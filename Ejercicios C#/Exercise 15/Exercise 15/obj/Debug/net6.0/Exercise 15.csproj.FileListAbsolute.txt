@@ -1,0 +1,28 @@
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.exe
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.deps.json
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.runtimeconfig.json
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.dll
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.pdb
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.AssemblyInfoInputs.cache
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.AssemblyInfo.cs
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.csproj.CoreCompileInputs.cache
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.dll
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\refint\Exercise 15.dll
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.pdb
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.genruntimeconfig.cache
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\ref\Exercise 15.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\refint\Exercise 15.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.exe
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.deps.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.runtimeconfig.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\bin\Debug\net6.0\Exercise 15.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\Exercise 15.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 15\Exercise 15\obj\Debug\net6.0\ref\Exercise 15.dll

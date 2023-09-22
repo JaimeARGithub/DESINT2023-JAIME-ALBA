@@ -1,0 +1,14 @@
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\bin\Debug\net6.0\Exercise 10.exe
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\bin\Debug\net6.0\Exercise 10.deps.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\bin\Debug\net6.0\Exercise 10.runtimeconfig.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\bin\Debug\net6.0\Exercise 10.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\bin\Debug\net6.0\Exercise 10.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\Exercise 10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\Exercise 10.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\Exercise 10.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\Exercise 10.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\Exercise 10.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\refint\Exercise 10.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\Exercise 10.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\Exercise 10.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 10\Exercise 10\obj\Debug\net6.0\ref\Exercise 10.dll

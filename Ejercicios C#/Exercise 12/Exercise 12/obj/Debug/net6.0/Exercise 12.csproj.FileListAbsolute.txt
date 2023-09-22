@@ -1,0 +1,14 @@
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\bin\Debug\net6.0\Exercise 12.exe
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\bin\Debug\net6.0\Exercise 12.deps.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\bin\Debug\net6.0\Exercise 12.runtimeconfig.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\bin\Debug\net6.0\Exercise 12.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\bin\Debug\net6.0\Exercise 12.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\Exercise 12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\Exercise 12.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\Exercise 12.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\Exercise 12.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\Exercise 12.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\refint\Exercise 12.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\Exercise 12.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\Exercise 12.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 12\Exercise 12\obj\Debug\net6.0\ref\Exercise 12.dll

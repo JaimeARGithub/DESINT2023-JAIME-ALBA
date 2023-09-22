@@ -1,0 +1,28 @@
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.exe
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.deps.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.runtimeconfig.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\refint\Exercise 11.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\ref\Exercise 11.dll
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.exe
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.deps.json
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.runtimeconfig.json
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.dll
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\bin\Debug\net6.0\Exercise 11.pdb
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.AssemblyInfoInputs.cache
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.AssemblyInfo.cs
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.csproj.CoreCompileInputs.cache
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.dll
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\refint\Exercise 11.dll
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.pdb
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\Exercise 11.genruntimeconfig.cache
+E:\Desarrollo de Interfaces\Ejercicios C#\Exercise 11\Exercise 11\obj\Debug\net6.0\ref\Exercise 11.dll

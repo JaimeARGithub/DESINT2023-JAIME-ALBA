@@ -1,0 +1,14 @@
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\bin\Debug\net6.0\Prueba.exe
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\bin\Debug\net6.0\Prueba.deps.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\bin\Debug\net6.0\Prueba.runtimeconfig.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\bin\Debug\net6.0\Prueba.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\bin\Debug\net6.0\Prueba.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\Prueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\Prueba.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\Prueba.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\Prueba.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\Prueba.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\refint\Prueba.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\Prueba.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\Prueba.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Prueba\Prueba\obj\Debug\net6.0\ref\Prueba.dll

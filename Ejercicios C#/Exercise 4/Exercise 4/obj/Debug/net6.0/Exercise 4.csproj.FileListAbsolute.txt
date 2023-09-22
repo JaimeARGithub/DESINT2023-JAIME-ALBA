@@ -1,0 +1,14 @@
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\bin\Debug\net6.0\Exercise 4.exe
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\bin\Debug\net6.0\Exercise 4.deps.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\bin\Debug\net6.0\Exercise 4.runtimeconfig.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\bin\Debug\net6.0\Exercise 4.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\bin\Debug\net6.0\Exercise 4.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\Exercise 4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\Exercise 4.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\Exercise 4.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\Exercise 4.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\Exercise 4.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\refint\Exercise 4.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\Exercise 4.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\Exercise 4.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 4\Exercise 4\obj\Debug\net6.0\ref\Exercise 4.dll

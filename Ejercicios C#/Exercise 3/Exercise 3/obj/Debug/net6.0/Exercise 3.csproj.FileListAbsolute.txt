@@ -1,0 +1,28 @@
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.exe
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.deps.json
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.runtimeconfig.json
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.dll
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.pdb
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.AssemblyInfoInputs.cache
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.AssemblyInfo.cs
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.csproj.CoreCompileInputs.cache
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.dll
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\refint\Exercise 3.dll
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.pdb
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.genruntimeconfig.cache
+C:\Users\DAM02-04\source\repos\Exercise 3\Exercise 3\obj\Debug\net6.0\ref\Exercise 3.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.exe
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.deps.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.runtimeconfig.json
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\bin\Debug\net6.0\Exercise 3.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\refint\Exercise 3.dll
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.pdb
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\Exercise 3.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Desktop\2º DAM\Desarrollo de Interfaces\Ejercicios C#\Exercise 3\Exercise 3\obj\Debug\net6.0\ref\Exercise 3.dll
