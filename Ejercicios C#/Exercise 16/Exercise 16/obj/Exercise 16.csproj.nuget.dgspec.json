@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pokem\\OneDrive\\Desktop\\2º DAM\\Desarrollo de Interfaces\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj": {}
+    "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pokem\\OneDrive\\Desktop\\2º DAM\\Desarrollo de Interfaces\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj": {
+    "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pokem\\OneDrive\\Desktop\\2º DAM\\Desarrollo de Interfaces\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
+        "projectUniqueName": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
         "projectName": "Exercise 16",
-        "projectPath": "C:\\Users\\pokem\\OneDrive\\Desktop\\2º DAM\\Desarrollo de Interfaces\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
+        "projectPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
         "packagesPath": "C:\\Users\\pokem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pokem\\OneDrive\\Desktop\\2º DAM\\Desarrollo de Interfaces\\Ejercicios C#\\Exercise 16\\Exercise 16\\obj\\",
+        "outputPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pokem\\AppData\\Roaming\\NuGet\\NuGet.Config",
