@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj": {}
+    "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj": {
+    "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj",
+        "projectUniqueName": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj",
         "projectName": "Ejercise 17",
-        "projectPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj",
-        "packagesPath": "C:\\Users\\pokem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\obj\\",
+        "projectPath": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\Ejercise 17.csproj",
+        "packagesPath": "C:\\Users\\DAM02-04\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Ejercise 17\\Ejercise 17\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pokem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DAM02-04\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

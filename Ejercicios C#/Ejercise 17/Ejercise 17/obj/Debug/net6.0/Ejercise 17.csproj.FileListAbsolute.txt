@@ -26,3 +26,17 @@ C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.pdb
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.genruntimeconfig.cache
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\ref\Ejercise 17.dll
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\bin\Debug\net6.0\Ejercise 17.exe
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\bin\Debug\net6.0\Ejercise 17.deps.json
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\bin\Debug\net6.0\Ejercise 17.runtimeconfig.json
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\bin\Debug\net6.0\Ejercise 17.dll
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\bin\Debug\net6.0\Ejercise 17.pdb
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.AssemblyInfoInputs.cache
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.AssemblyInfo.cs
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.csproj.CoreCompileInputs.cache
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.dll
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\refint\Ejercise 17.dll
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.pdb
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\Ejercise 17.genruntimeconfig.cache
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES\DESINT2023-JAIME-ALBA\Ejercicios C#\Ejercise 17\Ejercise 17\obj\Debug\net6.0\ref\Ejercise 17.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DAM02-04\\Desktop\\Desarrollo de Interfaces\\Ejercicios C#\\MatrixSimulation\\MatrixSimulation\\MatrixSimulation.csproj",
+      "projectUniqueName": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\MatrixSimulation\\MatrixSimulation\\MatrixSimulation.csproj",
       "projectName": "MatrixSimulation",
-      "projectPath": "C:\\Users\\DAM02-04\\Desktop\\Desarrollo de Interfaces\\Ejercicios C#\\MatrixSimulation\\MatrixSimulation\\MatrixSimulation.csproj",
+      "projectPath": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\MatrixSimulation\\MatrixSimulation\\MatrixSimulation.csproj",
       "packagesPath": "C:\\Users\\DAM02-04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DAM02-04\\Desktop\\Desarrollo de Interfaces\\Ejercicios C#\\MatrixSimulation\\MatrixSimulation\\obj\\",
+      "outputPath": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\MatrixSimulation\\MatrixSimulation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DAM02-04\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -189,6 +189,10 @@ namespace Ejercise_17
             Console.WriteLine(" ");
         }
     
+        
+        
+        
+        
         public static void j()
         {
             for (int i=0; i<6; i++)
@@ -266,6 +270,10 @@ namespace Ejercise_17
             Console.WriteLine(" ");
         }
     
+        
+        
+        
+        
         public static void m()
         {
             for (int i=0; i<8; i++)
@@ -303,5 +311,154 @@ namespace Ejercise_17
             Console.WriteLine(" ");
             Console.WriteLine(" ");
         }
+        
+        public static void o()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (j < 8 - i - 1)
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.Write(8-j);
+                    }
+                }
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }    
+        
+        public static void p()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i <= j)
+                    {
+                        Console.Write(8-j);
+                    }
+                }
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+    
+        
+        
+        public static void q()
+        {
+            int height = 8;
+            int counter = 1;
+
+            for (int i=0; i<height; i++)
+            {
+                for (int j=0; j<height-i-1; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j=0; j<((i+1)*2)-1; j++)
+                {
+                    Console.Write(counter);
+
+                    if (j<i)
+                    {
+                        counter++;
+                    } else {
+                        counter--;
+                    }
+                }
+                counter = 1;
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+    
+        public static void r()
+        {
+            int height = 8;
+            int counter = 1;
+            
+            for (int i=0; i<height; i++)
+            {
+                for (int j=0; j<i; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 0; j < (height*2)-1 - (2 * i); j++)
+                {
+                    Console.Write(counter);
+
+                    if (j<height-i-1)
+                    {
+                        counter++;
+                    } else
+                    {
+                        counter--;
+                    }
+                }
+                counter = 1;
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+    
+    
+    
+        public static void s()
+        {
+            int height = 8;
+            int counter = 1;
+
+            for (int i=0; i<height; i++)
+            {
+                for (int j = 0; j < i + 1; j++)
+                {
+                    Console.Write(counter);
+
+                    if (j < height)
+                    {
+                        counter++;
+                    }
+                    else
+                    {
+                        counter--;
+                    }
+
+                }
+                for (int j = 0; j < height - i - 1; j++)
+                {
+                    Console.Write(" ");
+                }
+
+
+
+                for (int j=0; j<height-i-1; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j=0; j<i+1; j++)
+                {
+                    Console.Write(i+1);
+                }
+                counter = 1;
+                Console.WriteLine(" ");
+            }
+
+
+
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+
     }
 }

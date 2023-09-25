@@ -32,5 +32,15 @@ public class Exercise
         PrintPatterns.m();
 
         PrintPatterns.n();
+
+        PrintPatterns.o();
+
+        PrintPatterns.p();
+
+        PrintPatterns.q();
+
+        PrintPatterns.r();
+
+        PrintPatterns.s();
     }
 }
