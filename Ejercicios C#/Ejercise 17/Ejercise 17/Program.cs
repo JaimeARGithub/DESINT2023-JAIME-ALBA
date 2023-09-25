@@ -24,5 +24,13 @@ public class Exercise
         PrintPatterns.i();
 
         PrintPatterns.j();
+
+        PrintPatterns.k(6);
+
+        PrintPatterns.l(11);
+
+        PrintPatterns.m();
+
+        PrintPatterns.n();
     }
 }

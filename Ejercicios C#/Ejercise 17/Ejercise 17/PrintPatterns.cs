@@ -191,20 +191,117 @@ namespace Ejercise_17
     
         public static void j()
         {
-            for (int i=0; i<12; i++)
+            for (int i=0; i<6; i++)
             {
-                for (int j=0; j<6; j++)
+                
+                for (int j=0; j<i; j++)
                 {
-                    if (j<i)
-                    {
-                        Console.Write(" ");
-                    } else
-                    {
-                        Console.Write("#");
-                    }
+                    Console.Write(" ");
+                }
+
+                for (int j = 0; j < 11-(2*i); j++)
+                {
+                    Console.Write("#");
+                }
+
+
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+    
+        public static void k(int height)
+        {
+            for (int i=0; i<height; i++)
+            {
+                for (int j=0; j<height-1-i; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 0; j < ((i+1)*2)-1; j++)
+                {
+                    Console.Write("#");
+                }
+
+
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+
+        public static void l(int height)
+        {
+            for (int i=0; i<((int)height/2)+1; i++)
+            {
+                for (int j=0; j<((int)height/2)-i; j++)
+                {
+                    Console.Write(" ");
+                }
+                
+                for (int j=0; j<((i+1)*2)-1; j++)
+                {
+                    Console.Write("#");
+                }
+
+                Console.WriteLine(" ");
+            }
+
+            for (int i=((int)height/2)+1; i<height; i++)
+            {
+                for (int j=0; j<(i-(int)height/2); j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j=0; j<(height-i)+((height-i)-1); j++)
+                {
+                    Console.Write("#");
                 }
                 Console.WriteLine(" ");
             }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+    
+        public static void m()
+        {
+            for (int i=0; i<8; i++)
+            {
+                for (int j=0; j<=i; j++)
+                {
+                    Console.Write(j+1);
+                }
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+        }
+
+        public static void n()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+
+                    if (j <= i - 1)
+                    {
+                       Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.Write(j + 1 - i);
+                    }
+
+
+                }
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
         }
     }
 }
