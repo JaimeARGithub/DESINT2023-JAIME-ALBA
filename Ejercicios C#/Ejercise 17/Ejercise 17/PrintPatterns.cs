@@ -509,6 +509,8 @@ namespace Ejercise_17
                 
                 Console.WriteLine(" ");
             }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
         }
     }
 }

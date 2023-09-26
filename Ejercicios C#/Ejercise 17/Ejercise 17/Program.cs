@@ -44,5 +44,7 @@ public class Exercise
         PrintPatterns.s();
 
         PrintPatterns.t();
+
+        Console.WriteLine("END OF THE EXERCISE.");
     }
 }
