@@ -442,14 +442,25 @@ namespace Ejercise_17
 
 
 
-                for (int j=0; j<height-i-1; j++)
+                if (i!=height-1)
                 {
-                    Console.Write(" ");
-                }
-                for (int j=0; j<i+1; j++)
+                    for (int j = 0; j < height - i - 2; j++)
+                    {
+                        Console.Write(" ");
+                    }
+                    for (int j = 0; j < i + 1; j++)
+                    {
+                        Console.Write((i + 1) - j);
+                    }
+                } else
                 {
-                    Console.Write(i+1);
+                    for (int j=0; j<i; j++)
+                    {
+                        Console.Write(i - j);
+                    }
                 }
+
+                
                 counter = 1;
                 Console.WriteLine(" ");
             }
@@ -460,5 +471,44 @@ namespace Ejercise_17
             Console.WriteLine(" ");
         }
 
+        public static void t()
+        {
+            int height = 8;
+
+            for (int i=0; i<height; i++)
+            {
+                for (int j=0; j<height; j++)
+                {
+                    if (j<(height-i))
+                    {
+                        Console.Write(j+1);
+                    } else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+
+
+                for (int j = 0; j < height - 1; j++)
+                {
+                    if (i==0)
+                    {
+                        Console.Write(height - j - 1);
+                    } else
+                    {
+                        if (i < j + 2)
+                        {
+                            Console.Write(height - j - 1);
+                        }
+                        else
+                        {
+                            Console.Write(" ");
+                        }
+                    }
+                }
+                
+                Console.WriteLine(" ");
+            }
+        }
     }
 }
