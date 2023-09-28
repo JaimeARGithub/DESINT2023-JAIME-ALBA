@@ -1,0 +1,15 @@
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\bin\Debug\ExampleInterfaces.exe.config
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\bin\Debug\ExampleInterfaces.exe
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\bin\Debug\ExampleInterfaces.pdb
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces.csproj.AssemblyReference.cache
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\App.g.cs
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces_MarkupCompile.cache
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces_MarkupCompile.lref
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces.g.resources
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces.Properties.Resources.resources
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces.csproj.GenerateResource.cache
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces.exe
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\ExampleInterfaces.pdb
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\View\MainWindow.g.cs
+C:\Users\DAM02-04\Desktop\Desarrollo de Interfaces\ExampleInterfaces\ExampleInterfaces\obj\Debug\View\MainWindow.baml
