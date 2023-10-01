@@ -1,0 +1,14 @@
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\bin\Debug\net6.0\Exercise 21.exe
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\bin\Debug\net6.0\Exercise 21.deps.json
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\bin\Debug\net6.0\Exercise 21.runtimeconfig.json
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\bin\Debug\net6.0\Exercise 21.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\bin\Debug\net6.0\Exercise 21.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\Exercise 21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\Exercise 21.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\Exercise 21.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\Exercise 21.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\Exercise 21.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\refint\Exercise 21.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\Exercise 21.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\Exercise 21.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\Exercise 21\Exercise 21\obj\Debug\net6.0\ref\Exercise 21.dll
