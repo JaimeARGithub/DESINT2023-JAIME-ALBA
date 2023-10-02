@@ -25,7 +25,12 @@
         <TabControl TabStripPlacement="Left" Grid.Row="1">
             <TabItem Header="HOME" FontSize="20">
                 
-            </TabItem> 
+            </TabItem>
+            <TabItem Header="CLIENTS" FontSize="20">
+                <Button x:Name="btnNew"></Button>
+                <!--<DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/> -->
+            </TabItem>
+            
         </TabControl>
 
 
