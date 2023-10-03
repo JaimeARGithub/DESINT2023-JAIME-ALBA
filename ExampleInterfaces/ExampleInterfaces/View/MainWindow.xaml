@@ -16,7 +16,7 @@
                 
             </RowDefinition>
             <RowDefinition Height="7*">
-                
+  
             </RowDefinition>
             
         </Grid.RowDefinitions>
@@ -26,9 +26,95 @@
             <TabItem Header="HOME" FontSize="20">
                 
             </TabItem>
-            <TabItem Header="CLIENTS" FontSize="20">
-                <Button x:Name="btnNew"></Button>
-                <!--<DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/> -->
+
+
+            <TabItem Header="CLIENTS" FontSize="20" IsSelected="True">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition Height="0.5*"/>
+                        </Grid.RowDefinitions>
+                        
+                        
+                        <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">New</Button>
+                        <Button Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2">Delete</Button>
+                        
+                        <!-- Otra forma: -->
+
+                        <!-- <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1"> -->
+                        <!--    <Button Content="New" Margin="4"></Button> -->
+                        <!--    <Button Content="Delete" Margin="4"></Button> -->
+                        <!--</StackPanel> -->
+
+                        
+                        
+                        <DataGrid Grid.Column="1" Grid.ColumnSpan="9" Grid.Row="2" Grid.RowSpan="1">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="DNI" Width="*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Name" Width="*"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Age" Width="*"></DataGridTextColumn>
+                            </DataGrid.Columns>
+
+                        </DataGrid>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.3*"/>
+                            <ColumnDefinition Width="0.9*"/>
+                            <ColumnDefinition Width="0.65*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.8*"/>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="0.15*"/>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="0.15*"/>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="1.5*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="1" Grid.Column="1">DNI: </Label>
+                        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">Introduce DNI</TextBox>
+                        <Label Grid.Row="3" Grid.Column="1">Name: </Label>
+                        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3">Introduce nombre</TextBox>
+                        <Label Grid.Row="5" Grid.Column="1">Age: </Label>
+                        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3">Introduce edad</TextBox>
+                        <Button Grid.Row="7" Grid.Column="3">Save</Button>
+                    </Grid>
+                    
+                </Grid>
             </TabItem>
             
         </TabControl>
