@@ -33,12 +33,5 @@ namespace MatrixSimulation
             this.abilityInfect = AuxiliarMethods.generateRandom(1, MAX_ABILITY_INFECT);
         }
 
-        // FALTA IMPLEMENTARLO
-        public List<Casilla> getShortestRoute (Casilla casillaNeo, Casilla casillaSmith)
-        {
-            List<Casilla> shortestRoute = new List<Casilla>();
-
-            return shortestRoute;
-        }
     }
 }
