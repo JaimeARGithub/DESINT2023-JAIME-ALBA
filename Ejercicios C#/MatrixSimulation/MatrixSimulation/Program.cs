@@ -15,13 +15,12 @@ public class Simulation
         }
 
 
-        for (int i=0; i<30; i++)
-        {
-            Matrix simulacion = new Matrix(queueChars);
-            simulacion.print();
-            simulacion.getRoute(simulacion.getCasillaSmith());
-            simulacion.print();
-        }
+        Matrix simulacion;
+
+        simulacion = new Matrix(queueChars, 6, 6);
+        simulacion.funcionar();
+
+
 
 
 

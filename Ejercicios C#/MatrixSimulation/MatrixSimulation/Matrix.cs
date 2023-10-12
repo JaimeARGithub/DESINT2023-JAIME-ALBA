@@ -88,7 +88,7 @@ namespace MatrixSimulation
                 Console.WriteLine("");
             }
 
-            // E imprimimos la matrix para ver cómo queda tras construitla
+            // E imprimimos la matrix para ver cómo queda tras construirla
             print();
         }
 
@@ -107,20 +107,20 @@ namespace MatrixSimulation
                 {
                     if (matrix[i,j] is Neo)
                     {
-                        Console.Write("| N |  ");
+                        Console.Write(" N ");
                     } else if (matrix[i, j] is Smith)
                     {
-                        Console.Write("| S |  ");
+                        Console.Write(" S ");
                     } else if (matrix[i, j] is MatrixCharacter)
                     {
-                        Console.Write("| C |  ");
+                        Console.Write(" C ");
                     } else if (matrix[i, j] == null)
                     {
-                        Console.Write("| X |  ");
+                        Console.Write(" X ");
                     }
                 }
                 Console.WriteLine(" ");
-                Console.WriteLine(" ");
+
             }
 
             Console.WriteLine("Neo is in (" + getCasillaNeo().getX() + "," + getCasillaNeo().getY() + ")");
@@ -199,7 +199,12 @@ namespace MatrixSimulation
         }
 
 
-        public void getRoute(Casilla casillaSmith)
+        /**
+         * Método que busca la ruta más corta de Smith hacia Neo. Localiza la ruta,
+         * y a lo largo de ella va asesinando a personajes, cuya cantidad dependerá
+         * de la capacidad de infectar con que haya aparecido ese turno.
+         */
+        public void getRoute(Casilla casillaSmith, int capacidadInfeccion)
         {
             int xReach = casillaSmith.getX() + this.casillaNeo.getX();
             int yReach = casillaSmith.getY() + this.casillaNeo.getY();
@@ -217,26 +222,60 @@ namespace MatrixSimulation
                 // todo dentro de los límites de la matrix ¡¡Y!! que sean casillas válidas,
                 // es decir, casillas diagonales a su posición dentro de lo disponible en
                 // la adyacencia, puesto que solamente puede moverse a esas casillas
+
+                int xCoordenadaDivisible;
+                int yCoordenadaDivisible;
+
                 for (int i = -1; i <= 1; i++)
                 {
                     for (int j = -1; j <= 1; j++)
                     {
+                        xCoordenadaDivisible = casillaSmith.getX() + i + this.casillaNeo.getX();
+                        yCoordenadaDivisible = casillaSmith.getY() + j + this.casillaNeo.getY();
+
                         if (casillaSmith.getX()+i >= 0 && 
                             casillaSmith.getX()+i < matrix.GetLength(0) &&
                             casillaSmith.getY()+j >= 0 &&
-                            casillaSmith.getY()+j < matrix.GetLength(1))
+                            casillaSmith.getY()+j < matrix.GetLength(1) &&
+                            (matrix[casillaSmith.getX() + i, casillaSmith.getY() + j] is not Smith) &&
+                            (  (xCoordenadaDivisible%2==0 && yCoordenadaDivisible%2==0)  ||  (xCoordenadaDivisible % 2 != 0 && yCoordenadaDivisible % 2 != 0)  ))
                         {
                             
-                            matrix[casillaSmith.getX() + i, casillaSmith.getY() + j] = null;
-                            //casillaRevisada = new Casilla(casillaSmith.getX()+i , casillaSmith.getY()+j);
-                            //int xOptimal = Math.Abs((casillaSmith.getX()+i) - (this.casillaNeo.getX()));
-                            //int yOptimal = Math.Abs((casillaSmith.getY()+j) - (this.casillaNeo.getY()));
-                            //int numMovsOptimal = (int)Math.Max(xOptimal, yOptimal);
+                            casillaRevisada = new Casilla(casillaSmith.getX()+i , casillaSmith.getY()+j);
+                            int xOptimal = Math.Abs((casillaSmith.getX()+i) - (this.casillaNeo.getX()));
+                            int yOptimal = Math.Abs((casillaSmith.getY()+j) - (this.casillaNeo.getY()));
+                            int numMovsOptimal = (int)Math.Max(xOptimal, yOptimal);
 
-                            //if (numMovsOptimal < numOfMovs)
-                            //{
-                            //    casillaOptima = casillaRevisada;
-                            //}
+                            // Si el número de movimientos que hay desde la casilla que se ha revisado
+                            // hasta Neo es menor que el que anteriormente se calculó, esa casilla
+                            // es aceptada como válida y la variable que indica la distancia hasta
+                            // Neo se reasigna, evitando de esa manera que puedan tomarse como válidas
+                            // varias casillas que ofrezcan hacia Neo una distancia igual entre sí,
+                            // pero menor a la existente desde la casilla en la que se encuentra Smith.
+
+                            // En el propio acto de encontrar una casilla eficiente se mata al personaje
+                            // presente en ésta, y la capacidad de infectar de Smith se reduce en 1.
+
+                            // Encontrada una casilla óptima, se hace una llamada recursiva al método
+                            // pasando como parámetros la casilla óptima encontrada y la capacidad de
+                            // infectar de Smith reducida en 1.
+                            
+                            if (numMovsOptimal < numOfMovs)
+                            {
+                                numOfMovs = numMovsOptimal;
+                                casillaOptima = casillaRevisada;
+                                int capInf = capacidadInfeccion;
+                                if (capInf>0 && (matrix[casillaOptima.getX(), casillaOptima.getY()] is not Neo))
+                                {
+                                    matrix[casillaOptima.getX(), casillaOptima.getY()] = null;
+                                    capInf = capInf - 1;
+                                }
+
+                                if (numOfMovs>1)
+                                {
+                                    getRoute(casillaOptima,capInf);
+                                }
+                            }
 
 
 
@@ -244,6 +283,141 @@ namespace MatrixSimulation
                     }
                 }
             }
+        }
+
+        /**
+         * Método que aglutina lo que hará Smith siempre que sea su turno. Se
+         * generará una capacidad de infectar aleatoria entre 1 y su máximo
+         * asignado, se buscará la ruta óptima desde él hasta Neo y se matará
+         * al número de personajes que haya aparecido en la capacidad de infección.
+         */
+        public void smithTurn()
+        {
+            Smith smithInfectar = (Smith)(matrix[casillaSmith.getX(),casillaSmith.getY()]);
+            smithInfectar.setAbilityInfect();
+            int capInfectar = smithInfectar.getAbilityInfect();
+            Console.WriteLine("Smith's ability to infect is "+ capInfectar);
+            getRoute(casillaSmith,capInfectar);
+        }
+
+
+        /**
+         * Método para asesinar a toda la matrix y ver si Neo 
+         * revive a los de su alrededor. No se usa en el programa
+         * final. Borrarlo si me acuerdo.
+         */
+        public void matar()
+        {
+            for (int i=0; i<matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (matrix[i,j] is MatrixCharacter &&
+                        matrix[i, j] is not Neo &&
+                        matrix[i, j] is not Smith)
+                    {
+                        matrix[i, j] = null;
+                    }
+                }
+            }
+        }
+
+
+        /**
+         * Método que aglutina lo que hará Neo siempre que sea su turno. 
+         * 
+         * En primer lugar, decide con una probabilidad del 50% si es el elegido 
+         * o no; si resulta serlo, inspecciona las casillas de la adyacencia, y 
+         * aquellas que encuentre nulas (con personajes muertos) las rellenará 
+         * extrayendo personajes de la cola e insertándolos en dichas casillas.
+         * 
+         * En segundo lugar, intercambiará su posición. Genera dos números aleatorios
+         * que utiliza como coordenadas para revisar una posición de la matriz; si
+         * esa posición está ocupada por un personaje genérico o por Smith, 
+         * intercambia la posición de uno por la del otro.
+         */
+        public void neoTurn()
+        {
+            Neo neo = new Neo();
+            neo.setIsTheOne();
+            if (neo.getIsTheOne())
+            {
+                int positionQueue;
+                for (int i=-1; i<=1; i++)
+                {
+                    for (int j=-1; j<=1; j++)
+                    {
+                        if ((casillaNeo.getX()+i >= 0) &&
+                            (casillaNeo.getX()+i < matrix.GetLength(0)) &&
+                            (casillaNeo.getY()+j >= 0) &&
+                            (casillaNeo.getY()+j < matrix.GetLength(1)) &&
+                            (matrix[casillaNeo.getX() + i, casillaNeo.getY() + j] is null))
+                        {
+
+                            positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
+
+                            // Se elige el personaje de la cola de manera aleatoria; si el número
+                            // que se usará para la posición aleatoria se corresponde con una posición
+                            // nula, se vuelve a generar otro número.
+                            while (queue[positionQueue] == null)
+                            {
+                                positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
+                            }
+
+                            matrix[casillaNeo.getX() + i, casillaNeo.getY() + j] = queue[positionQueue];
+                            this.numberOfCreated++;
+                            queue[positionQueue] = null;
+
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+
+        /**
+         * Método que pone en marcha el funcionamiento de toda la matriz.
+         * 
+         * Cada segundo se produce el turno de los personajes genéricos.
+         * Cada dos segundos se produce el turno del agente Smith.
+         * Cada cinco segundos se produce el turno de Neo.
+         * 
+         * La simulación termina, según los términos especificados en clase,
+         * cuando han pasado 20 segundos o cuando la cola de personajes
+         * está vacía (los 200 ya han entrado en Matrix).
+         */
+        public void funcionar()
+        {
+            int max_time = 20;
+            int time = 1;
+
+            do
+            {
+                print();
+                if (numberOfCreated<=queue.Length)
+                {
+                    if (time % 1 == 0)
+                    {
+                        charactersTurn();
+                    }
+                    if (time % 2 == 0) 
+                    { 
+                        //smithTurn(); 
+                    }
+                    if (time % 5 == 0)
+                    {
+                        //neoTurn();
+                    }
+                }
+                Thread.Sleep(1000);
+                time += 1;
+
+            } while (time <= max_time);
+            print();
+            Console.WriteLine("Tiempo en Matrix terminado.");
         }
     }
 }
