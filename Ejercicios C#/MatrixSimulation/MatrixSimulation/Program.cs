@@ -19,17 +19,5 @@ public class Simulation
 
         simulacion = new Matrix(queueChars, 6, 6);
         simulacion.funcionar();
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

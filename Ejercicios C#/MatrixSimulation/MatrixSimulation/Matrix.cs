@@ -182,16 +182,19 @@ namespace MatrixSimulation
                         {
                             matrix[i, j] = null;
 
-                            int positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
-
-                            while (queue[positionQueue] == null)
+                            if (queue.Length - this.numberOfCreated > 0)
                             {
-                                positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
-                            }
+                                int positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
 
-                            matrix[i, j] = this.queue[positionQueue];
-                            queue[positionQueue] = null;
-                            numberOfCreated++;
+                                while (queue[positionQueue] == null)
+                                {
+                                    positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
+                                }
+
+                                matrix[i, j] = this.queue[positionQueue];
+                                queue[positionQueue] = null;
+                                numberOfCreated++;
+                            }
                         }
                     }
                 }
@@ -259,13 +262,27 @@ namespace MatrixSimulation
                             // Encontrada una casilla óptima, se hace una llamada recursiva al método
                             // pasando como parámetros la casilla óptima encontrada y la capacidad de
                             // infectar de Smith reducida en 1.
+
                             
                             if (numMovsOptimal < numOfMovs)
                             {
                                 numOfMovs = numMovsOptimal;
                                 casillaOptima = casillaRevisada;
                                 int capInf = capacidadInfeccion;
-                                if (capInf>0 && (matrix[casillaOptima.getX(), casillaOptima.getY()] is not Neo))
+                                if (capInf>0 && 
+                                    (matrix[casillaOptima.getX(), casillaOptima.getY()] is not Neo) &&
+
+                                    // DETALLE IMPORTANTE: en el camino desde Smith hasta Neo, es posible
+                                    // que encuentre casillas con personajes ya muertos; a la hora de
+                                    // asesinar personajes en la ruta más corta hasta Neo, estas casillas
+                                    // son bestialmente ignoradas, de manera que únicamente continuará
+                                    // matando en aquellas casillas en las que haya personajes vivos
+                                    // disponibles.
+                                    // Tras morir estos personajes, las casillas permanecen a nulo a menos
+                                    // que Neo inserte personajes nuevos; no se reponen con el paso del
+                                    // tiempo, al contrario que el caso de aquellos personajes que mueren
+                                    // de manera natural, por el atributo de la probabilidad de muerte.
+                                    (matrix[casillaOptima.getX(), casillaOptima.getY()] != null))
                                 {
                                     matrix[casillaOptima.getX(), casillaOptima.getY()] = null;
                                     capInf = capInf - 1;
@@ -331,17 +348,17 @@ namespace MatrixSimulation
          * aquellas que encuentre nulas (con personajes muertos) las rellenará 
          * extrayendo personajes de la cola e insertándolos en dichas casillas.
          * 
-         * En segundo lugar, intercambiará su posición. Genera dos números aleatorios
-         * que utiliza como coordenadas para revisar una posición de la matriz; si
-         * esa posición está ocupada por un personaje genérico o por Smith, 
-         * intercambia la posición de uno por la del otro.
+         * En segundo lugar, cambiará su posición. Genera dos números aleatorios
+         * que utiliza como coordenadas para revisar una posición de la matriz, e
+         * intercambia posiciones, independientemente de qué la esté ocupando.
          */
         public void neoTurn()
         {
             Neo neo = new Neo();
             neo.setIsTheOne();
-            if (neo.getIsTheOne())
+            if (neo.getIsTheOne() && (queue.Length - this.numberOfCreated > 0))
             {
+                Console.WriteLine("Neo is the Chosen One!");
                 int positionQueue;
                 for (int i=-1; i<=1; i++)
                 {
@@ -354,23 +371,55 @@ namespace MatrixSimulation
                             (matrix[casillaNeo.getX() + i, casillaNeo.getY() + j] is null))
                         {
 
-                            positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
 
-                            // Se elige el personaje de la cola de manera aleatoria; si el número
+                            // En el hipotético caso de que queden personajes disponibles en la cola,
+                            // se elige el personaje de la cola de manera aleatoria; si el número
                             // que se usará para la posición aleatoria se corresponde con una posición
                             // nula, se vuelve a generar otro número.
-                            while (queue[positionQueue] == null)
-                            {
+                            // Los personajes elegidos de la cola de personajes disponibles son insertados
+                            // en Matrix, en la adyacencia de Neo.
                                 positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
-                            }
 
-                            matrix[casillaNeo.getX() + i, casillaNeo.getY() + j] = queue[positionQueue];
-                            this.numberOfCreated++;
-                            queue[positionQueue] = null;
+                                while (queue[positionQueue] == null)
+                                {
+                                    positionQueue = AuxiliarMethods.generateRandom(0, queue.Length - 1);
+                                }
+
+                                matrix[casillaNeo.getX() + i, casillaNeo.getY() + j] = this.queue[positionQueue];
+                                this.numberOfCreated++;
+                                queue[positionQueue] = null;
+                            
 
                         }
                     }
                 }
+            } else
+            {
+                Console.WriteLine("Neo is not the Chosen One. Sorry :(");
+            }
+
+
+            int xNewPosition = AuxiliarMethods.generateRandom(0, matrix.GetLength(0) - 1);
+            int yNewPosition = AuxiliarMethods.generateRandom(0, matrix.GetLength(1) - 1);
+
+            if (matrix[xNewPosition,yNewPosition] is Smith)
+            {
+                // Para el caso de la casilla generada coincida con aquella en la que
+                // se encuentre Smith
+                matrix[casillaNeo.getX(), casillaNeo.getY()] = new Smith();
+                casillaSmith = new Casilla(casillaNeo.getX(), casillaNeo.getY());
+                
+                matrix[xNewPosition, yNewPosition] = new Neo();
+                casillaNeo = new Casilla(xNewPosition, yNewPosition);
+
+            } else
+            {
+                // Para el caso de la casilla generada sea una en la que haya un
+                // personaje genérico, ya sea vivo o muerto
+                matrix[casillaNeo.getX(), casillaNeo.getY()] = matrix[xNewPosition, yNewPosition];
+
+                matrix[xNewPosition, yNewPosition] = new Neo();
+                casillaNeo = new Casilla(xNewPosition, yNewPosition);
             }
 
 
@@ -397,25 +446,22 @@ namespace MatrixSimulation
             do
             {
                 print();
-                if (numberOfCreated<=queue.Length)
+                if (time % 1 == 0)
                 {
-                    if (time % 1 == 0)
-                    {
-                        charactersTurn();
-                    }
-                    if (time % 2 == 0) 
-                    { 
-                        //smithTurn(); 
-                    }
-                    if (time % 5 == 0)
-                    {
-                        //neoTurn();
-                    }
+                    charactersTurn();
+                }
+                if (time % 2 == 0) 
+                { 
+                    smithTurn(); 
+                }
+                if (time % 5 == 0)
+                {
+                    neoTurn();
                 }
                 Thread.Sleep(1000);
                 time += 1;
 
-            } while (time <= max_time);
+            } while (time <= max_time && numberOfCreated < queue.Length);
             print();
             Console.WriteLine("Tiempo en Matrix terminado.");
         }
