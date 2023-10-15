@@ -1,0 +1,14 @@
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\bin\Debug\net6.0\PruebasDHondt.exe
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\bin\Debug\net6.0\PruebasDHondt.deps.json
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\bin\Debug\net6.0\PruebasDHondt.runtimeconfig.json
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\bin\Debug\net6.0\PruebasDHondt.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\bin\Debug\net6.0\PruebasDHondt.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\PruebasDHondt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\PruebasDHondt.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\PruebasDHondt.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\PruebasDHondt.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\PruebasDHondt.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\refint\PruebasDHondt.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\PruebasDHondt.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\PruebasDHondt.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\PruebasDHondt\PruebasDHondt\obj\Debug\net6.0\ref\PruebasDHondt.dll
