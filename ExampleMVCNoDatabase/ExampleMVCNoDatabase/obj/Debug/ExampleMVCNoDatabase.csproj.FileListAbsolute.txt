@@ -1,0 +1,15 @@
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\bin\Debug\ExampleMVCNoDatabase.exe.config
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\bin\Debug\ExampleMVCNoDatabase.exe
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\bin\Debug\ExampleMVCNoDatabase.pdb
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase.csproj.AssemblyReference.cache
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\View\MainWindow.g.cs
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\App.g.cs
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase_MarkupCompile.cache
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase_MarkupCompile.lref
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\View\MainWindow.baml
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase.g.resources
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase.Properties.Resources.resources
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase.csproj.GenerateResource.cache
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase.csproj.CoreCompileInputs.cache
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase.exe
+C:\Users\DAM02-04\Desktop\ExampleMVCNoDatabase\ExampleMVCNoDatabase\obj\Debug\ExampleMVCNoDatabase.pdb
