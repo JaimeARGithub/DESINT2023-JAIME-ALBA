@@ -28,5 +28,15 @@ namespace ExampleMVCnoDatabase
             people.readP();
             dgvPeople.ItemsSource = people.getListPeople();
         }
+
+        private void dgvPeople_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show("Selección cambiada");
+        }
+
+        private void btnExample_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("ESTOY DESQUICIADO");
+        }
     }
 }

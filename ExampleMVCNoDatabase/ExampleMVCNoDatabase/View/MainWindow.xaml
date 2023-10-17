@@ -11,7 +11,17 @@
             <ColumnDefinition Width="97*"/>
             <ColumnDefinition Width="63*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="dgvPeople" AutoGenerateColumns="True"/>
+        <DataGrid x:Name="dgvPeople" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="dgvPeople_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Age" Binding="{Binding age}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBox x:Name="txtContenido" Margin="20"></TextBox>
+            <Button x:Name="btnExample" Content="Push me" Grid.Column="1" Margin="20" Click="btnExample_Click"/>
+        </StackPanel>
+        
 
     </Grid>
 </Window>
