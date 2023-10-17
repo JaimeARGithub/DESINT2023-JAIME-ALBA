@@ -1,4 +1,4 @@
-﻿using ExampleMVCnoDatabase.Persistence.Manages;
+﻿using ExampleMVCnoDatabase.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +24,9 @@ namespace ExampleMVCnoDatabase
         public MainWindow()
         {
             InitializeComponent();
-            PeopleManage pm = new PeopleManage();
-            dgvPeople.ItemsSource = pm.ListPeople;
+            People people = new People();
+            people.readP();
+            dgvPeople.ItemsSource = people.getListPeople();
         }
     }
 }

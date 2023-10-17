@@ -13,3 +13,18 @@ C:\Users\Profesor\source\repos\ExampleMVCnoDatabase\ExampleMVCnoDatabase\obj\Deb
 C:\Users\Profesor\source\repos\ExampleMVCnoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.csproj.CoreCompileInputs.cache
 C:\Users\Profesor\source\repos\ExampleMVCnoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.exe
 C:\Users\Profesor\source\repos\ExampleMVCnoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.pdb
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\bin\Debug\ExampleMVCnoDatabase.exe.config
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\bin\Debug\ExampleMVCnoDatabase.exe
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\bin\Debug\ExampleMVCnoDatabase.pdb
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.csproj.AssemblyReference.cache
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\View\MainWindow.g.cs
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\App.g.cs
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase_MarkupCompile.cache
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase_MarkupCompile.lref
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\View\MainWindow.baml
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.g.resources
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.Properties.Resources.resources
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.csproj.GenerateResource.cache
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.csproj.CoreCompileInputs.cache
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.exe
+C:\Users\DAM02-04\Desktop\DESARROLLO INTERFACES REPO\DESINT2023-JAIME-ALBA\ExampleMVCNoDatabase\ExampleMVCnoDatabase\obj\Debug\ExampleMVCnoDatabase.pdb

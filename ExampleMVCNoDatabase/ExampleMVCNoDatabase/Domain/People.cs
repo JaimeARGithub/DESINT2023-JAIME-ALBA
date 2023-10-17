@@ -9,19 +9,30 @@ namespace ExampleMVCnoDatabase.Domain
 {
     internal class People
     {
-        private String name;
-        private int age;
-        private PeopleManage pm;
+        public string name { get; set; }
+        public int age { get; set; }
+        public PeopleManage pm { get; set; }
 
-        public string Name { get => name; set => name = value; }
-        public int Age { get => age; set => age = value; }
-        internal PeopleManage Pm { get => pm; set => pm = value; }
+        public People() 
+        {
+            pm = new PeopleManage();
+        }
 
         public People(string name, int age)
         {
             this.name = name;
             this.age = age;
             pm = new PeopleManage();
+        }
+
+        public void readP()
+        {
+            pm.readPeople();
+        }
+
+        public List<People> getListPeople()
+        {
+            return pm.listPeople;
         }
 
        
