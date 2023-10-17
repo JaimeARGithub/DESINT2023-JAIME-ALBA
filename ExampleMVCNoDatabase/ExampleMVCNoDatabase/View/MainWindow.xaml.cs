@@ -1,4 +1,4 @@
-﻿using ExampleMVCNoDatabase.Persistence.Manages;
+﻿using ExampleMVCnoDatabase.Persistence.Manages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ExampleMVCNoDatabase
+namespace ExampleMVCnoDatabase
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
@@ -25,7 +25,7 @@ namespace ExampleMVCNoDatabase
         {
             InitializeComponent();
             PeopleManage pm = new PeopleManage();
-            dgvPeople.ItemsSource = pm.ListPeople();
+            dgvPeople.ItemsSource = pm.ListPeople;
         }
     }
 }

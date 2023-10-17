@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ExampleMVCNoDatabase.Properties
+namespace ExampleMVCnoDatabase.Properties
 {
 
 

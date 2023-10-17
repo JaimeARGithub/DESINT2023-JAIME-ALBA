@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ExampleMVCNoDatabase.Properties
+namespace ExampleMVCnoDatabase.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace ExampleMVCNoDatabase.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ExampleMVCNoDatabase.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ExampleMVCnoDatabase.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
