@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pokem\\.nuget\\packages\\": {}
+    "C:\\Users\\DAM02-04\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
+      "projectUniqueName": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES REPO\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
       "projectName": "Exercise 16",
-      "projectPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
-      "packagesPath": "C:\\Users\\pokem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\obj\\",
+      "projectPath": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES REPO\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\Exercise 16.csproj",
+      "packagesPath": "C:\\Users\\DAM02-04\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DAM02-04\\Desktop\\DESARROLLO INTERFACES REPO\\DESINT2023-JAIME-ALBA\\Ejercicios C#\\Exercise 16\\Exercise 16\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pokem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DAM02-04\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
