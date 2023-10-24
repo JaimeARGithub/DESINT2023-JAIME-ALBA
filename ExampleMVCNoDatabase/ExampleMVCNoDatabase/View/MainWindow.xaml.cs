@@ -75,6 +75,7 @@ namespace ExampleMVCnoDatabase
 
         private void btnDel_Click(object sender, RoutedEventArgs e)
         {
+            // NUNCA BORRAR NADA SIN ANTES PEDIR CONFIRMACIÓN
             if (MessageBox.Show("Do you want to remove this person?","Confirmation",MessageBoxButton.YesNo)==MessageBoxResult.Yes) {
                 // El objeto que quiero borrar.
                 People p = (People)dgvPeople.SelectedItems[0];
@@ -98,6 +99,50 @@ namespace ExampleMVCnoDatabase
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+            // Vamos a pedir confirmación
+            // Si el botón de NEW está deshabilitado, es porque le hemos pinchado; vamos a añadir
+            // Si el botón de NEW está habilitado, modificamos
+            if (!btnNew.IsEnabled) // añadir
+            {
+                if (MessageBox.Show("Do you want to add this person?", "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                {
+                    try
+                    {
+                        ((List<People>)dgvPeople.ItemsSource).Add(new People(txtName.Text, Int32.Parse(txtAge.Text)));
+                        dgvPeople.Items.Refresh();
+                    } catch (Exception E)
+                    {
+                        MessageBox.Show("No metas texto en la edad, mongolo");
+                    }
+
+                }
+            } else // modificar
+            {
+                if (MessageBox.Show("Do you want to modify this person?", "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                {
+                    if (dgvPeople.SelectedItems.Count > 0)
+                    {
+                        People p = (People)dgvPeople.SelectedItems[0]; // Si selecciono varios, sólo me pone el primero; puedo poner SelectedItem
+                        p.name = txtName.Text;
+                        p.age = Int32.Parse(txtAge.Text);
+
+                        dgvPeople.Items.Refresh();
+
+
+                        // Ejemplo con index:
+                        // List<People> listado = (List<People>) dgvPeople.ItemsSource;
+                        // listado[dgvPeople.SelectedIndex].name = txtName.Text;
+                        // listado[dgvPeople.SelectedIndex].age = int.Parse(txtAge.Text);
+                        // dgvPeople.Items.Refresh();
+                    }
+
+                }
+            }
+            start();
+
+
+
+            /* Mi  versión:
             if (dgvPeople.SelectedItems.Count > 0)
             {
                 btnDel.IsEnabled = true;
@@ -114,7 +159,7 @@ namespace ExampleMVCnoDatabase
                 dgvPeople.Items.Refresh();
                 dgvPeople.ItemsSource = lista;
             }  
-
+            */
         }
     }
 }
