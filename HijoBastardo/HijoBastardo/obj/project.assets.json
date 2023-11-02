@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\PruebasDHondt\\PruebasDHondt\\PruebasDHondt.csproj",
-      "projectName": "PruebasDHondt",
-      "projectPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\PruebasDHondt\\PruebasDHondt\\PruebasDHondt.csproj",
+      "projectUniqueName": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\HijoBastardo\\HijoBastardo\\HijoBastardo.csproj",
+      "projectName": "HijoBastardo",
+      "projectPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\HijoBastardo\\HijoBastardo\\HijoBastardo.csproj",
       "packagesPath": "C:\\Users\\pokem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\PruebasDHondt\\PruebasDHondt\\obj\\",
+      "outputPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\HijoBastardo\\HijoBastardo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pokem\\AppData\\Roaming\\NuGet\\NuGet.Config",
