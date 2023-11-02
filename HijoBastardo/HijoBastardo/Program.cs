@@ -91,7 +91,7 @@ namespace HijoBastardo
             int col = 0;
             for (int i = 0; i < m.GetLength(0); i++)
             {
-                for (int j = 0; j < m.GetLength(1); j++)
+                for (int j = 1; j < m.GetLength(1); j++)
                 {
                     if (m[i, j] > mayor)
                     {

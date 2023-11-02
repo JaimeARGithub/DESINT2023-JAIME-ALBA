@@ -12,3 +12,17 @@ C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\HijoBastardo\HijoBast
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.pdb
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.genruntimeconfig.cache
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\HijoBastardo\HijoBastardo\obj\Debug\net6.0\ref\HijoBastardo.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\bin\Debug\net6.0\HijoBastardo.exe
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\bin\Debug\net6.0\HijoBastardo.deps.json
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\bin\Debug\net6.0\HijoBastardo.runtimeconfig.json
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\bin\Debug\net6.0\HijoBastardo.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\bin\Debug\net6.0\HijoBastardo.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.AssemblyInfoInputs.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.AssemblyInfo.cs
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\refint\HijoBastardo.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\HijoBastardo.genruntimeconfig.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\HijoBastardo\HijoBastardo\obj\Debug\net6.0\ref\HijoBastardo.dll
