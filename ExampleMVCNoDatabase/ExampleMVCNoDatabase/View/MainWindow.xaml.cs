@@ -80,18 +80,12 @@ namespace ExampleMVCnoDatabase
                 // El objeto que quiero borrar.
                 People p = (People)dgvPeople.SelectedItems[0];
 
-                // Necesito recuperar la list de la DataGrid.
-                List<People> lista = (List<People>) dgvPeople.ItemsSource;
+                p.delete();
+                List<People> list = (List<People>)dgvPeople.ItemsSource;
+                list.Remove(p);
 
-                // Y borro el objeto de la lista.
-                lista.Remove(p);
-
-                // Y hacemos un refresh para que los cambios
-                // se vean reflejados.
                 dgvPeople.Items.Refresh();
-                dgvPeople.ItemsSource = lista;
-
-                // Volvemos al estado inicial.
+                dgvPeople.ItemsSource = list;
                 start();
             }
         }
@@ -108,7 +102,10 @@ namespace ExampleMVCnoDatabase
                 {
                     try
                     {
-                        ((List<People>)dgvPeople.ItemsSource).Add(new People(txtName.Text, Int32.Parse(txtAge.Text)));
+                        People p = new People(txtName.Text, Int32.Parse(txtAge.Text));
+                        p.insert();
+                        p.last();
+                        ((List<People>)dgvPeople.ItemsSource).Add(p);
                         dgvPeople.Items.Refresh();
                     } catch (Exception E)
                     {
