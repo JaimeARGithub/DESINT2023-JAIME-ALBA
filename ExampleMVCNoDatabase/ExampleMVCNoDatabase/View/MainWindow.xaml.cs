@@ -120,10 +120,11 @@ namespace ExampleMVCnoDatabase
                     if (dgvPeople.SelectedItems.Count > 0)
                     {
                         People p = (People)dgvPeople.SelectedItems[0]; // Si selecciono varios, sólo me pone el primero; puedo poner SelectedItem
-                        p.name = txtName.Text;
+                        p.name=txtName.Text;
                         p.age = Int32.Parse(txtAge.Text);
-
                         dgvPeople.Items.Refresh();
+                        p.update();
+                        
 
 
                         // Ejemplo con index:

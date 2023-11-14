@@ -57,5 +57,9 @@ namespace ExampleMVCnoDatabase.Domain
             pm.deletePeople(this);
         }
        
+        public void update()
+        {
+            pm.updatePeople(this);
+        }
     }
 }

@@ -64,5 +64,12 @@ namespace ExampleMVCnoDatabase.Persistence.Manages
             MessageBox.Show("delete from People where idPeople=" + p.Id);
             dBBroker.modificar("delete from People where idPeople=" + p.Id);
         }
+
+        public void updatePeople(People p)
+        {
+            DBBroker dBBroker = DBBroker.obtenerAgente();
+            MessageBox.Show("update People set name='" + p.name + "', age=" + p.age + " where idPeople=" + p.Id);
+            dBBroker.modificar("update People set name='"+p.name+"', age="+p.age+" where idPeople="+p.Id);
+        }
     }
 }
