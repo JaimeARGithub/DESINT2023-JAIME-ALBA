@@ -1792,19 +1792,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pokem\\.nuget\\packages\\": {}
+    "C:\\Users\\b15-07m\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pokem\\OneDrive\\Desktop\\EjemploExamen\\EjemploExamen\\EjemploExamen.csproj",
+      "projectUniqueName": "C:\\Users\\b15-07m\\Desktop\\EjsDesInt\\DESINT2023-JAIME-ALBA\\EjemploExamen\\EjemploExamen\\EjemploExamen.csproj",
       "projectName": "EjemploExamen",
-      "projectPath": "C:\\Users\\pokem\\OneDrive\\Desktop\\EjemploExamen\\EjemploExamen\\EjemploExamen.csproj",
-      "packagesPath": "C:\\Users\\pokem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pokem\\OneDrive\\Desktop\\EjemploExamen\\EjemploExamen\\obj\\",
+      "projectPath": "C:\\Users\\b15-07m\\Desktop\\EjsDesInt\\DESINT2023-JAIME-ALBA\\EjemploExamen\\EjemploExamen\\EjemploExamen.csproj",
+      "packagesPath": "C:\\Users\\b15-07m\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\b15-07m\\Desktop\\EjsDesInt\\DESINT2023-JAIME-ALBA\\EjemploExamen\\EjemploExamen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pokem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\b15-07m\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1854,7 +1854,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
