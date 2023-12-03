@@ -1,0 +1,76 @@
+{
+  "party": [
+    {
+      "Id": 1,
+      "party": "Party1",
+      "votes": 1455109,
+      "seats": 16
+    },
+    {
+      "Id": 2,
+      "party": "Party1",
+      "votes": 1455109,
+      "seats": 16
+    },
+    {
+      "Id": 3,
+      "party": "Party2",
+      "votes": 1021672,
+      "seats": 10
+    },
+    {
+      "Id": 4,
+      "party": "Party3",
+      "votes": 650155,
+      "seats": 6
+    },
+    {
+      "Id": 5,
+      "party": "Party4",
+      "votes": 588235,
+      "seats": 5
+    },
+    {
+      "Id": 6,
+      "party": "Party5",
+      "votes": 154798,
+      "seats": 0
+    },
+    {
+      "Id": 7,
+      "party": "Party6",
+      "votes": 134158,
+      "seats": 0
+    },
+    {
+      "Id": 8,
+      "party": "Party7",
+      "votes": 61919,
+      "seats": 0
+    },
+    {
+      "Id": 9,
+      "party": "Party8",
+      "votes": 20639,
+      "seats": 0
+    },
+    {
+      "Id": 10,
+      "party": "Party9",
+      "votes": 10319,
+      "seats": 0
+    },
+    {
+      "Id": 11,
+      "party": "Party10",
+      "votes": 10319,
+      "seats": 0
+    },
+    {
+      "Id": 12,
+      "party": "Blank ballots",
+      "votes": 20646,
+      "seats": 0
+    }
+  ]
+}

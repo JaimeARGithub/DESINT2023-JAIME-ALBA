@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KwUfGiUe+PkEr3dqM7kcnhHQVvpm2fYtUZYRiwjdhmhNjtwWiP0niBSTkf7Dmbl0yjAQA5GVtLC2rZAno24tfw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pokem\\OneDrive\\Desktop\\MiniHito3Json\\MiniHito3Json\\MiniHito3Json.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pokem\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
