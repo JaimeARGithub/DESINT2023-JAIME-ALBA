@@ -1,0 +1,32 @@
+{
+  "employee": [
+    {
+      "Id": 1,
+      "nif": "06286704E",
+      "name": "Jaime",
+      "surname": "Alba",
+      "age": 28
+    },
+    {
+      "Id": 2,
+      "nif": "06286704F",
+      "name": "Diego",
+      "surname": "Alba",
+      "age": 24
+    },
+    {
+      "Id": 3,
+      "nif": "00000000Y",
+      "name": "Mª Prado",
+      "surname": "Ruiz",
+      "age": 55
+    },
+    {
+      "Id": 4,
+      "nif": "00000000Z",
+      "name": "Ricardo",
+      "surname": "Alba",
+      "age": 60
+    }
+  ]
+}
