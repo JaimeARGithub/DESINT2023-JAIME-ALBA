@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace ComunidadVecinos
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para PagComunidad.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PagComunidad : Page
     {
-        public MainWindow()
+        public PagComunidad()
         {
             InitializeComponent();
+        }
+
+        private void btnYes_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
