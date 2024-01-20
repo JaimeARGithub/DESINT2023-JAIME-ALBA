@@ -74,6 +74,8 @@
     <Compile Include="Domain\Comunidad.cs" />
     <Compile Include="Domain\Piso.cs" />
     <Compile Include="Domain\Portal.cs" />
+    <Compile Include="Domain\Propietario.cs" />
+    <Compile Include="Persistence\Manages\PropietarioManage.cs" />
     <Compile Include="View\PagComunidad.xaml.cs">
       <DependentUpon>PagComunidad.xaml</DependentUpon>
     </Compile>
@@ -82,7 +84,6 @@
     </Compile>
     <Compile Include="Persistence\Manages\ComunidadManage.cs" />
     <Compile Include="Persistence\Manages\PisoManage.cs" />
-    <Compile Include="Persistence\Manages\PortalManage.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

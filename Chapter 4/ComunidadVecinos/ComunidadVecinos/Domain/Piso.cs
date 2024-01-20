@@ -11,6 +11,8 @@ namespace ComunidadVecinos.Domain
     {
         public int Id { get; set; }
         public int idComunidad { get; set; }
+        public int idProp1 { get; set; }
+        public int idProp2 { get; set; }
         public int numPortal { get; set; }
         public int numEscalera { get; set; }
         public int numPlanta { get; set; }
@@ -31,16 +33,18 @@ namespace ComunidadVecinos.Domain
             pm = new PisoManage();
         }
 
-        public Piso(int idComunidad, int numPortal, int numEscalera, int numPlanta, string puerta, int numTrastero, int numPlaza)
+        public Piso(int idComunidad, int idProp1, int idProp2, int numPortal, int numEscalera, int numPlanta, string puerta, int numTrastero, int numPlaza)
         {
             this.idComunidad = idComunidad;
+            this.idProp1 = idProp1;
+            this.idProp2 = idProp2;
             this.numPortal = numPortal;
             this.numEscalera = numEscalera;
             this.numPlanta = numPlanta;
             this.puerta = puerta;
             this.numTrastero = numTrastero;
             this.numPlaza = numPlaza;
-            pm = new PisoManage();
+            this.pm = new PisoManage();
         }
     }
 }

@@ -28,10 +28,11 @@ namespace ComunidadVecinos
         string name;
         string address;
         double surface;
-        int numDoorways;
+        int numDoorways=0;
         bool isSwimPool;
         string creationDate;
 
+        Portal[] portales;
         int numStairs;
         int numFloors;
         int numDoors;
@@ -52,65 +53,136 @@ namespace ComunidadVecinos
 
         private void btnNext_Click(object sender, RoutedEventArgs e)
         {
-            FrameCommunity.UpdateLayout();
-            // Acciones a ejecutar si se está en la última página
+            // PÁGINA DE CREACIÓN DE COMUNIDAD
+            // PRIMERO SE RECOGEN LAS VARIABLES PARA USARLAS Y CREAR LA COMUNIDAD
+            // TRAS ESO SE REGENERA LA INTERFAZ Y SE MUESTRA LA DE CREAR PORTALES
             if (cont == 0)
             {
                 
                 try
                 {
+                    // Si el número de portales escrito el distinto que el valor
+                    // que hay almacenado, el array de portales se crea nuevo
+                    if (numDoorways != Int32.Parse(paginaCom.txtNumDoor.Text.ToString()))
+                    {
+                        // El array de portales se crea con el nº de huecos indicado
+                        // Si ha cambiado el número de doorways, se crea nuevo.
+                        numDoorways = Int32.Parse(paginaCom.txtNumDoor.Text.ToString());
+                        portales = new Portal[numDoorways];
+                        MessageBox.Show("New doorways have been created.");
+                    }
+
+                    
                     // Se guardan los valores de las variables asignadas a la comunidad
                     name = paginaCom.txtName.Text.ToString();
                     address = paginaCom.txtAddress.Text.ToString();
                     surface = Double.Parse(paginaCom.txtSurface.Text.ToString());
-                    numDoorways = Int32.Parse(paginaCom.txtNumDoor.Text.ToString());
                     creationDate = paginaCom.calCalendar.SelectedDate.Value.ToString("dd/MM/yyyy");
 
-                    // Se incrementa el contador, que se empleará para determinar qué página
-                    // mostrar y a qué objeto Portal acceder
-                    cont++;
 
-                    paginaPort = new PagPortal();
-                    FrameCommunity.Content = paginaPort;
-                    btnPrev.Visibility = Visibility.Visible;
-                    paginaPort.labelPortal.Content = $"Portal {cont} de {numDoorways}";
+                    
+                    // Solamente se puede seguir si los portales y la superficie son mayores que cero
+                    if (numDoorways <= 0 || surface <=0)
+                    {
+                        MessageBox.Show("The number of doorways and the surface must be greater than 0.");
+                    } else
+                    {
+                        // Se incrementa el contador, que se empleará para gestionar el
+                        // avance y retroceso en el proceso de creación
+                        cont++;
+
+
+                        // SE UBICA COMO INTERFAZ LA DE CREAR PORTALES
+                        paginaPort = new PagPortal();
+                        FrameCommunity.Content = paginaPort;
+                        btnPrev.Visibility = Visibility.Visible;
+                        paginaPort.labelPortal.Content = $"Doorway nº {cont} of {numDoorways}";
+
+
+                        // Si estamos volviendo a portales tras haber estado ya en
+                        // ellos y ya había datos, los datos se rellenan solos
+                        if (portales[cont - 1] != null)
+                        {
+                            MessageBox.Show($"Returning to temporarily saved data for doorway nº {cont}.");
+                            paginaPort.txtStair.Text = portales[cont - 1].numEscaleras.ToString();
+                            paginaPort.txtFloor.Text = portales[cont - 1].numPlantas.ToString();
+                            paginaPort.txtDoor.Text = portales[cont - 1].numPuertas.ToString();
+                        }
+                    }
 
 
                 } catch (Exception E)
                 {
-                    MessageBox.Show("Error en la creación. Por favor, introduzca datos correctos.");
+                    MessageBox.Show("Failure during creation. Please, enter correct data for the condominium.");
                 }
 
-            // Acciones a ejecutar si ya se ha pasado por todos los portales
+            // PÁGINA FINAL, APARECE TRAS TODOS LOS PORTALES
             } else if (cont == numDoorways)
             {
                 cont++;
                 
                 FrameCommunity.Content = paginaCom;
-                paginaPort.labelPortal.Content = $"PÁGINA FINAL";
+                paginaPort.labelPortal.Content = $"LAST PAGE";
                 btnNext.Content = $"FINISH";
 
                 
             } else if (cont > numDoorways)
-            // Acciones a ejecutar si se presiona FINISH
+            // CUANDO SE LE DA A FINISH
             {
                 Environment.Exit(0);
             } else
-            // Acciones a ejecutar si se está en la página de un portal
+
+            // CREACIÓN DE UN PORTAL
             {
-                cont++;
-
-                paginaPort.labelPortal.Content = $"Portal {cont} de {numDoorways}";
-
                 try
                 {
+                    // Se recogen los datos de un portal y se crea 
+                    numStairs = Int32.Parse(paginaPort.txtStair.Text.ToString());
+                    numFloors = Int32.Parse(paginaPort.txtFloor.Text.ToString());
+                    numDoors = Int32.Parse(paginaPort.txtDoor.Text.ToString());
+                    portales[cont - 1] = new Portal(numStairs, numFloors, numDoors);
+
+
+                    // No se puede seguir a menos que escaleras y plantan no sean negativos
+                    // y haya al menos una puerta
+                    if (numDoors <= 0 || numStairs<0 || numFloors<0)
+                    {
+                        MessageBox.Show("At least, there must be a door in every doorway. Also, stairs and floors must be, at least, zero.");
+                        paginaPort.txtStair.Text = "";
+                        paginaPort.txtFloor.Text = "";
+                        paginaPort.txtDoor.Text = "";
+                    } else
+                    {
+                        MessageBox.Show($"Data for doorway nº {cont} correctly saved.");
+
+                        // Se vacían los campos de texto
+                        paginaPort.txtStair.Text = "";
+                        paginaPort.txtFloor.Text = "";
+                        paginaPort.txtDoor.Text = "";
+
+                        // Si en el elemento siguiente del array de portales hay datos,
+                        // rellenamos los campos con ellos
+                        if (portales[cont] != null)
+                        {
+                            MessageBox.Show($"Returning to temporarily saved data for doorway nº {cont + 1}.");
+                            paginaPort.txtStair.Text = portales[cont].numEscaleras.ToString();
+                            paginaPort.txtFloor.Text = portales[cont].numPlantas.ToString();
+                            paginaPort.txtDoor.Text = portales[cont].numPuertas.ToString();
+                        }
+
+                        // Y nos movemos de página y etiqueta
+                        cont++;
+                        paginaPort.labelPortal.Content = $"Doorway nº {cont} of {numDoorways}";
+                    }
 
                 }
                 catch (Exception E)
                 {
-                    MessageBox.Show("Error en la creación. Por favor, introduzca datos correctos.");
+                    MessageBox.Show("Failure during creation. Please, enter correct data for the doorway.");
+                    paginaPort.txtStair.Text = "";
+                    paginaPort.txtFloor.Text = "";
+                    paginaPort.txtDoor.Text = "";
                 }
-
             }
 
 
@@ -120,24 +192,70 @@ namespace ComunidadVecinos
         private void btnPrev_Click(object sender, RoutedEventArgs e)
         {
             cont--;
-            // Acciones a realizar si, tras la pulsación de previous, se vuelve a la pantalla inicial
+            // RETORNO A LA PANTALLA INICIAL
             if (cont == 0)
             {
+                // Si se habían rellenado los tres campos del portal, se guardan los datos
+                if (paginaPort.txtStair.Text.ToString() != "" && paginaPort.txtFloor.Text.ToString() != "" && paginaPort.txtDoor.Text.ToString() != "")
+                {
+                    try
+                    {
+                        numStairs = Int32.Parse(paginaPort.txtStair.Text.ToString());
+                        numFloors = Int32.Parse(paginaPort.txtFloor.Text.ToString());
+                        numDoors = Int32.Parse(paginaPort.txtDoor.Text.ToString());
+                        portales[cont] = new Portal(numStairs, numFloors, numDoors);
+                        MessageBox.Show($"Data of doorway number {cont + 1} temporarily saved.");
+                    }
+                    catch (Exception E)
+                    {
+                        MessageBox.Show("Please, enter valid data if you want to save it for later.");
+                    }
+                }
+
                 FrameCommunity.Content = paginaCom;
                 btnPrev.Visibility = Visibility.Hidden;
 
+
             } 
-            // Acciones a ejecutar si, tras la pulsación de previous, se vuelve de la página final a la de un portal
+            // VUELTA DE PÁGINA FINAL A PORTAL
             else if (cont == numDoorways)
             {
                 FrameCommunity.Content = paginaPort;
-                paginaPort.labelPortal.Content = $"Portal {cont} de {numDoorways}";
+                paginaPort.labelPortal.Content = $"Doorway nº {cont} of {numDoorways}";
                 btnNext.Content = $"NEXT";
+
+
+                paginaPort.txtStair.Text = portales[cont - 1].numEscaleras.ToString();
+                paginaPort.txtFloor.Text = portales[cont - 1].numPlantas.ToString();
+                paginaPort.txtDoor.Text = portales[cont - 1].numPuertas.ToString();
+
             } 
-            // Acciones a ejecutar en el movimiento entre portales, de uno hacia otro, atrás
+            // VUELTA ATRÁS DE UN PORTAL A OTRO
             else
             {
-                paginaPort.labelPortal.Content = $"Portal {cont} de {numDoorways}";
+                // Si se habían rellenado los tres campos del portal, se guardan los datos
+                if (paginaPort.txtStair.Text.ToString()!="" && paginaPort.txtFloor.Text.ToString()!="" && paginaPort.txtDoor.Text.ToString()!="")
+                {
+                    try
+                    {
+                        numStairs = Int32.Parse(paginaPort.txtStair.Text.ToString());
+                        numFloors = Int32.Parse(paginaPort.txtFloor.Text.ToString());
+                        numDoors = Int32.Parse(paginaPort.txtDoor.Text.ToString());
+                        portales[cont] = new Portal(numStairs, numFloors, numDoors);
+                        MessageBox.Show($"Data of doorway number {cont + 1} temporarily saved.");
+                    } catch (Exception E)
+                    {
+                        MessageBox.Show("Please, enter valid data if you want to save it for later.");
+                    }
+                }
+
+
+                paginaPort.labelPortal.Content = $"Doorway nº {cont} of {numDoorways}";
+
+
+                paginaPort.txtStair.Text = portales[cont - 1].numEscaleras.ToString();
+                paginaPort.txtFloor.Text = portales[cont - 1].numPlantas.ToString();
+                paginaPort.txtDoor.Text = portales[cont - 1].numPuertas.ToString();
 
             }
         }
