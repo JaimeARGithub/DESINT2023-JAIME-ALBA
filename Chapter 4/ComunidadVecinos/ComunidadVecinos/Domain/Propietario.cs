@@ -86,6 +86,12 @@ namespace ComunidadVecinos.Domain
             int indice = RandomNumber.random_Number(0, lista.Count);
             return lista[indice];
         }
+
+        public void Insertar()
+        {
+            pm.insertOwner(this);
+        }
     }
 }
-}
+
+

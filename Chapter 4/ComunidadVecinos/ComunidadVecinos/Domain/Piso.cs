@@ -17,13 +17,13 @@ namespace ComunidadVecinos.Domain
         public int numPortal { get; set; }
         public int numEscalera { get; set; }
         public int numPlanta { get; set; }
-        public char puerta { get; set; }
+        public string puerta { get; set; }
         public int numTrastero { get; set; }
         public int numPlaza { get; set; }
         public PisoManage pm { get; set; }
 
 
-        public Piso(int idComunidad,  int numPortal, int numEscalera, int numPlanta, char puerta)
+        public Piso(int idComunidad,  int numPortal, int numEscalera, int numPlanta, string puerta)
         {
             this.Id = autoID++;
             this.idComunidad = idComunidad;
@@ -32,6 +32,11 @@ namespace ComunidadVecinos.Domain
             this.numPlanta = numPlanta;
             this.puerta = puerta;
             this.pm = new PisoManage();
+        }
+
+        public void Insert()
+        {
+            pm.insertPiso(this);
         }
     }
 }

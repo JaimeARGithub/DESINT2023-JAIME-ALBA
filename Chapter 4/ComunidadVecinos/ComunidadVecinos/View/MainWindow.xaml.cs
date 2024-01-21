@@ -30,7 +30,7 @@ namespace ComunidadVecinos
         string address;
         int surface;
         int numDoorways=0;
-        Boolean isSwimPool;
+        bool isSwimPool;
         string creationDate;
 
         Portal[] portales;
@@ -82,16 +82,26 @@ namespace ComunidadVecinos
 
                     
                     // Solamente se puede seguir si los portales y la superficie son mayores que cero
-                    if (numDoorways <= 0 || surface <=0)
+                    if (numDoorways <= 0 || surface <=0 || (paginaCom.btnYes.IsChecked==false && paginaCom.btnNo.IsChecked == false))
                     {
                         MessageBox.Show("The number of doorways and the surface must be greater than 0. Also, you must select yes or no swimming pool.");
                     } else
                     {
                         // Se crea el objeto comunidad con los datos introducidos
+                        
+                        if (paginaCom.btnYes.IsChecked==true)
+                        {
+                            isSwimPool = true;
+
+                        } else
+                        {
+                            isSwimPool = false;
+                        }
+
                         comu = new Comunidad(name, address, creationDate, surface, isSwimPool, numDoorways);
-                        
-                        
-                        
+
+
+
                         // Se incrementa el contador, que se empleará para gestionar el
                         // avance y retroceso en el proceso de creación
                         cont++;
@@ -113,6 +123,7 @@ namespace ComunidadVecinos
                             paginaPort.txtFloor.Text = portales[cont - 1].numPlantas.ToString();
                             paginaPort.txtDoor.Text = portales[cont - 1].numPuertas.ToString();
                         }
+                        
                     }
 
 
@@ -172,6 +183,8 @@ namespace ComunidadVecinos
             {
                 // Se generan todos los pisos y las listas de ellos son añadidas a la lista de
                 // pisos de que dispone la comunidad
+
+
                 for (int i=0; i<portales.Length; i++)
                 {
                     portales[i].generarPisos();
@@ -195,12 +208,14 @@ namespace ComunidadVecinos
                 Random random = new Random();
                 int haySegundoProp;
                 int posSegundoProp;
+                List<PisosPropietarios> listaPisosPropietarios = new List<PisosPropietarios>();
                 List<int> plazasParking = GenerateAndShuffleList(comu.listaPisos.Count);
                 List<int> trasteros = GenerateAndShuffleList(comu.listaPisos.Count);
 
                 for (int i=0; i<comu.listaPisos.Count; i++)
                 {
                     comu.listaPisos[i].idProp1 = listaPropietarios[i].dni;
+                    listaPisosPropietarios.Add(new PisosPropietarios(comu.listaPisos[i].Id, comu.listaPisos[i].idProp1));
 
                     haySegundoProp = random.Next(0,2);
                     if (haySegundoProp==1)
@@ -211,6 +226,7 @@ namespace ComunidadVecinos
                             posSegundoProp = random.Next(0, listaPropietarios.Length);
                         }
                         comu.listaPisos[i].idProp2 = listaPropietarios[posSegundoProp].dni;
+                        listaPisosPropietarios.Add(new PisosPropietarios(comu.listaPisos[i].Id, comu.listaPisos[i].idProp2));
                     }
 
                     comu.listaPisos[i].numPlaza = plazasParking[i];
@@ -221,6 +237,20 @@ namespace ComunidadVecinos
 
                 // Tras generarse todos los pisos, se imprimen en la segunda pestaña
                 Imprimir(comu, OutputTextBox);
+
+                comu.Insert();
+                foreach(Propietario p in listaPropietarios)
+                {
+                    p.Insertar();
+                }
+                foreach(Piso p in comu.listaPisos)
+                {
+                    p.Insert();
+                }
+                foreach(PisosPropietarios p in listaPisosPropietarios)
+                {
+                    p.Insert();
+                }
 
 
             } else
@@ -406,13 +436,11 @@ namespace ComunidadVecinos
 
         private void btnYes_Checked(object sender, RoutedEventArgs e)
         {
-            isSwimPool = true;
             paginaCom.btnNo.IsChecked = false;
         }
 
         private void btnNo_Checked(object sender, RoutedEventArgs e)
         {
-            isSwimPool = false;
             paginaCom.btnNo.IsChecked = false;
         }
     }

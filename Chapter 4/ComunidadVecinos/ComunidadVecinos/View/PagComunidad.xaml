@@ -53,7 +53,7 @@
             <Label Content="Swimming pool                                                 "></Label>
             <RadioButton x:Name="btnYes" Content="Yes" VerticalAlignment="Center" Checked="btnYes_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNo" Content="No" VerticalAlignment="Center"></RadioButton>
+            <RadioButton x:Name="btnNo" Content="No" VerticalAlignment="Center" Checked="btnNo_Checked"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left">

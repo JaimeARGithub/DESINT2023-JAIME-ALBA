@@ -36,7 +36,7 @@ namespace ComunidadVecinos.Domain
                 {
                     for (int let=1; let<=numPuertas; let++)
                     {
-                        listaPisos.Add(new Piso(idComunidad, Idportal, esc, pla, Convert.ToChar('A' + let - 1)));
+                        listaPisos.Add(new Piso(idComunidad, Idportal, esc, pla, Convert.ToChar('A' + let - 1).ToString()));
                     }
                 }
             }
@@ -44,7 +44,7 @@ namespace ComunidadVecinos.Domain
 
         public void toString()
         {
-            MessageBox.Show($"Número de escaleras: {numEscaleras}. Número de plantas: {numPlantas}. Número de puertas: {numPuertas}");
+            MessageBox.Show($"Number of stairs: {numEscaleras}. Number of floors: {numPlantas}. Number of doors: {numPuertas}");
         }
     }
 }

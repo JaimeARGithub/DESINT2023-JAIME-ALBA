@@ -29,5 +29,10 @@ namespace ComunidadVecinos
         {
 
         }
+
+        private void btnNo_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

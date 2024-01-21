@@ -1,4 +1,5 @@
 ﻿using ComunidadVecinos.Persistence.Manages;
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +17,13 @@ namespace ComunidadVecinos.Domain
         public string direccion { get; set;}
         public string fechaCreac { get; set; }
         public int metrosCuadrados { get; set; }
-        public Boolean hayPiscina { get; set; }
+        public bool hayPiscina { get; set; }
         public int numPortales { get; set; }
         public List<Piso> listaPisos {  get; set; }
         public ComunidadManage cm { get; set; }
 
 
-        public Comunidad(string nombre, string direccion, string fechaCreac, int metrosCuadrados, Boolean hayPiscina, int numPortales)
+        public Comunidad(string nombre, string direccion, string fechaCreac, int metrosCuadrados, bool hayPiscina, int numPortales)
         {
             this.Id = autoID++;
             this.nombre = nombre;
@@ -33,6 +34,11 @@ namespace ComunidadVecinos.Domain
             this.numPortales = numPortales;
             this.listaPisos = new List<Piso>();
             cm = new ComunidadManage();
+        }
+
+        public void Insert()
+        {
+            cm.insertCommunity(this);
         }
     }
 
