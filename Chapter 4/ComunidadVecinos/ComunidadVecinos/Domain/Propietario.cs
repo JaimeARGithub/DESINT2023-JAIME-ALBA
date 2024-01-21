@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ComunidadVecinos.Persistence;
 
 namespace ComunidadVecinos.Domain
 {
-    internal class Propietario
+    public class Propietario
     {
-        public int Id { get; set; }
         public string dni {  get; set; }
         public string nombre { get; set; }
         public string apellidos { get; set; }
@@ -17,31 +17,75 @@ namespace ComunidadVecinos.Domain
         public string localidad {  get; set; }
         public int codPostal { get; set; }
         public string provincia { get; set; }
+
         public PropietarioManage pm { get; set; }
 
 
-        public Propietario()
-        {
-            pm = new PropietarioManage();
-        }
+        private static readonly List<string> listaNombres = new List<string>
+{
+    "Mérida", "Alfredo", "Carlos", "Rodrigo", "Laureano", "Laura", "José María", "Mariví",
+    "Joel", "Jaime", "Silvia", "Patricia", "Marta", "Diana", "Paula", "Javier", "Raquel", "Gonzalo",
+    "Stacy", "Rosa", "Luis", "Raúl"
+};
+
+        private static readonly List<string> listaApellidos = new List<string>
+{
+    "López", "Gómez", "Sánchez", "Alba", "Toledo", "Córdoba", "Navajas", "León",
+    "Vellón", "Valverde", "Serrano", "Bacho", "España", "Luque", "Maldonado",
+    "Lavigne", "Blanco", "Rubio", "Ruiz", "Aparicio", "Rouse", "Estrada", "Malpartida",
+    "Cafetero", "Menor", "Alarcón", "Laguna", "Ayuga", "Zapata", "Ochovo", "Gil-Ortega"
+};
+
+        private static readonly List<string> listaLocalidades = new List<string>
+{
+    "Madrid", "Barcelona", "Valencia", "Sevilla", "Zaragoza", "Ciudad Real", "Móstoles", "Piedrabuena",
+    "Málaga", "Murcia", "Palma", "Valladolid", "Santander", "Villarrobledo", "Santa Cruz de Mudela", "Baix del Llobregat",
+    "Almendralejo", "Lepe", "Alcantarilla", "Villarrubia de los Ojos", "Fuente el Fresno", "Puerto Lápice", "Arenas de San Juan",
+    "Malagón", "Fuenlabrada", "Benalmádena", "Pontevedra", "Carballo", "Lugo", "Sanxenxo", "Las Labores"
+};
+
+        private static readonly List<string> listaProvincias = new List<string>
+{
+    "Álava", "Albacete", "Alicante", "Almería", "Asturias",
+    "Ávila", "Badajoz", "Barcelona", "Burgos", "Cáceres",
+    "Cádiz", "Cantabria", "Castellón", "Ciudad Real", "Córdoba",
+    "Cuenca", "Gerona", "Granada", "Guadalajara", "Guipúzcoa",
+    "Huelva", "Huesca", "Islas Balears", "Jaén", "La Coruña",
+    "La Rioja", "Las Palmas", "León", "Lérida", "Lugo",
+    "Madrid", "Málaga", "Murcia", "Navarra", "Orense",
+    "Palencia", "Pontevedra", "Salamanca", "Santa Cruz de Tenerife", "Segovia",
+    "Sevilla", "Soria", "Tarragona", "Teruel", "Toledo",
+    "Valencia", "Valladolid", "Vizcaya", "Zamora", "Zaragoza"
+};
 
 
-        public Propietario(int id)
-        {
-            this.Id = id;
-            pm = new PropietarioManage();
-        }
 
-        public Propietario(string dni, string nombre, string apellidos, string direcResidencia, string localidad, int codPostal, string provincia)
+        public Propietario(string dniP)
         {
-            this.dni = dni;
-            this.nombre = nombre;
-            this.apellidos = apellidos;
-            this.direcResidencia = direcResidencia;
-            this.localidad = localidad;
-            this.codPostal = codPostal;
-            this.provincia = provincia;
+            this.dni = dniP;
             this.pm = new PropietarioManage();
+            generarPropietarioAleatorio();
+        }
+
+
+        public void generarPropietarioAleatorio()
+        {
+            // Generar valores aleatorios para las otras propiedades 
+            Random random = new Random();
+            this.nombre = ObtenerElementoAleatorio(listaNombres);
+            this.apellidos = ObtenerElementoAleatorio(listaApellidos);
+            this.direcResidencia = ObtenerElementoAleatorio(listaLocalidades) + ", " + RandomNumber.random_Number(1, 100);
+            this.localidad = ObtenerElementoAleatorio(listaLocalidades);
+            this.provincia = ObtenerElementoAleatorio(listaProvincias);
+            this.codPostal = RandomNumber.random_Number(1000, 9999);
+        }
+
+        private string ObtenerElementoAleatorio(List<string> lista)
+        {
+            Random random = new Random();
+            int indice = RandomNumber.random_Number(0, lista.Count);
+            return lista[indice];
         }
     }
+}
 }

@@ -44,7 +44,9 @@
             
             <TabItem Header="PROPRIETORS">
                 <Grid Background="#FFE5E5E5">
-                    
+
+                    <TextBox Name="OutputTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+
                 </Grid>
             </TabItem>
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComunidadVecinos.Persistence.Manages
 {
-    internal class ComunidadManage
+    public class ComunidadManage
     {
     }
 }

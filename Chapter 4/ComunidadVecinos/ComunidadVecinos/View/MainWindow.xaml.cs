@@ -25,11 +25,12 @@ namespace ComunidadVecinos
         PagPortal paginaPort;
         int cont;
 
+        Comunidad comu;
         string name;
         string address;
-        double surface;
+        int surface;
         int numDoorways=0;
-        bool isSwimPool;
+        Boolean isSwimPool;
         string creationDate;
 
         Portal[] portales;
@@ -44,7 +45,6 @@ namespace ComunidadVecinos
 
             paginaCom = new PagComunidad();
             FrameCommunity.Content = paginaCom;
-
             btnPrev.Visibility = Visibility.Hidden;
             FrameCommunity.NavigationUIVisibility = NavigationUIVisibility.Hidden;
 
@@ -76,7 +76,7 @@ namespace ComunidadVecinos
                     // Se guardan los valores de las variables asignadas a la comunidad
                     name = paginaCom.txtName.Text.ToString();
                     address = paginaCom.txtAddress.Text.ToString();
-                    surface = Double.Parse(paginaCom.txtSurface.Text.ToString());
+                    surface = Int32.Parse(paginaCom.txtSurface.Text.ToString());
                     creationDate = paginaCom.calCalendar.SelectedDate.Value.ToString("dd/MM/yyyy");
 
 
@@ -84,9 +84,14 @@ namespace ComunidadVecinos
                     // Solamente se puede seguir si los portales y la superficie son mayores que cero
                     if (numDoorways <= 0 || surface <=0)
                     {
-                        MessageBox.Show("The number of doorways and the surface must be greater than 0.");
+                        MessageBox.Show("The number of doorways and the surface must be greater than 0. Also, you must select yes or no swimming pool.");
                     } else
                     {
+                        // Se crea el objeto comunidad con los datos introducidos
+                        comu = new Comunidad(name, address, creationDate, surface, isSwimPool, numDoorways);
+                        
+                        
+                        
                         // Se incrementa el contador, que se empleará para gestionar el
                         // avance y retroceso en el proceso de creación
                         cont++;
@@ -119,6 +124,42 @@ namespace ComunidadVecinos
             // PÁGINA FINAL, APARECE TRAS TODOS LOS PORTALES
             } else if (cont == numDoorways)
             {
+                // En el paso a la página final, se guarda el último piso
+                try
+                {
+                    // Se recogen los datos de un portal y se crea 
+                    numStairs = Int32.Parse(paginaPort.txtStair.Text.ToString());
+                    numFloors = Int32.Parse(paginaPort.txtFloor.Text.ToString());
+                    numDoors = Int32.Parse(paginaPort.txtDoor.Text.ToString());
+                    portales[cont - 1] = new Portal(comu.Id, numStairs, numFloors, numDoors);
+
+
+                    // No se puede seguir a menos que escaleras y plantan no sean negativos
+                    // y haya al menos una puerta
+                    if (numDoors <= 0 || numStairs < 0 || numFloors < 0)
+                    {
+                        MessageBox.Show("At least, there must be a door in every doorway. Also, stairs and floors must be, at least, zero.");
+                        paginaPort.txtStair.Text = "";
+                        paginaPort.txtFloor.Text = "";
+                        paginaPort.txtDoor.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Data for doorway nº {cont} correctly saved.");
+                        portales[cont - 1].toString();
+                    }
+
+                }
+                catch (Exception E)
+                {
+                    MessageBox.Show("Failure during creation. Please, enter correct data for the doorway.");
+                    paginaPort.txtStair.Text = "";
+                    paginaPort.txtFloor.Text = "";
+                    paginaPort.txtDoor.Text = "";
+                }
+
+
+
                 cont++;
                 
                 FrameCommunity.Content = paginaCom;
@@ -129,7 +170,59 @@ namespace ComunidadVecinos
             } else if (cont > numDoorways)
             // CUANDO SE LE DA A FINISH
             {
-                Environment.Exit(0);
+                // Se generan todos los pisos y las listas de ellos son añadidas a la lista de
+                // pisos de que dispone la comunidad
+                for (int i=0; i<portales.Length; i++)
+                {
+                    portales[i].generarPisos();
+
+                    comu.listaPisos.AddRange(portales[i].listaPisos);
+                }
+
+
+                // Generamos los propietarios de manera aleatoria
+                Propietario[] listaPropietarios = new Propietario[comu.listaPisos.Count];
+                for (int i=0; i< listaPropietarios.Length; i++)
+                {
+                    listaPropietarios[i] = new Propietario(DniGenerator.GenerarDNIUnico());
+                }
+
+
+                // Recorremos la lista de pisos para asignar un propietario 1, uno o ninguno propietario 2,
+                // un trastero y una plaza de garaje
+                // Determinaremos si hay o no segundo propietario, y el propietario, con un nº aleatorio de
+                // sí/no y un nº aleatorio para la posición
+                Random random = new Random();
+                int haySegundoProp;
+                int posSegundoProp;
+                List<int> plazasParking = GenerateAndShuffleList(comu.listaPisos.Count);
+                List<int> trasteros = GenerateAndShuffleList(comu.listaPisos.Count);
+
+                for (int i=0; i<comu.listaPisos.Count; i++)
+                {
+                    comu.listaPisos[i].idProp1 = listaPropietarios[i].dni;
+
+                    haySegundoProp = random.Next(0,2);
+                    if (haySegundoProp==1)
+                    {
+                        posSegundoProp = random.Next(0, listaPropietarios.Length);
+                        while (posSegundoProp==i)
+                        {
+                            posSegundoProp = random.Next(0, listaPropietarios.Length);
+                        }
+                        comu.listaPisos[i].idProp2 = listaPropietarios[posSegundoProp].dni;
+                    }
+
+                    comu.listaPisos[i].numPlaza = plazasParking[i];
+                    comu.listaPisos[i].numTrastero = trasteros[i];
+                }
+
+
+
+                // Tras generarse todos los pisos, se imprimen en la segunda pestaña
+                Imprimir(comu, OutputTextBox);
+
+
             } else
 
             // CREACIÓN DE UN PORTAL
@@ -140,7 +233,7 @@ namespace ComunidadVecinos
                     numStairs = Int32.Parse(paginaPort.txtStair.Text.ToString());
                     numFloors = Int32.Parse(paginaPort.txtFloor.Text.ToString());
                     numDoors = Int32.Parse(paginaPort.txtDoor.Text.ToString());
-                    portales[cont - 1] = new Portal(numStairs, numFloors, numDoors);
+                    portales[cont - 1] = new Portal(comu.Id, numStairs, numFloors, numDoors);
 
 
                     // No se puede seguir a menos que escaleras y plantan no sean negativos
@@ -154,6 +247,7 @@ namespace ComunidadVecinos
                     } else
                     {
                         MessageBox.Show($"Data for doorway nº {cont} correctly saved.");
+                        portales[cont - 1].toString();
 
                         // Se vacían los campos de texto
                         paginaPort.txtStair.Text = "";
@@ -189,6 +283,56 @@ namespace ComunidadVecinos
             
         }
 
+        // Método que genera, desordena y devuelve una lista de números que
+        // abarca del 1 al número que se pase por parámetro
+        public List<int> GenerateAndShuffleList(int x)
+        {
+            List<int> result = new List<int>();
+
+            // Generar lista ordenada 
+            for (int i = 1; i <= x; i++)
+            {
+                result.Add(i);
+            }
+
+            // Desordenar la lista utilizando el método Fisher-Yates 
+            int n = result.Count;
+
+            for (int i = n - 1; i > 0; i--)
+            {
+                int j = RandomNumber.random_Number(0, i + 1);
+                int temp = result[i];
+                result[i] = result[j];
+                result[j] = temp;
+            }
+
+            return result;
+        }
+
+        // Imprimir troncho de texto
+        public static void Imprimir(Comunidad comunidad, TextBox outputTextBox)
+        {
+            outputTextBox.AppendText($"Datos de la Comunidad: {comunidad.nombre}\n"); outputTextBox.AppendText($"Comunidad ID: {comunidad.Id}\n");
+            outputTextBox.AppendText($"Dirección: {comunidad.direccion}\n"); outputTextBox.AppendText($"Fecha: {comunidad.fechaCreac}\n");
+            outputTextBox.AppendText($"Metros Cuadrados: {comunidad.metrosCuadrados}\n"); outputTextBox.AppendText($"Piscina: {(comunidad.hayPiscina ? "Sí" : "No")}\n");
+            outputTextBox.AppendText("\nPisos:\n");
+            foreach (Piso piso in comunidad.listaPisos)
+            {
+                outputTextBox.AppendText($"Piso ID: {piso.Id}\n"); outputTextBox.AppendText($"Portal: {piso.numPortal}\n");
+                outputTextBox.AppendText($"Escaleras: {piso.numEscalera}\n"); outputTextBox.AppendText($"Plantas: {piso.numPlanta}\n");
+                outputTextBox.AppendText($"Letras: {piso.puerta}\n"); outputTextBox.AppendText($"Número de Trastero: {piso.numTrastero}\n");
+                outputTextBox.AppendText($"Número de Parking: {piso.numPlaza}\n");
+                outputTextBox.AppendText($"Propietario 1: {piso.idProp1}\n");
+                outputTextBox.AppendText($"Propietario 2: {piso.idProp2}\n");
+                outputTextBox.AppendText("\n------------------------\n");
+            }
+        }
+
+
+
+
+
+
         private void btnPrev_Click(object sender, RoutedEventArgs e)
         {
             cont--;
@@ -203,7 +347,7 @@ namespace ComunidadVecinos
                         numStairs = Int32.Parse(paginaPort.txtStair.Text.ToString());
                         numFloors = Int32.Parse(paginaPort.txtFloor.Text.ToString());
                         numDoors = Int32.Parse(paginaPort.txtDoor.Text.ToString());
-                        portales[cont] = new Portal(numStairs, numFloors, numDoors);
+                        portales[cont] = new Portal(comu.Id, numStairs, numFloors, numDoors);
                         MessageBox.Show($"Data of doorway number {cont + 1} temporarily saved.");
                     }
                     catch (Exception E)
@@ -241,7 +385,7 @@ namespace ComunidadVecinos
                         numStairs = Int32.Parse(paginaPort.txtStair.Text.ToString());
                         numFloors = Int32.Parse(paginaPort.txtFloor.Text.ToString());
                         numDoors = Int32.Parse(paginaPort.txtDoor.Text.ToString());
-                        portales[cont] = new Portal(numStairs, numFloors, numDoors);
+                        portales[cont] = new Portal(comu.Id, numStairs, numFloors, numDoors);
                         MessageBox.Show($"Data of doorway number {cont + 1} temporarily saved.");
                     } catch (Exception E)
                     {
@@ -270,6 +414,38 @@ namespace ComunidadVecinos
         {
             isSwimPool = false;
             paginaCom.btnNo.IsChecked = false;
+        }
+    }
+
+
+    // Clase para la generación de DNIs aleatorios
+    internal class DniGenerator
+    {
+        private static List<string> dnisGenerados = new List<string>();
+        private static Random random = new Random();
+
+        public static string GenerarDNIUnico()
+        {
+            string nuevoDNI;
+
+            do
+            {
+                nuevoDNI = GenerarDNI();
+            } while (dnisGenerados.Contains(nuevoDNI));
+
+            dnisGenerados.Add(nuevoDNI);
+            return nuevoDNI;
+        }
+
+        private static string GenerarDNI()
+        {
+            int numero = random.Next(10000000, 99999999);
+            int indice = numero % 23;
+
+            // Array de letras posibles para un DNI en España 
+            char[] letrasDNI = "TRWAGMYFPDXBNJZSQVHLCKE".ToCharArray();
+
+            return numero.ToString("D8") + letrasDNI[indice];
         }
     }
 }

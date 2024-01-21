@@ -76,6 +76,7 @@
     <Compile Include="Domain\Portal.cs" />
     <Compile Include="Domain\Propietario.cs" />
     <Compile Include="Persistence\Manages\PropietarioManage.cs" />
+    <Compile Include="Persistence\RandomNumber.cs" />
     <Compile Include="View\PagComunidad.xaml.cs">
       <DependentUpon>PagComunidad.xaml</DependentUpon>
     </Compile>
