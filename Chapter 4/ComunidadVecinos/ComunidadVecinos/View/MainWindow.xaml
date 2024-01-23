@@ -7,8 +7,15 @@
         mc:Ignorable="d"
         Title="Community manager" Height="450" Width="800">
     <Grid>
-        <TabControl TabStripPlacement="Left">
-            <TabItem Header="CREATE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="NEIGHBORHOOD ASSOCIATION" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="35"></Label>
+        
+        <TabControl TabStripPlacement="Left" Grid.Row="1">
+            <TabItem Header="CREATION">
                 <Grid Background="White">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.75*"/>
@@ -42,7 +49,7 @@
                 </Grid>
             </TabItem>
             
-            <TabItem Header="PROPRIETORS">
+            <TabItem Header="">
                 <Grid Background="#FFE5E5E5">
 
                     <TextBox Name="OutputTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
@@ -50,7 +57,7 @@
                 </Grid>
             </TabItem>
 
-            <TabItem Header="PROPERTIES">
+            <TabItem Header="">
                 <Grid Background="#FFE5E5E5">
                     
                 </Grid>

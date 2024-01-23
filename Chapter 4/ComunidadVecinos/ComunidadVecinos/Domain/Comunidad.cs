@@ -22,6 +22,16 @@ namespace ComunidadVecinos.Domain
         public List<Piso> listaPisos {  get; set; }
         public ComunidadManage cm { get; set; }
 
+        // Nuevas variables: dependencias
+        public bool hayPortero { get; set; }
+        public bool hayDucha { get; set; }
+        public bool hayJuego { get; set; }
+        public bool hayEjercicio { get; set; }
+        public bool haySala { get; set; }
+        public bool hayTenis { get; set; }
+        public bool hayPadel {  get; set; }
+
+
 
         public Comunidad(string nombre, string direccion, string fechaCreac, int metrosCuadrados, bool hayPiscina, int numPortales)
         {
