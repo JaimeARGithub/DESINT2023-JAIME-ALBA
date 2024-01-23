@@ -6,6 +6,37 @@
         xmlns:local="clr-namespace:ComunidadVecinos"
         mc:Ignorable="d"
         Title="Community manager" Height="450" Width="800">
+
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}" x:Name="StyleButton">
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Background" Value="#757DBA"/>
+        </Style>
+
+        <Style TargetType="{x:Type Label}" x:Name="StyleLabel">
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Background" Value="#757DBA"/>
+        </Style>
+
+        <Style TargetType="{x:Type TabItem}" x:Name="StyleTabItem">
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="Background" Value="#757DBA"/>
+        </Style>
+
+        <Style TargetType="{x:Type TabControl}" x:Name="StyleTabControl">
+            <Setter Property="Background" Value="#200356"/>
+        </Style>
+
+        <Style TargetType="{x:Type Grid}" x:Name="StyleTab">
+            <Setter Property="Background" Value="#CAC1CC"/>
+        </Style>
+    </Window.Resources>
+
+
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
@@ -15,8 +46,16 @@
         <Label Content="NEIGHBORHOOD ASSOCIATION" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="35"></Label>
         
         <TabControl TabStripPlacement="Left" Grid.Row="1">
+
+            <TabControl.Resources>
+                <Style TargetType="{x:Type Grid}" x:Key="StyleTab">
+                    <Setter Property="Background" Value="#CAC1CC"/>
+                </Style>
+            </TabControl.Resources>
+
+
             <TabItem Header="CREATION">
-                <Grid Background="White">
+                <Grid Style="{StaticResource StyleTab}">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.75*"/>
                         <ColumnDefinition Width="8*"/>
@@ -43,7 +82,7 @@
 
                     <StackPanel Grid.Column="2" Grid.Row="9" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
                         <Button Height="30" Width="65" Content="Previous" x:Name="btnPrev" HorizontalAlignment="Right" Click="btnPrev_Click" ></Button>
-                        <Label Content="                     "></Label>
+                        <Label Content="                     " Background="#CAC1CC"></Label>
                         <Button Height="30" Width="65" Content="Next" x:Name="btnNext" HorizontalAlignment="Right" Click="btnNext_Click" ></Button>
                     </StackPanel>
                 </Grid>

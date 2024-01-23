@@ -6,7 +6,31 @@
       xmlns:local="clr-namespace:ComunidadVecinos"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PagComunidad" Background="White">
+      Title="PagComunidad">
+
+
+    <Page.Resources>
+        <Style TargetType="{x:Type Page}" x:Key="PageStyle">
+            <Setter Property="Background" Value="#CAC1CC"/>
+        </Style>
+
+        <Style TargetType="{x:Type Label}" x:Key="PageStyleLabel">
+            <Setter Property="Background" Value="#CAC1CC"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+        </Style>
+
+        <Style TargetType="{x:Type RadioButton}" x:Key="PageStyleRadioButton">
+            <Setter Property="Background" Value="#CAC1CC"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+    </Page.Resources>
+
+    <Page.Style>
+        <StaticResourceExtension ResourceKey="PageStyle"/>
+    </Page.Style>
+    
+
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -30,34 +54,34 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Name of the community:             "></Label>
-            <TextBox x:Name="txtName" Height="20" Width="160"></TextBox>
+            <Label Content="Name of the community:  " Style="{StaticResource PageStyleLabel}"></Label>
+            <TextBox x:Name="txtName" Height="20" Width="161"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Address:                                       "></Label>
+            <Label Content="Address:                " Style="{StaticResource PageStyleLabel}"></Label>
             <TextBox x:Name="txtAddress" Height="20" Width="161"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Surface (m²):                                                                     "></Label>
+            <Label Content="Surface (m²):                            " Style="{StaticResource PageStyleLabel}"></Label>
             <TextBox x:Name="txtSurface" Height="20" Width="41"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Number of doorways:                                                       "></Label>
-            <TextBox x:Name="txtNumDoor" Height="20" Width="39"></TextBox>
+            <Label Content="Number of doorways:                      " Style="{StaticResource PageStyleLabel}"></Label>
+            <TextBox x:Name="txtNumDoor" Height="20" Width="40"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Swimming pool                                                 "></Label>
-            <RadioButton x:Name="btnYes" Content="Yes" VerticalAlignment="Center" Checked="btnYes_Checked"></RadioButton>
+            <Label Content="Swimming pool                    " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton x:Name="btnYes" Content="Yes" VerticalAlignment="Center" Checked="btnYes_Checked" Style="{StaticResource PageStyleRadioButton}"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNo" Content="No" VerticalAlignment="Center" Checked="btnNo_Checked"></RadioButton>
+            <RadioButton x:Name="btnNo" Content="No" VerticalAlignment="Center" Checked="btnNo_Checked" Style="{StaticResource PageStyleRadioButton}"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left">
-            <Label x:Name="selDate" Content="             Creation date:"></Label>
+            <Label x:Name="selDate" Content="         Creation date:" Style="{StaticResource PageStyleLabel}"></Label>
         </StackPanel>
 
         <Calendar x:Name="calCalendar" Grid.Column="2" Grid.Row="3" Grid.RowSpan="7"></Calendar>
