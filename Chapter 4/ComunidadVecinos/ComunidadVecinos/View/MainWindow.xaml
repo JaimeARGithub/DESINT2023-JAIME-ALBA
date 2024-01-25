@@ -10,21 +10,22 @@
 
     <Window.Resources>
         <Style TargetType="{x:Type Button}" x:Name="StyleButton">
-            <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="FontSize" Value="10" />
-            <Setter Property="Background" Value="#0D0208"/>
-            <Setter Property="Foreground" Value="#00FF41"/>
+            <Setter Property="FontFamily" Value="Roboto Mono"/>
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Background" Value="#F2F2F2"/>
+            <Setter Property="Foreground" Value="#2E6DBD"/>
 
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Background="{TemplateBinding Background}">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="10">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#00FF41"/>
-                                <Setter Property="Foreground" Value="#0D0208"/>
+                                <Setter Property="Background" Value="#2E6DBD"/>
+                                <Setter Property="Foreground" Value="#F2F2F2"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -34,24 +35,28 @@
         </Style>
 
         <Style TargetType="{x:Type Label}" x:Name="StyleLabel">
-            <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="Foreground" Value="#00FF41"/>
+            <Setter Property="FontFamily" Value="Roboto Mono"/>
+            <Setter Property="Foreground" Value="#2E6DBD"/>
             <Setter Property="FontSize" Value="12" />
-            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Background" Value="#F2F2F2"/>
         </Style>
 
         <Style TargetType="{x:Type TabItem}" x:Name="StyleTabItem">
-            <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="Background" Value="#0D0208"/>
-            <Setter Property="Foreground" Value="#00FF41"/>
+            <Setter Property="FontFamily" Value="Roboto Mono"/>
+            <Setter Property="Background" Value="#F2F2F2"/>
+            <Setter Property="Foreground" Value="#2E6DBD"/>
         </Style>
 
         <Style TargetType="{x:Type TabControl}" x:Name="StyleTabControl">
-            <Setter Property="Background" Value="#00FF41"/>
+            <Setter Property="Background" Value="#2E6DBD"/>
+            <Setter Property="FontWeight" Value="Bold" />
+            
+            
         </Style>
 
         <Style TargetType="{x:Type Grid}" x:Name="StyleTab">
-            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="Background" Value="#F2F2F2"/>
         </Style>
     </Window.Resources>
 
@@ -69,7 +74,7 @@
 
             <TabControl.Resources>
                 <Style TargetType="{x:Type Grid}" x:Key="StyleTab">
-                    <Setter Property="Background" Value="#0D0208"/>
+                    <Setter Property="Background" Value="#F2F2F2"/>
                 </Style>
             </TabControl.Resources>
 
@@ -102,7 +107,7 @@
 
                     <StackPanel Grid.Column="2" Grid.Row="9" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
                         <Button Height="30" Width="65" Content="Previous" x:Name="btnPrev" HorizontalAlignment="Right" Click="btnPrev_Click" ></Button>
-                        <Label Content="                 " Background="#0D0208"></Label>
+                        <Label Content="                 " Background="#F2F2F2"></Label>
                         <Button Height="30" Width="65" Content="Next" x:Name="btnNext" HorizontalAlignment="Right" Click="btnNext_Click" ></Button>
                     </StackPanel>
                 </Grid>
