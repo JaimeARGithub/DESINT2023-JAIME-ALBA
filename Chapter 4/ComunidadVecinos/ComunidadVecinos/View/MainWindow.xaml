@@ -11,27 +11,30 @@
     <Window.Resources>
         <Style TargetType="{x:Type Button}" x:Name="StyleButton">
             <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="FontSize" Value="12" />
-            <Setter Property="Background" Value="#757DBA"/>
+            <Setter Property="FontSize" Value="10" />
+            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
         </Style>
 
         <Style TargetType="{x:Type Label}" x:Name="StyleLabel">
             <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
             <Setter Property="FontSize" Value="12" />
-            <Setter Property="Background" Value="#757DBA"/>
+            <Setter Property="Background" Value="#0D0208"/>
         </Style>
 
         <Style TargetType="{x:Type TabItem}" x:Name="StyleTabItem">
             <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="Background" Value="#757DBA"/>
+            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
         </Style>
 
         <Style TargetType="{x:Type TabControl}" x:Name="StyleTabControl">
-            <Setter Property="Background" Value="#200356"/>
+            <Setter Property="Background" Value="#00FF41"/>
         </Style>
 
         <Style TargetType="{x:Type Grid}" x:Name="StyleTab">
-            <Setter Property="Background" Value="#CAC1CC"/>
+            <Setter Property="Background" Value="#0D0208"/>
         </Style>
     </Window.Resources>
 
@@ -49,7 +52,7 @@
 
             <TabControl.Resources>
                 <Style TargetType="{x:Type Grid}" x:Key="StyleTab">
-                    <Setter Property="Background" Value="#CAC1CC"/>
+                    <Setter Property="Background" Value="#0D0208"/>
                 </Style>
             </TabControl.Resources>
 
@@ -82,14 +85,14 @@
 
                     <StackPanel Grid.Column="2" Grid.Row="9" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
                         <Button Height="30" Width="65" Content="Previous" x:Name="btnPrev" HorizontalAlignment="Right" Click="btnPrev_Click" ></Button>
-                        <Label Content="                     " Background="#CAC1CC"></Label>
+                        <Label Content="                     " Background="#0D0208"></Label>
                         <Button Height="30" Width="65" Content="Next" x:Name="btnNext" HorizontalAlignment="Right" Click="btnNext_Click" ></Button>
                     </StackPanel>
                 </Grid>
             </TabItem>
             
             <TabItem Header="">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#0D0208">
 
                     <TextBox Name="OutputTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
 
@@ -97,7 +100,7 @@
             </TabItem>
 
             <TabItem Header="">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#0D0208">
                     
                 </Grid>
             </TabItem>

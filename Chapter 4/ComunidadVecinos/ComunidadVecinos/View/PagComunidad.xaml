@@ -11,19 +11,30 @@
 
     <Page.Resources>
         <Style TargetType="{x:Type Page}" x:Key="PageStyle">
-            <Setter Property="Background" Value="#CAC1CC"/>
+            <Setter Property="Background" Value="#0D0208"/>
         </Style>
 
         <Style TargetType="{x:Type Label}" x:Key="PageStyleLabel">
-            <Setter Property="Background" Value="#CAC1CC"/>
+            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
             <Setter Property="FontFamily" Value="Cascadia Mono"/>
         </Style>
 
         <Style TargetType="{x:Type RadioButton}" x:Key="PageStyleRadioButton">
-            <Setter Property="Background" Value="#CAC1CC"/>
+            <Setter Property="Background" Value="#0D0208"/>
             <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="Background" Value="White"/>
+            <Setter Property="Background" Value="#00FF41"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
         </Style>
+
+        <Style TargetType="{x:Type TextBox}" x:Key="PageStyleTextBox">
+            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="Background" Value="#00FF41"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
+        </Style>
+
+
     </Page.Resources>
 
     <Page.Style>
