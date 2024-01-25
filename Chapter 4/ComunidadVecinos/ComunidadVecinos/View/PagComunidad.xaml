@@ -21,20 +21,10 @@
         </Style>
 
         <Style TargetType="{x:Type RadioButton}" x:Key="PageStyleRadioButton">
-            <Setter Property="Background" Value="#0D0208"/>
             <Setter Property="FontFamily" Value="Cascadia Mono"/>
             <Setter Property="Background" Value="#00FF41"/>
             <Setter Property="Foreground" Value="#00FF41"/>
         </Style>
-
-        <Style TargetType="{x:Type TextBox}" x:Key="PageStyleTextBox">
-            <Setter Property="Background" Value="#0D0208"/>
-            <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="Background" Value="#00FF41"/>
-            <Setter Property="Foreground" Value="#00FF41"/>
-        </Style>
-
-
     </Page.Resources>
 
     <Page.Style>
@@ -76,12 +66,12 @@
 
         <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" VerticalAlignment="Center">
             <Label Content="Surface (m²):                            " Style="{StaticResource PageStyleLabel}"></Label>
-            <TextBox x:Name="txtSurface" Height="20" Width="41"></TextBox>
+            <TextBox x:Name="txtSurface" Height="20" Width="42"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center">
             <Label Content="Number of doorways:                      " Style="{StaticResource PageStyleLabel}"></Label>
-            <TextBox x:Name="txtNumDoor" Height="20" Width="40"></TextBox>
+            <TextBox x:Name="txtNumDoor" Height="20" Width="42"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal" VerticalAlignment="Center">
@@ -92,7 +82,7 @@
         </StackPanel>
 
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left">
-            <Label x:Name="selDate" Content="         Creation date:" Style="{StaticResource PageStyleLabel}"></Label>
+            <Label x:Name="selDate" Content="            Creation date:" Style="{StaticResource PageStyleLabel}"></Label>
         </StackPanel>
 
         <Calendar x:Name="calCalendar" Grid.Column="2" Grid.Row="3" Grid.RowSpan="7"></Calendar>

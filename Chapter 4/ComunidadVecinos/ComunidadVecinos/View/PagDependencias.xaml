@@ -8,7 +8,26 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PagDependencias" Background="White">
 
-    <Grid>
+
+    <Page.Resources>
+        <Style TargetType="{x:Type Page}" x:Key="PageStyle">
+            <Setter Property="Background" Value="#0D0208"/>
+        </Style>
+
+        <Style TargetType="{x:Type Label}" x:Key="PageStyleLabel">
+            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+        </Style>
+
+        <Style TargetType="{x:Type RadioButton}" x:Key="PageStyleRadioButton">
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+            <Setter Property="Background" Value="#00FF41"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="#0D0208">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.75*"/>
             <ColumnDefinition Width="8*"/>
@@ -28,54 +47,54 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="DEPENDENCIES" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"></Label>
+        <Label Content="DEPENDENCIES" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource PageStyleLabel}"></Label>
         <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="GateKeeper's apartment                                                 "></Label>
-            <RadioButton x:Name="btnYesGatekeeper" Content="Yes" VerticalAlignment="Center" Checked="btnYesGatekeeper_Checked"></RadioButton>
+            <Label Content="GateKeeper's apartment                       " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnYesGatekeeper" Content="Yes" VerticalAlignment="Center" Checked="btnYesGatekeeper_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNoGatekeeper" Content="No" VerticalAlignment="Center" Checked="btnNoGatekeeper_Checked"></RadioButton>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnNoGatekeeper" Content="No" VerticalAlignment="Center" Checked="btnNoGatekeeper_Checked"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Communal showers and toilets                                      "></Label>
-            <RadioButton x:Name="btnYesShower" Content="Yes" VerticalAlignment="Center" Checked="btnYesShower_Checked"></RadioButton>
+            <Label Content="Communal showers and toilets                 " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnYesShower" Content="Yes" VerticalAlignment="Center" Checked="btnYesShower_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNoShower" Content="No" VerticalAlignment="Center" Checked="btnNoShower_Checked"></RadioButton>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnNoShower" Content="No" VerticalAlignment="Center" Checked="btnNoShower_Checked"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Communal play area                                                       "></Label>
-            <RadioButton x:Name="btnYesPlay" Content="Yes" VerticalAlignment="Center" Checked="btnYesPlay_Checked"></RadioButton>
+            <Label Content="Communal play area                           " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnYesPlay" Content="Yes" VerticalAlignment="Center" Checked="btnYesPlay_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNoPlay" Content="No" VerticalAlignment="Center" Checked="btnNoPlay_Checked"></RadioButton>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnNoPlay" Content="No" VerticalAlignment="Center" Checked="btnNoPlay_Checked"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Communal exercise area                                                "></Label>
-            <RadioButton x:Name="btnYesExercise" Content="Yes" VerticalAlignment="Center" Checked="btnYesExercise_Checked"></RadioButton>
+            <Label Content="Communal exercise area                       " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnYesExercise" Content="Yes" VerticalAlignment="Center" Checked="btnYesExercise_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNoExercise" Content="No" VerticalAlignment="Center" Checked="btnNoExercise_Checked"></RadioButton>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnNoExercise" Content="No" VerticalAlignment="Center" Checked="btnNoExercise_Checked"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Communal meeting and social room                             "></Label>
-            <RadioButton x:Name="btnYesRoom" Content="Yes" VerticalAlignment="Center" Checked="btnYesRoom_Checked"></RadioButton>
+            <Label Content="Communal meeting and social room             " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnYesRoom" Content="Yes" VerticalAlignment="Center" Checked="btnYesRoom_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNoRoom" Content="No" VerticalAlignment="Center" Checked="btnNoRoom_Checked"></RadioButton>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnNoRoom" Content="No" VerticalAlignment="Center" Checked="btnNoRoom_Checked"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="7" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Communal tennis court                                                  "></Label>
-            <RadioButton x:Name="btnYesTennis" Content="Yes" VerticalAlignment="Center" Checked="btnYesTennis_Checked"></RadioButton>
+            <Label Content="Communal tennis court                        " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnYesTennis" Content="Yes" VerticalAlignment="Center" Checked="btnYesTennis_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNoTennis" Content="No" VerticalAlignment="Center" Checked="btnNoTennis_Checked"></RadioButton>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnNoTennis" Content="No" VerticalAlignment="Center" Checked="btnNoTennis_Checked"></RadioButton>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="8" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label Content="Communal padel court                                                   "></Label>
-            <RadioButton x:Name="btnYesPadel" Content="Yes" VerticalAlignment="Center" Checked="btnYesPadel_Checked"></RadioButton>
+            <Label Content="Communal padel court                         " Style="{StaticResource PageStyleLabel}"></Label>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnYesPadel" Content="Yes" VerticalAlignment="Center" Checked="btnYesPadel_Checked"></RadioButton>
             <Label Content="   "></Label>
-            <RadioButton x:Name="btnNoPadel" Content="No" VerticalAlignment="Center" Checked="btnNoPadel_Checked"></RadioButton>
+            <RadioButton Style="{StaticResource PageStyleRadioButton}" x:Name="btnNoPadel" Content="No" VerticalAlignment="Center" Checked="btnNoPadel_Checked"></RadioButton>
         </StackPanel>
     </Grid>
 </Page>

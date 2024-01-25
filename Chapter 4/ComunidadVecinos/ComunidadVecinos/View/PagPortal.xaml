@@ -8,7 +8,17 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PagPortal" Background="White">
 
-    <Grid>
+
+    <Page.Resources>
+         <Style TargetType="{x:Type Label}" x:Key="PageStyleLabel">
+            <Setter Property="Background" Value="#0D0208"/>
+            <Setter Property="Foreground" Value="#00FF41"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono"/>
+        </Style>
+    </Page.Resources>
+
+
+    <Grid Background="#0D0208">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.75*"/>
             <ColumnDefinition Width="8*"/>
@@ -29,21 +39,21 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center">
-            <Label x:Name="labelPortal" Content="Portal X of Y"></Label>
+            <Label x:Name="labelPortal" Content="Portal X of Y" Style="{StaticResource PageStyleLabel}"></Label>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label Content="Number of stairways:    "></Label>
+            <Label Content="Number of stairways:    " Style="{StaticResource PageStyleLabel}"></Label>
             <TextBox x:Name="txtStair" Height="20" Width="40"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label Content="Number of floors:         "></Label>
+            <Label Content="Number of floors:       " Style="{StaticResource PageStyleLabel}"></Label>
             <TextBox x:Name="txtFloor" Height="20" Width="41"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label Content="Number of doors:         "></Label>
+            <Label Content="Number of doors:        " Style="{StaticResource PageStyleLabel}"></Label>
             <TextBox x:Name="txtDoor" Height="20" Width="40"></TextBox>
         </StackPanel>
     </Grid>
