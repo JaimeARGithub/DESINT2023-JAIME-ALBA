@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Apartments" msprop:Generator_RowClassName="ApartmentsRow" msprop:Generator_RowEvHandlerName="ApartmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="ApartmentsRowDeleted" msprop:Generator_RowDeletingName="ApartmentsRowDeleting" msprop:Generator_RowEvArgName="ApartmentsRowChangeEvent" msprop:Generator_TablePropName="Apartments" msprop:Generator_RowChangedName="ApartmentsRowChanged" msprop:Generator_UserTableName="Apartments" msprop:Generator_RowChangingName="ApartmentsRowChanging" msprop:Generator_TableClassName="ApartmentsDataTable" msprop:Generator_TableVarName="tableApartments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="apartment" msprop:Generator_UserColumnName="apartment" msprop:Generator_ColumnPropNameInTable="apartmentColumn" msprop:Generator_ColumnPropNameInRow="apartment" msprop:Generator_ColumnVarNameInTable="columnapartment" type="xs:string" minOccurs="0" />
+              <xs:element name="doorway" msprop:Generator_UserColumnName="doorway" msprop:Generator_ColumnPropNameInTable="doorwayColumn" msprop:Generator_ColumnPropNameInRow="doorway" msprop:Generator_ColumnVarNameInTable="columndoorway" type="xs:string" minOccurs="0" />
+              <xs:element name="storage_x0020_room" msprop:Generator_UserColumnName="storage room" msprop:Generator_ColumnPropNameInTable="storage_roomColumn" msprop:Generator_ColumnPropNameInRow="storage_room" msprop:Generator_ColumnVarNameInTable="columnstorage_room" type="xs:string" minOccurs="0" />
+              <xs:element name="parking_x0020_spot" msprop:Generator_UserColumnName="parking spot" msprop:Generator_ColumnPropNameInTable="parking_spotColumn" msprop:Generator_ColumnPropNameInRow="parking_spot" msprop:Generator_ColumnVarNameInTable="columnparking_spot" type="xs:string" minOccurs="0" />
+              <xs:element name="first_x0020_owner" msprop:Generator_UserColumnName="first owner" msprop:Generator_ColumnPropNameInTable="first_ownerColumn" msprop:Generator_ColumnPropNameInRow="first_owner" msprop:Generator_ColumnVarNameInTable="columnfirst_owner" type="xs:string" minOccurs="0" />
+              <xs:element name="second_x0020_owner" msprop:Generator_UserColumnName="second owner" msprop:Generator_ColumnPropNameInTable="second_ownerColumn" msprop:Generator_ColumnPropNameInRow="second_owner" msprop:Generator_ColumnVarNameInTable="columnsecond_owner" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

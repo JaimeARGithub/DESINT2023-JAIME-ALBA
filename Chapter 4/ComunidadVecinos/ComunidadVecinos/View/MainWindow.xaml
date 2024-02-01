@@ -113,17 +113,17 @@
                 </Grid>
             </TabItem>
             
-            <TabItem Header="">
-                <Grid Background="#0D0208">
+            <TabItem Header="REPORT" VerticalAlignment="Center">
+                <Grid Background="#F2F2F2">
 
-                    <TextBox Name="OutputTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+                    
 
                 </Grid>
             </TabItem>
 
             <TabItem Header="">
                 <Grid Background="#0D0208">
-                    
+                    <TextBox Name="OutputTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
                 </Grid>
             </TabItem>
         </TabControl>

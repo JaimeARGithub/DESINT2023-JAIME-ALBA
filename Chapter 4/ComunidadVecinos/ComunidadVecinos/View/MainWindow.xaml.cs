@@ -382,6 +382,12 @@ namespace ComunidadVecinos
                     {
                         p.Insert();
                     }
+
+
+
+                    // GENERACIÓN DEL INFORME
+                    PagInforme pagInforme = new PagInforme();
+                    FrameCommunity.Content = pagInforme;
                 }
 
                 

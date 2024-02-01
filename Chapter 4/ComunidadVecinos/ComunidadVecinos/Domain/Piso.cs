@@ -1,6 +1,7 @@
 ﻿using ComunidadVecinos.Persistence.Manages;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,11 @@ namespace ComunidadVecinos.Domain
         public PisoManage pm { get; set; }
 
 
+        public Piso()
+        {
+            this.pm = new PisoManage();
+        }
+
         public Piso(int idComunidad,  int numPortal, int numEscalera, int numPlanta, string puerta)
         {
             this.Id = autoID++;
@@ -37,6 +43,12 @@ namespace ComunidadVecinos.Domain
         public void Insert()
         {
             pm.insertPiso(this);
+        }
+
+
+        public DataTable getP()
+        {
+            return pm.getReportPisos();
         }
     }
 }
