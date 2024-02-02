@@ -70,7 +70,7 @@
 
         <Label Content="NEIGHBORHOOD ASSOCIATION" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="35"></Label>
         
-        <TabControl TabStripPlacement="Left" Grid.Row="1">
+        <TabControl x:Name="TabControl" TabStripPlacement="Left" Grid.Row="1">
 
             <TabControl.Resources>
                 <Style TargetType="{x:Type Grid}" x:Key="StyleTab">
@@ -116,7 +116,9 @@
             <TabItem Header="REPORT" VerticalAlignment="Center">
                 <Grid Background="#F2F2F2">
 
-                    
+                    <Frame x:Name="FrameReport">
+
+                    </Frame>
 
                 </Grid>
             </TabItem>

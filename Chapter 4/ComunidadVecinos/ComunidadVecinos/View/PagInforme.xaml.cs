@@ -41,7 +41,7 @@ namespace ComunidadVecinos.View
             // al crystal report le asigno como tabla
             // (CON UN NOMBRE QUE COINCIDA EXACTO CON EL ANTERIOR QUE ME HE CREADO)
             // la data table que me acabo de recuperar
-            cr1.Database.Tables["Apartments"].SetDataSource(dt);
+            cr1.Database.Tables["APARTMENTS"].SetDataSource(dt);
 
             // llamo al crystal report con el nombre de la variable que le haya asignado
             // y le asigno como datos el crystal report que me he creado

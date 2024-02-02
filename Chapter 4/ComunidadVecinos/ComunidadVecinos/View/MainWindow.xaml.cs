@@ -386,8 +386,12 @@ namespace ComunidadVecinos
 
 
                     // GENERACIÓN DEL INFORME
+                    // Se realiza un cambio de tab en el tabControl,
+                    // se crea una página del tipo de informes
+                    // y se asigna al frame establecido en el tab
+                    TabControl.SelectedIndex = 1;
                     PagInforme pagInforme = new PagInforme();
-                    FrameCommunity.Content = pagInforme;
+                    FrameReport.Content = pagInforme;
                 }
 
                 

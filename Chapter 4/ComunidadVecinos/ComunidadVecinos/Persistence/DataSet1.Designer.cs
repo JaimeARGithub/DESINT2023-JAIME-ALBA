@@ -24,7 +24,7 @@ namespace ComunidadVecinos.Persistence {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DataSet1 : global::System.Data.DataSet {
         
-        private ApartmentsDataTable tableApartments;
+        private APARTMENTSDataTable tableAPARTMENTS;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace ComunidadVecinos.Persistence {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Apartments"] != null)) {
-                    base.Tables.Add(new ApartmentsDataTable(ds.Tables["Apartments"]));
+                if ((ds.Tables["APARTMENTS"] != null)) {
+                    base.Tables.Add(new APARTMENTSDataTable(ds.Tables["APARTMENTS"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ComunidadVecinos.Persistence {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ApartmentsDataTable Apartments {
+        public APARTMENTSDataTable APARTMENTS {
             get {
-                return this.tableApartments;
+                return this.tableAPARTMENTS;
             }
         }
         
@@ -152,8 +152,8 @@ namespace ComunidadVecinos.Persistence {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Apartments"] != null)) {
-                    base.Tables.Add(new ApartmentsDataTable(ds.Tables["Apartments"]));
+                if ((ds.Tables["APARTMENTS"] != null)) {
+                    base.Tables.Add(new APARTMENTSDataTable(ds.Tables["APARTMENTS"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ComunidadVecinos.Persistence {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableApartments = ((ApartmentsDataTable)(base.Tables["Apartments"]));
+            this.tableAPARTMENTS = ((APARTMENTSDataTable)(base.Tables["APARTMENTS"]));
             if ((initTable == true)) {
-                if ((this.tableApartments != null)) {
-                    this.tableApartments.InitVars();
+                if ((this.tableAPARTMENTS != null)) {
+                    this.tableAPARTMENTS.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace ComunidadVecinos.Persistence {
             this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableApartments = new ApartmentsDataTable();
-            base.Tables.Add(this.tableApartments);
+            this.tableAPARTMENTS = new APARTMENTSDataTable();
+            base.Tables.Add(this.tableAPARTMENTS);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeApartments() {
+        private bool ShouldSerializeAPARTMENTS() {
             return false;
         }
         
@@ -270,31 +270,31 @@ namespace ComunidadVecinos.Persistence {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void ApartmentsRowChangeEventHandler(object sender, ApartmentsRowChangeEvent e);
+        public delegate void APARTMENTSRowChangeEventHandler(object sender, APARTMENTSRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ApartmentsDataTable : global::System.Data.TypedTableBase<ApartmentsRow> {
+        public partial class APARTMENTSDataTable : global::System.Data.TypedTableBase<APARTMENTSRow> {
             
-            private global::System.Data.DataColumn columnapartment;
+            private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columndoorway;
+            private global::System.Data.DataColumn columnDOORWAY;
             
-            private global::System.Data.DataColumn columnstorage_room;
+            private global::System.Data.DataColumn columnSTORAGE_ROOM;
             
-            private global::System.Data.DataColumn columnparking_spot;
+            private global::System.Data.DataColumn columnPARKING_SPOT;
             
-            private global::System.Data.DataColumn columnfirst_owner;
+            private global::System.Data.DataColumn columnDNI_OWNER_1;
             
-            private global::System.Data.DataColumn columnsecond_owner;
+            private global::System.Data.DataColumn columnDNI_OWNER_2;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ApartmentsDataTable() {
-                this.TableName = "Apartments";
+            public APARTMENTSDataTable() {
+                this.TableName = "APARTMENTS";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +302,7 @@ namespace ComunidadVecinos.Persistence {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal ApartmentsDataTable(global::System.Data.DataTable table) {
+            internal APARTMENTSDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,56 +319,56 @@ namespace ComunidadVecinos.Persistence {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected ApartmentsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected APARTMENTSDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn apartmentColumn {
+            public global::System.Data.DataColumn IDColumn {
                 get {
-                    return this.columnapartment;
+                    return this.columnID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn doorwayColumn {
+            public global::System.Data.DataColumn DOORWAYColumn {
                 get {
-                    return this.columndoorway;
+                    return this.columnDOORWAY;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn storage_roomColumn {
+            public global::System.Data.DataColumn STORAGE_ROOMColumn {
                 get {
-                    return this.columnstorage_room;
+                    return this.columnSTORAGE_ROOM;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn parking_spotColumn {
+            public global::System.Data.DataColumn PARKING_SPOTColumn {
                 get {
-                    return this.columnparking_spot;
+                    return this.columnPARKING_SPOT;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn first_ownerColumn {
+            public global::System.Data.DataColumn DNI_OWNER_1Column {
                 get {
-                    return this.columnfirst_owner;
+                    return this.columnDNI_OWNER_1;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn second_ownerColumn {
+            public global::System.Data.DataColumn DNI_OWNER_2Column {
                 get {
-                    return this.columnsecond_owner;
+                    return this.columnDNI_OWNER_2;
                 }
             }
             
@@ -383,50 +383,50 @@ namespace ComunidadVecinos.Persistence {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ApartmentsRow this[int index] {
+            public APARTMENTSRow this[int index] {
                 get {
-                    return ((ApartmentsRow)(this.Rows[index]));
+                    return ((APARTMENTSRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ApartmentsRowChangeEventHandler ApartmentsRowChanging;
+            public event APARTMENTSRowChangeEventHandler APARTMENTSRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ApartmentsRowChangeEventHandler ApartmentsRowChanged;
+            public event APARTMENTSRowChangeEventHandler APARTMENTSRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ApartmentsRowChangeEventHandler ApartmentsRowDeleting;
+            public event APARTMENTSRowChangeEventHandler APARTMENTSRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ApartmentsRowChangeEventHandler ApartmentsRowDeleted;
+            public event APARTMENTSRowChangeEventHandler APARTMENTSRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddApartmentsRow(ApartmentsRow row) {
+            public void AddAPARTMENTSRow(APARTMENTSRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ApartmentsRow AddApartmentsRow(string apartment, string doorway, string storage_room, string parking_spot, string first_owner, string second_owner) {
-                ApartmentsRow rowApartmentsRow = ((ApartmentsRow)(this.NewRow()));
+            public APARTMENTSRow AddAPARTMENTSRow(string ID, string DOORWAY, string STORAGE_ROOM, string PARKING_SPOT, string DNI_OWNER_1, string DNI_OWNER_2) {
+                APARTMENTSRow rowAPARTMENTSRow = ((APARTMENTSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        apartment,
-                        doorway,
-                        storage_room,
-                        parking_spot,
-                        first_owner,
-                        second_owner};
-                rowApartmentsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowApartmentsRow);
-                return rowApartmentsRow;
+                        ID,
+                        DOORWAY,
+                        STORAGE_ROOM,
+                        PARKING_SPOT,
+                        DNI_OWNER_1,
+                        DNI_OWNER_2};
+                rowAPARTMENTSRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAPARTMENTSRow);
+                return rowAPARTMENTSRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ApartmentsDataTable cln = ((ApartmentsDataTable)(base.Clone()));
+                APARTMENTSDataTable cln = ((APARTMENTSDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -434,61 +434,61 @@ namespace ComunidadVecinos.Persistence {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ApartmentsDataTable();
+                return new APARTMENTSDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnapartment = base.Columns["apartment"];
-                this.columndoorway = base.Columns["doorway"];
-                this.columnstorage_room = base.Columns["storage room"];
-                this.columnparking_spot = base.Columns["parking spot"];
-                this.columnfirst_owner = base.Columns["first owner"];
-                this.columnsecond_owner = base.Columns["second owner"];
+                this.columnID = base.Columns["ID"];
+                this.columnDOORWAY = base.Columns["DOORWAY"];
+                this.columnSTORAGE_ROOM = base.Columns["STORAGE_ROOM"];
+                this.columnPARKING_SPOT = base.Columns["PARKING_SPOT"];
+                this.columnDNI_OWNER_1 = base.Columns["DNI_OWNER_1"];
+                this.columnDNI_OWNER_2 = base.Columns["DNI_OWNER_2"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnapartment = new global::System.Data.DataColumn("apartment", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnapartment);
-                this.columndoorway = new global::System.Data.DataColumn("doorway", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndoorway);
-                this.columnstorage_room = new global::System.Data.DataColumn("storage room", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnstorage_room);
-                this.columnparking_spot = new global::System.Data.DataColumn("parking spot", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnparking_spot);
-                this.columnfirst_owner = new global::System.Data.DataColumn("first owner", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfirst_owner);
-                this.columnsecond_owner = new global::System.Data.DataColumn("second owner", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsecond_owner);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
+                this.columnDOORWAY = new global::System.Data.DataColumn("DOORWAY", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDOORWAY);
+                this.columnSTORAGE_ROOM = new global::System.Data.DataColumn("STORAGE_ROOM", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSTORAGE_ROOM);
+                this.columnPARKING_SPOT = new global::System.Data.DataColumn("PARKING_SPOT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPARKING_SPOT);
+                this.columnDNI_OWNER_1 = new global::System.Data.DataColumn("DNI_OWNER_1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDNI_OWNER_1);
+                this.columnDNI_OWNER_2 = new global::System.Data.DataColumn("DNI_OWNER_2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDNI_OWNER_2);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ApartmentsRow NewApartmentsRow() {
-                return ((ApartmentsRow)(this.NewRow()));
+            public APARTMENTSRow NewAPARTMENTSRow() {
+                return ((APARTMENTSRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ApartmentsRow(builder);
+                return new APARTMENTSRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ApartmentsRow);
+                return typeof(APARTMENTSRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ApartmentsRowChanged != null)) {
-                    this.ApartmentsRowChanged(this, new ApartmentsRowChangeEvent(((ApartmentsRow)(e.Row)), e.Action));
+                if ((this.APARTMENTSRowChanged != null)) {
+                    this.APARTMENTSRowChanged(this, new APARTMENTSRowChangeEvent(((APARTMENTSRow)(e.Row)), e.Action));
                 }
             }
             
@@ -496,8 +496,8 @@ namespace ComunidadVecinos.Persistence {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ApartmentsRowChanging != null)) {
-                    this.ApartmentsRowChanging(this, new ApartmentsRowChangeEvent(((ApartmentsRow)(e.Row)), e.Action));
+                if ((this.APARTMENTSRowChanging != null)) {
+                    this.APARTMENTSRowChanging(this, new APARTMENTSRowChangeEvent(((APARTMENTSRow)(e.Row)), e.Action));
                 }
             }
             
@@ -505,8 +505,8 @@ namespace ComunidadVecinos.Persistence {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ApartmentsRowDeleted != null)) {
-                    this.ApartmentsRowDeleted(this, new ApartmentsRowChangeEvent(((ApartmentsRow)(e.Row)), e.Action));
+                if ((this.APARTMENTSRowDeleted != null)) {
+                    this.APARTMENTSRowDeleted(this, new APARTMENTSRowChangeEvent(((APARTMENTSRow)(e.Row)), e.Action));
                 }
             }
             
@@ -514,14 +514,14 @@ namespace ComunidadVecinos.Persistence {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ApartmentsRowDeleting != null)) {
-                    this.ApartmentsRowDeleting(this, new ApartmentsRowChangeEvent(((ApartmentsRow)(e.Row)), e.Action));
+                if ((this.APARTMENTSRowDeleting != null)) {
+                    this.APARTMENTSRowDeleting(this, new APARTMENTSRowChangeEvent(((APARTMENTSRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveApartmentsRow(ApartmentsRow row) {
+            public void RemoveAPARTMENTSRow(APARTMENTSRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -548,7 +548,7 @@ namespace ComunidadVecinos.Persistence {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ApartmentsDataTable";
+                attribute2.FixedValue = "APARTMENTSDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -592,183 +592,183 @@ namespace ComunidadVecinos.Persistence {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ApartmentsRow : global::System.Data.DataRow {
+        public partial class APARTMENTSRow : global::System.Data.DataRow {
             
-            private ApartmentsDataTable tableApartments;
+            private APARTMENTSDataTable tableAPARTMENTS;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal ApartmentsRow(global::System.Data.DataRowBuilder rb) : 
+            internal APARTMENTSRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableApartments = ((ApartmentsDataTable)(this.Table));
+                this.tableAPARTMENTS = ((APARTMENTSDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string apartment {
+            public string ID {
                 get {
                     try {
-                        return ((string)(this[this.tableApartments.apartmentColumn]));
+                        return ((string)(this[this.tableAPARTMENTS.IDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'apartment\' de la tabla \'Apartments\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ID\' de la tabla \'APARTMENTS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableApartments.apartmentColumn] = value;
+                    this[this.tableAPARTMENTS.IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string doorway {
+            public string DOORWAY {
                 get {
                     try {
-                        return ((string)(this[this.tableApartments.doorwayColumn]));
+                        return ((string)(this[this.tableAPARTMENTS.DOORWAYColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'doorway\' de la tabla \'Apartments\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DOORWAY\' de la tabla \'APARTMENTS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableApartments.doorwayColumn] = value;
+                    this[this.tableAPARTMENTS.DOORWAYColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string storage_room {
+            public string STORAGE_ROOM {
                 get {
                     try {
-                        return ((string)(this[this.tableApartments.storage_roomColumn]));
+                        return ((string)(this[this.tableAPARTMENTS.STORAGE_ROOMColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'storage room\' de la tabla \'Apartments\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'STORAGE_ROOM\' de la tabla \'APARTMENTS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableApartments.storage_roomColumn] = value;
+                    this[this.tableAPARTMENTS.STORAGE_ROOMColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string parking_spot {
+            public string PARKING_SPOT {
                 get {
                     try {
-                        return ((string)(this[this.tableApartments.parking_spotColumn]));
+                        return ((string)(this[this.tableAPARTMENTS.PARKING_SPOTColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'parking spot\' de la tabla \'Apartments\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PARKING_SPOT\' de la tabla \'APARTMENTS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableApartments.parking_spotColumn] = value;
+                    this[this.tableAPARTMENTS.PARKING_SPOTColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string first_owner {
+            public string DNI_OWNER_1 {
                 get {
                     try {
-                        return ((string)(this[this.tableApartments.first_ownerColumn]));
+                        return ((string)(this[this.tableAPARTMENTS.DNI_OWNER_1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'first owner\' de la tabla \'Apartments\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DNI_OWNER_1\' de la tabla \'APARTMENTS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableApartments.first_ownerColumn] = value;
+                    this[this.tableAPARTMENTS.DNI_OWNER_1Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string second_owner {
+            public string DNI_OWNER_2 {
                 get {
                     try {
-                        return ((string)(this[this.tableApartments.second_ownerColumn]));
+                        return ((string)(this[this.tableAPARTMENTS.DNI_OWNER_2Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'second owner\' de la tabla \'Apartments\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DNI_OWNER_2\' de la tabla \'APARTMENTS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableApartments.second_ownerColumn] = value;
+                    this[this.tableAPARTMENTS.DNI_OWNER_2Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsapartmentNull() {
-                return this.IsNull(this.tableApartments.apartmentColumn);
+            public bool IsIDNull() {
+                return this.IsNull(this.tableAPARTMENTS.IDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetapartmentNull() {
-                this[this.tableApartments.apartmentColumn] = global::System.Convert.DBNull;
+            public void SetIDNull() {
+                this[this.tableAPARTMENTS.IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsdoorwayNull() {
-                return this.IsNull(this.tableApartments.doorwayColumn);
+            public bool IsDOORWAYNull() {
+                return this.IsNull(this.tableAPARTMENTS.DOORWAYColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetdoorwayNull() {
-                this[this.tableApartments.doorwayColumn] = global::System.Convert.DBNull;
+            public void SetDOORWAYNull() {
+                this[this.tableAPARTMENTS.DOORWAYColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isstorage_roomNull() {
-                return this.IsNull(this.tableApartments.storage_roomColumn);
+            public bool IsSTORAGE_ROOMNull() {
+                return this.IsNull(this.tableAPARTMENTS.STORAGE_ROOMColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setstorage_roomNull() {
-                this[this.tableApartments.storage_roomColumn] = global::System.Convert.DBNull;
+            public void SetSTORAGE_ROOMNull() {
+                this[this.tableAPARTMENTS.STORAGE_ROOMColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isparking_spotNull() {
-                return this.IsNull(this.tableApartments.parking_spotColumn);
+            public bool IsPARKING_SPOTNull() {
+                return this.IsNull(this.tableAPARTMENTS.PARKING_SPOTColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setparking_spotNull() {
-                this[this.tableApartments.parking_spotColumn] = global::System.Convert.DBNull;
+            public void SetPARKING_SPOTNull() {
+                this[this.tableAPARTMENTS.PARKING_SPOTColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isfirst_ownerNull() {
-                return this.IsNull(this.tableApartments.first_ownerColumn);
+            public bool IsDNI_OWNER_1Null() {
+                return this.IsNull(this.tableAPARTMENTS.DNI_OWNER_1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setfirst_ownerNull() {
-                this[this.tableApartments.first_ownerColumn] = global::System.Convert.DBNull;
+            public void SetDNI_OWNER_1Null() {
+                this[this.tableAPARTMENTS.DNI_OWNER_1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Issecond_ownerNull() {
-                return this.IsNull(this.tableApartments.second_ownerColumn);
+            public bool IsDNI_OWNER_2Null() {
+                return this.IsNull(this.tableAPARTMENTS.DNI_OWNER_2Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setsecond_ownerNull() {
-                this[this.tableApartments.second_ownerColumn] = global::System.Convert.DBNull;
+            public void SetDNI_OWNER_2Null() {
+                this[this.tableAPARTMENTS.DNI_OWNER_2Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -776,22 +776,22 @@ namespace ComunidadVecinos.Persistence {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class ApartmentsRowChangeEvent : global::System.EventArgs {
+        public class APARTMENTSRowChangeEvent : global::System.EventArgs {
             
-            private ApartmentsRow eventRow;
+            private APARTMENTSRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ApartmentsRowChangeEvent(ApartmentsRow row, global::System.Data.DataRowAction action) {
+            public APARTMENTSRowChangeEvent(APARTMENTSRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ApartmentsRow Row {
+            public APARTMENTSRow Row {
                 get {
                     return this.eventRow;
                 }
