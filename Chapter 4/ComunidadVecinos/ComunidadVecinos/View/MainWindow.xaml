@@ -124,8 +124,12 @@
             </TabItem>
 
             <TabItem Header="">
-                <Grid Background="#0D0208">
-                    <TextBox Name="OutputTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+                <Grid Background="#F2F2F2">
+
+                    <Frame x:Name="FramePRUEBA">
+
+                    </Frame>
+
                 </Grid>
             </TabItem>
         </TabControl>

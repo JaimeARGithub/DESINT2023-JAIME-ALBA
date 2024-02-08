@@ -197,3 +197,5 @@ C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 4\ComunidadVecinos\ComunidadVecinos\bin\Debug\stdole.dll
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 4\ComunidadVecinos\ComunidadVecinos\obj\Debug\View\PagInforme.g.cs
 C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 4\ComunidadVecinos\ComunidadVecinos\obj\Debug\View\PagInforme.baml
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 4\ComunidadVecinos\ComunidadVecinos\obj\Debug\View\PagPRUEBA.g.cs
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 4\ComunidadVecinos\ComunidadVecinos\obj\Debug\View\PagPRUEBA.baml

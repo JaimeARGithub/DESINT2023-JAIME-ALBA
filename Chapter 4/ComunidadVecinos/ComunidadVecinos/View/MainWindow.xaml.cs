@@ -367,7 +367,7 @@ namespace ComunidadVecinos
 
 
                     // Tras generarse todos los pisos, se imprimen en la segunda pestaña
-                    Imprimir(comu, OutputTextBox);
+                    //Imprimir(comu, OutputTextBox);
 
                     comu.Insert();
                     foreach (Propietario p in listaPropietarios)
@@ -389,9 +389,14 @@ namespace ComunidadVecinos
                     // Se realiza un cambio de tab en el tabControl,
                     // se crea una página del tipo de informes
                     // y se asigna al frame establecido en el tab
-                    TabControl.SelectedIndex = 1;
-                    PagInforme pagInforme = new PagInforme();
-                    FrameReport.Content = pagInforme;
+                    //TabControl.SelectedIndex = 1;
+                    //PagInforme pagInforme = new PagInforme();
+                    //FrameReport.Content = pagInforme;
+
+
+                    TabControl.SelectedIndex = 2;
+                    PagPRUEBA prueba = new PagPRUEBA();
+                    FramePRUEBA.Content = prueba;
                 }
 
                 

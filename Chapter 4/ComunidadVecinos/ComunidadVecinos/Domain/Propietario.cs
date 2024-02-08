@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ComunidadVecinos.Persistence;
+using System.Data;
 
 namespace ComunidadVecinos.Domain
 {
@@ -59,6 +60,10 @@ namespace ComunidadVecinos.Domain
 };
 
 
+        public Propietario()
+        {
+            this.pm = new PropietarioManage();
+        }
 
         public Propietario(string dniP)
         {
@@ -90,6 +95,11 @@ namespace ComunidadVecinos.Domain
         public void Insertar()
         {
             pm.insertOwner(this);
+        }
+
+        public DataTable getD()
+        {
+            return pm.getDatosPropietarios();
         }
     }
 }
