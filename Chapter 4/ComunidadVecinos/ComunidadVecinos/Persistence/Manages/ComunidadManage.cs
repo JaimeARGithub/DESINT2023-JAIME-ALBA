@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace ComunidadVecinos.Persistence.Manages
 {
@@ -23,7 +24,7 @@ namespace ComunidadVecinos.Persistence.Manages
         public DataTable getReportMinihito2()
         {
             // hacemos la select de la info almacenada en la base de datos y la almacenamos en una lista de objetos
-            List<Object> col = DBBroker.obtenerAgente().leer("SELECT GATEKEEPER_APARTMENT, SHOWERS_AND_TOILETS, PLAY_AREA, EXERCISE_AREA, SOCIAL_ROOM, TENNIS_COURT, PADEL_COURT FROM communities");
+            List<Object> col = DBBroker.obtenerAgente().leer("SELECT GATEKEEPER_APARTMENT, SHOWERS_AND_TOILETS, PLAY_AREA, EXERCISE_AREA, SOCIAL_ROOM, TENNIS_COURT, PADEL_COURT from communities");
 
             // creamos una data table, dos columnas con sus nombres y las añadimos a la data table
             DataTable dt = new DataTable();
@@ -35,54 +36,56 @@ namespace ComunidadVecinos.Persistence.Manages
             DataRow row = null;
 
 
-            if ((bool) col[0]==true)
+            foreach(List<Object> aux in col)
             {
-                row = dt.NewRow();
-                row[0] = "GATEKEEPER_APARTMENT";
-                dt.Rows.Add(row);
-            }
+                if (Int32.Parse(aux[0].ToString())==1)
+                {
+                    row = dt.NewRow();
+                    row[0] = "GATEKEEPER_APARTMENT";
+                    dt.Rows.Add(row);
+                }
 
+                if (Int32.Parse(aux[1].ToString()) == 1)
+                {
+                    row = dt.NewRow();
+                    row[0] = "SHOWERS_AND_TOILETS";
+                    dt.Rows.Add(row);
+                }
 
-            if ((bool)col[1] == true)
-            {
-                row = dt.NewRow();
-                row[0] = "SHOWERS_AND_TOILETS";
-                dt.Rows.Add(row);
-            }
+                if (Int32.Parse(aux[2].ToString()) == 1)
+                {
+                    row = dt.NewRow();
+                    row[0] = "PLAY_AREA";
+                    dt.Rows.Add(row);
+                }
 
-            if ((bool)col[2] == true)
-            {
-                row = dt.NewRow();
-                row[0] = "PLAY_AREA";
-                dt.Rows.Add(row);
-            }
+                if (Int32.Parse(aux[3].ToString()) == 1)
+                {
+                    row = dt.NewRow();
+                    row[0] = "EXERCISE_AREA";
+                    dt.Rows.Add(row);
+                }
 
-            if ((bool)col[3] == true)
-            {
-                row = dt.NewRow();
-                row[0] = "EXERCISE_AREA";
-                dt.Rows.Add(row);
-            }
+                if (Int32.Parse(aux[4].ToString()) == 1)
+                {
+                    row = dt.NewRow();
+                    row[0] = "SOCIAL_ROOM";
+                    dt.Rows.Add(row);
+                }
 
-            if ((bool)col[4] == true)
-            {
-                row = dt.NewRow();
-                row[0] = "SOCIAL_ROOM";
-                dt.Rows.Add(row);
-            }
+                if (Int32.Parse(aux[5].ToString()) == 1)
+                {
+                    row = dt.NewRow();
+                    row[0] = "TENNIS_COURT";
+                    dt.Rows.Add(row);
+                }
 
-            if ((bool)col[5] == true)
-            {
-                row = dt.NewRow();
-                row[0] = "TENNIS_COURT";
-                dt.Rows.Add(row);
-            }
-
-            if ((bool)col[6] == true)
-            {
-                row = dt.NewRow();
-                row[0] = "PADEL_COURT";
-                dt.Rows.Add(row);
+                if (Int32.Parse(aux[6].ToString()) == 1)
+                {
+                    row = dt.NewRow();
+                    row[0] = "PADEL_COURT";
+                    dt.Rows.Add(row);
+                }
             }
 
 
