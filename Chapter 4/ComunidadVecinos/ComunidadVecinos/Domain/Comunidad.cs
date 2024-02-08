@@ -2,6 +2,7 @@
 using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -33,6 +34,11 @@ namespace ComunidadVecinos.Domain
 
 
 
+        public Comunidad()
+        {
+            cm = new ComunidadManage();
+        }
+
         public Comunidad(string nombre, string direccion, string fechaCreac, int metrosCuadrados, bool hayPiscina, int numPortales)
         {
             this.Id = autoID++;
@@ -49,6 +55,12 @@ namespace ComunidadVecinos.Domain
         public void Insert()
         {
             cm.insertCommunity(this);
+        }
+
+
+        public DataTable getMH2()
+        {
+            return cm.getReportMinihito2();
         }
     }
 

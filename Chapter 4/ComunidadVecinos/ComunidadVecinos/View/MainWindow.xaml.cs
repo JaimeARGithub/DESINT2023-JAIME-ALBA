@@ -394,9 +394,9 @@ namespace ComunidadVecinos
                     //FrameReport.Content = pagInforme;
 
 
-                    TabControl.SelectedIndex = 2;
-                    PagPRUEBA prueba = new PagPRUEBA();
-                    FramePRUEBA.Content = prueba;
+                    //TabControl.SelectedIndex = 2;
+                    //PagPRUEBA prueba = new PagPRUEBA();
+                    //FramePRUEBA.Content = prueba;
                 }
 
                 
@@ -669,6 +669,19 @@ namespace ComunidadVecinos
 
 
 
+        private void btnNeigh_Click(object sender, RoutedEventArgs e)
+        {
+            TabControl.SelectedIndex = 2;
+            Pag1Minihito pag = new Pag1Minihito();
+            FrameMinihito.Content = pag;
+        }
+
+        private void btnDep_Click(object sender, RoutedEventArgs e)
+        {
+            TabControl.SelectedIndex = 2;
+            Pag2Minihito pag = new Pag2Minihito();
+            FrameMinihito.Content = pag;
+        }
     }
 
 

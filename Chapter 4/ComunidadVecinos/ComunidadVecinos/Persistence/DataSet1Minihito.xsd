@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1Minihito" targetNamespace="http://tempuri.org/DataSet1Minihito.xsd" xmlns:mstns="http://tempuri.org/DataSet1Minihito.xsd" xmlns="http://tempuri.org/DataSet1Minihito.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1Minihito" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1Minihito" msprop:Generator_DataSetName="DataSet1Minihito">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NEIGHBORHOOD" msprop:Generator_RowEvHandlerName="NEIGHBORHOODRowChangeEventHandler" msprop:Generator_RowDeletedName="NEIGHBORHOODRowDeleted" msprop:Generator_RowDeletingName="NEIGHBORHOODRowDeleting" msprop:Generator_RowEvArgName="NEIGHBORHOODRowChangeEvent" msprop:Generator_TablePropName="NEIGHBORHOOD" msprop:Generator_RowChangedName="NEIGHBORHOODRowChanged" msprop:Generator_RowChangingName="NEIGHBORHOODRowChanging" msprop:Generator_TableClassName="NEIGHBORHOODDataTable" msprop:Generator_RowClassName="NEIGHBORHOODRow" msprop:Generator_TableVarName="tableNEIGHBORHOOD" msprop:Generator_UserTableName="NEIGHBORHOOD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DOORWAY" msprop:Generator_ColumnPropNameInRow="DOORWAY" msprop:Generator_ColumnPropNameInTable="DOORWAYColumn" msprop:Generator_ColumnVarNameInTable="columnDOORWAY" msprop:Generator_UserColumnName="DOORWAY" type="xs:string" minOccurs="0" />
+              <xs:element name="STAIR" msprop:Generator_ColumnPropNameInRow="STAIR" msprop:Generator_ColumnPropNameInTable="STAIRColumn" msprop:Generator_ColumnVarNameInTable="columnSTAIR" msprop:Generator_UserColumnName="STAIR" type="xs:string" minOccurs="0" />
+              <xs:element name="FLOOR" msprop:Generator_ColumnPropNameInRow="FLOOR" msprop:Generator_ColumnPropNameInTable="FLOORColumn" msprop:Generator_ColumnVarNameInTable="columnFLOOR" msprop:Generator_UserColumnName="FLOOR" type="xs:string" minOccurs="0" />
+              <xs:element name="DOOR" msprop:Generator_ColumnPropNameInRow="DOOR" msprop:Generator_ColumnPropNameInTable="DOORColumn" msprop:Generator_ColumnVarNameInTable="columnDOOR" msprop:Generator_UserColumnName="DOOR" type="xs:string" minOccurs="0" />
+              <xs:element name="NUMBER_OF_OWNERS" msprop:Generator_ColumnPropNameInRow="NUMBER_OF_OWNERS" msprop:Generator_ColumnPropNameInTable="NUMBER_OF_OWNERSColumn" msprop:Generator_ColumnVarNameInTable="columnNUMBER_OF_OWNERS" msprop:Generator_UserColumnName="NUMBER_OF_OWNERS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

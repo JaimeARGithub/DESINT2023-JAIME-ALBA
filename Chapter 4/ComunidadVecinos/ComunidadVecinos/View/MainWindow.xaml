@@ -1,9 +1,10 @@
-﻿<Window x:Class="ComunidadVecinos.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComunidadVecinos"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="ComunidadVecinos.MainWindow"
         mc:Ignorable="d"
         Title="Community manager" Height="450" Width="800">
 
@@ -51,8 +52,8 @@
         <Style TargetType="{x:Type TabControl}" x:Name="StyleTabControl">
             <Setter Property="Background" Value="#2E6DBD"/>
             <Setter Property="FontWeight" Value="Bold" />
-            
-            
+
+
         </Style>
 
         <Style TargetType="{x:Type Grid}" x:Name="StyleTab">
@@ -68,8 +69,8 @@
             <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="NEIGHBORHOOD ASSOCIATION" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="35"></Label>
-        
+        <Label Content="NEIGHBORHOOD ASSOCIATION" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="35"/>
+
         <TabControl x:Name="TabControl" TabStripPlacement="Left" Grid.Row="1">
 
             <TabControl.Resources>
@@ -101,24 +102,35 @@
                         <RowDefinition Height="2*"/>
                     </Grid.RowDefinitions>
 
-                    <Frame Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="9" x:Name="FrameCommunity">
-                        
-                    </Frame>
+                    <Frame Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="9" x:Name="FrameCommunity"/>
 
                     <StackPanel Grid.Column="2" Grid.Row="9" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
-                        <Button Height="30" Width="65" Content="Previous" x:Name="btnPrev" HorizontalAlignment="Right" Click="btnPrev_Click" ></Button>
-                        <Label Content="                 " Background="#F2F2F2"></Label>
-                        <Button Height="30" Width="65" Content="Next" x:Name="btnNext" HorizontalAlignment="Right" Click="btnNext_Click" ></Button>
+                        <Button Height="30" Width="65" Content="Previous" x:Name="btnPrev" HorizontalAlignment="Right" Click="btnPrev_Click" />
+                        <Label Content="                 " Background="#F2F2F2"/>
+                        <Button Height="30" Width="65" Content="Next" x:Name="btnNext" HorizontalAlignment="Right" Click="btnNext_Click" />
                     </StackPanel>
+                    <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="243,13,0,0" Grid.Row="5" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
-            
+
             <TabItem Header="REPORT" VerticalAlignment="Center">
                 <Grid Background="#F2F2F2">
 
-                    <Frame x:Name="FrameReport">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
 
-                    </Frame>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="btnNeigh" Content="NEIGHBORHOOD" Grid.Row="1" Grid.Column="0" Click="btnNeigh_Click"></Button>
+                    <Button x:Name="btnDep" Content="DEPENDENCIES" Grid.Row="1" Grid.Column="2" Click="btnDep_Click"></Button>
+
 
                 </Grid>
             </TabItem>
@@ -126,9 +138,7 @@
             <TabItem Header="">
                 <Grid Background="#F2F2F2">
 
-                    <Frame x:Name="FramePRUEBA">
-
-                    </Frame>
+                    <Frame x:Name="FrameMinihito"/>
 
                 </Grid>
             </TabItem>

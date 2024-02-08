@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2Minihito" targetNamespace="http://tempuri.org/DataSet2Minihito.xsd" xmlns:mstns="http://tempuri.org/DataSet2Minihito.xsd" xmlns="http://tempuri.org/DataSet2Minihito.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2Minihito" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet2Minihito" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet2Minihito">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DEPENDENCIES" msprop:Generator_RowClassName="DEPENDENCIESRow" msprop:Generator_RowEvHandlerName="DEPENDENCIESRowChangeEventHandler" msprop:Generator_RowDeletedName="DEPENDENCIESRowDeleted" msprop:Generator_RowDeletingName="DEPENDENCIESRowDeleting" msprop:Generator_RowEvArgName="DEPENDENCIESRowChangeEvent" msprop:Generator_TablePropName="DEPENDENCIES" msprop:Generator_RowChangedName="DEPENDENCIESRowChanged" msprop:Generator_UserTableName="DEPENDENCIES" msprop:Generator_RowChangingName="DEPENDENCIESRowChanging" msprop:Generator_TableClassName="DEPENDENCIESDataTable" msprop:Generator_TableVarName="tableDEPENDENCIES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA" msprop:Generator_UserColumnName="DATA" msprop:Generator_ColumnPropNameInTable="DATAColumn" msprop:Generator_ColumnPropNameInRow="DATA" msprop:Generator_ColumnVarNameInTable="columnDATA" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

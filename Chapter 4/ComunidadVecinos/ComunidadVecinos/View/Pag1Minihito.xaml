@@ -1,0 +1,17 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComunidadVecinos.View"
+      xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="ComunidadVecinos.View.Pag1Minihito"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Pag1Minihito">
+
+    <Grid Background="#F2F2F2">
+
+        <Viewer:CrystalReportsViewer x:Name="CrMini1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="450" Width="800" Loaded="CrMini1_Loaded"/>
+
+    </Grid>
+</Page>

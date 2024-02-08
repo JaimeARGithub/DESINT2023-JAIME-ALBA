@@ -117,6 +117,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Persistence\DataSet1Minihito.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1Minihito.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Persistence\DataSet2Minihito.cs">
+      <DependentUpon>DataSet2Minihito.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Persistence\DataSet2Minihito.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2Minihito.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Persistence\DataSetPRUEBA.cs">
       <DependentUpon>DataSetPRUEBA.xsd</DependentUpon>
     </Compile>
@@ -125,15 +138,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetPRUEBA.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View\CrystalReport1Minihito.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1Minihito.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\CrystalReport2Minihito.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2Minihito.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="View\CrystalReportPRUEBA.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReportPRUEBA.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="View\Pag1Minihito.xaml.cs">
+      <DependentUpon>Pag1Minihito.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pag2Minihito.xaml.cs">
+      <DependentUpon>Pag2Minihito.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\PagPRUEBA.xaml.cs">
       <DependentUpon>PagPRUEBA.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\Pag1Minihito.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pag2Minihito.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\PagComunidad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -226,6 +265,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\CrystalReport1Minihito.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1Minihito.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CrystalReport2Minihito.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2Minihito.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\CrystalReportPRUEBA.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportPRUEBA.cs</LastGenOutput>
@@ -241,6 +288,28 @@
     </None>
     <None Include="Persistence\DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Persistence\DataSet1Minihito.xsc">
+      <DependentUpon>DataSet1Minihito.xsd</DependentUpon>
+    </None>
+    <None Include="Persistence\DataSet1Minihito.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1Minihito.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Persistence\DataSet1Minihito.xss">
+      <DependentUpon>DataSet1Minihito.xsd</DependentUpon>
+    </None>
+    <None Include="Persistence\DataSet2Minihito.xsc">
+      <DependentUpon>DataSet2Minihito.xsd</DependentUpon>
+    </None>
+    <None Include="Persistence\DataSet2Minihito.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2Minihito.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Persistence\DataSet2Minihito.xss">
+      <DependentUpon>DataSet2Minihito.xsd</DependentUpon>
     </None>
     <None Include="Persistence\DataSetPRUEBA.xsc">
       <DependentUpon>DataSetPRUEBA.xsd</DependentUpon>

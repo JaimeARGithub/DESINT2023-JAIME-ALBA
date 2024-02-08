@@ -50,5 +50,10 @@ namespace ComunidadVecinos.Domain
         {
             return pm.getReportPisos();
         }
+
+        public DataTable getMH1()
+        {
+            return pm.getReportMinihito1();
+        }
     }
 }
