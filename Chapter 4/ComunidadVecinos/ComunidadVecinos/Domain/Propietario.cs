@@ -85,6 +85,11 @@ namespace ComunidadVecinos.Domain
             this.codPostal = RandomNumber.random_Number(1000, 9999);
         }
 
+        /// <summary>
+        /// Obteners the elemento aleatorio.
+        /// </summary>
+        /// <param name="lista">The lista.</param>
+        /// <returns></returns>
         private string ObtenerElementoAleatorio(List<string> lista)
         {
             Random random = new Random();
@@ -92,6 +97,9 @@ namespace ComunidadVecinos.Domain
             return lista[indice];
         }
 
+        /// <summary>
+        /// Insertars this instance.
+        /// </summary>
         public void Insertar()
         {
             pm.insertOwner(this);

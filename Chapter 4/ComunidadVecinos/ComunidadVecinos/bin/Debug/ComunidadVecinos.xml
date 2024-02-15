@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ComunidadVecinos</name>
+    </assembly>
+    <members>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1Minihito">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1Minihito.NEIGHBORHOODDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1Minihito.NEIGHBORHOODRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1Minihito.NEIGHBORHOODRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet2Minihito">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet2Minihito.DEPENDENCIESDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet2Minihito.DEPENDENCIESRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet2Minihito.DEPENDENCIESRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSetPRUEBA">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSetPRUEBA.OWNERSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSetPRUEBA.OWNERSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSetPRUEBA.OWNERSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1.APARTMENTSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1.APARTMENTSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.DataSet1.APARTMENTSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.View.Pag1Minihito">
+            <summary>
+            Lógica de interacción para Pag1Minihito.xaml
+            </summary>
+            <summary>
+            Pag1Minihito
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.View.Pag1Minihito.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.View.Pag2Minihito">
+            <summary>
+            Lógica de interacción para Pag2Minihito.xaml
+            </summary>
+            <summary>
+            Pag2Minihito
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.View.Pag2Minihito.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.View.PagPRUEBA">
+            <summary>
+            Lógica de interacción para PagPRUEBA.xaml
+            </summary>
+            <summary>
+            PagPRUEBA
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.View.PagPRUEBA.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.View.PagDependencias">
+            <summary>
+            Lógica de interacción para PagDependencias.xaml
+            </summary>
+            <summary>
+            PagDependencias
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.View.PagDependencias.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.View.PagInforme">
+            <summary>
+            Lógica de interacción para PagInforme.xaml
+            </summary>
+            <summary>
+            PagInforme
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.View.PagInforme.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.App">
+            <summary>
+            Lógica de interacción para App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Propietario.ObtenerElementoAleatorio(System.Collections.Generic.List{System.String})">
+            <summary>
+            Obteners the elemento aleatorio.
+            </summary>
+            <param name="lista">The lista.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Propietario.Insertar">
+            <summary>
+            Insertars this instance.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.RandomNumber.random_Number(System.Int32,System.Int32)">
+             Method that extracts of Sample its amount and increases the number of valid samples
+            
+        </member>
+        <member name="T:ComunidadVecinos.PagComunidad">
+            <summary>
+            Lógica de interacción para PagComunidad.xaml
+            </summary>
+            <summary>
+            PagComunidad
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.PagComunidad.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.PagPortal">
+            <summary>
+            Lógica de interacción para PagPortal.xaml
+            </summary>
+            <summary>
+            PagPortal
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.PagPortal.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.MainWindow">
+            <summary>
+            Lógica de interacción para MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:ComunidadVecinos.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:ComunidadVecinos.Properties.Resources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+    </members>
+</doc>
