@@ -8,15 +8,41 @@ using System.Threading.Tasks;
 
 namespace ComunidadVecinos.Persistence.Manages
 {
+    /// <summary>
+    /// Clase de persistencia que permite la interacción entre la base
+    /// de datos y el objeto Propietario, haciendo posible manipular
+    /// los datos relativos a esta entidad en la BBDD sin acceder
+    /// directamente a la misma.
+    /// </summary>
     public class PropietarioManage
     {
+        /// <summary>
+        /// Método que emplea una instancia del DBBroker para establecer
+        /// conexión con la base de datos e insertar en la misma el objeto
+        /// Propietario que se esté pasando por parámetro, introduciendo en
+        /// las columnas de la tabla los atributos del objeto.
+        /// </summary>
+        /// <param name="p">Propietario a insertar.</param>
         public void insertOwner(Propietario p)
         {
             DBBroker dbBroker = DBBroker.obtenerAgente();
             dbBroker.modificar("INSERT INTO OWNERS (DNI, NAME, SURNAMES, RESIDENCE_ADDRESS, LOCALITY, POSTAL_CODE, PROVINCE) VALUES ('" + p.dni + "','" + p.nombre + "','" + p.apellidos + "','" + p.direcResidencia + "','" + p.localidad + "'," + p.codPostal + ",'" + p.provincia + "')");
         }
 
-
+        /// <summary>
+        /// Método que ejecuta una consulta a la base de datos para hallar
+        /// información sobre los propietarios, y tras obtenerla, crear y 
+        /// devolver una Data Table cuyo contenido será la información 
+        /// encontrada sobre los propietarios.
+        /// 
+        /// Dado que la consulta select solamente solicita información sobre
+        /// el DNI, el nombre y los apellidos, éstos serán los datos contenidos
+        /// en la Data Table que se devolverá.
+        /// 
+        /// La creación de la Data Table en base a los datos obtenidos de la
+        /// consulta procede igual que en casos anteriores.
+        /// </summary>
+        /// <returns>Data Table con información sobre los propietarios.</returns>
         public DataTable getDatosPropietarios()
         {
             // hacemos la select de la info almacenada en la base de datos y la almacenamos en una lista de objetos

@@ -8,17 +8,59 @@ using System.Threading.Tasks;
 
 namespace ComunidadVecinos.Persistence.Manages
 {
+    /// <summary>
+    /// Clase de persistencia que permite la interacción entre la base
+    /// de datos y el objeto Piso, haciendo posible manipular
+    /// los datos relativos a esta entidad en la BBDD sin acceder
+    /// directamente a la misma.
+    /// </summary>
     public class PisoManage
     {
         public DataTable table { get; set; }
 
+        /// <summary>
+        /// Método que emplea una instancia del DBBroker para establecer
+        /// conexión con la base de datos e insertar en la misma el objeto
+        /// Piso que se esté pasando por parámetro, introduciendo en
+        /// las columnas de la tabla los atributos del objeto.
+        /// </summary>
+        /// <param name="p">Piso a insertar.</param>
         public void insertPiso(Piso p)
         {
             DBBroker dbBroker = DBBroker.obtenerAgente();
             dbBroker.modificar("INSERT INTO APARTMENTS (ID, COMMUNITY_ID, DNI_OWNER_1, DNI_OWNER_2, DOORWAY, STAIR, FLOOR, DOOR, STORAGE_ROOM, PARKING_SPOT) VALUES (" + p.Id + "," + p.idComunidad + ",'" + p.idProp1 + "','" + p.idProp2 + "'," + p.numPortal + ",'" + p.numEscalera + "'," + p.numPlanta + ",'" + p.puerta + "'," + p.numTrastero + "," + p.numPlaza + ")");
         }
 
-
+        /// <summary>
+        /// Método empleado como ejemplo de generación de Crystal Reports
+        /// en clase.
+        /// 
+        /// Método que ejecuta una consulta a la base de datos para hallar
+        /// información sobre los pisos (id, portal, trastero, plaza de 
+        /// parking, propietario uno y propietario dos), y tras obtenerla,
+        /// crear y devolver una Data Table que contiene la información
+        /// resultante de la consulta.
+        /// 
+        /// En primer lugar se ejecuta la consulta y se obtiene de la misma
+        /// el objeto que contiene el resultado, col. Tras ello, se crea una
+        /// Data Table como nueva y se le añaden seis columnas, correspondientes
+        /// al número de columnas que existe en la información obtenida de la
+        /// consulta a BBDD.
+        /// 
+        /// Tras ello, se recorre col; col se establece como lista de objetos,
+        /// siendo cada objeto una fila de la consulta, pero cada uno de estos
+        /// objetos (filas) se establece como otra lista de objetos, siendo cada
+        /// objeto una columna de la fila de la consulta.
+        /// 
+        /// Se recorre col iterando por cada objeto (que es lista de objetos),
+        /// se crea una fila por cada iteración y a cada columna de esta fila
+        /// creada se le asigna el valor que tenga la columna de la fila de col
+        /// que se esté recorriendo. Al acabar cada iteración, a la Data Table
+        /// se le añade la fila creada.
+        /// 
+        /// Al acabar de iterar, se devuelve la Data Table.
+        /// </summary>
+        /// <returns>Data Table con información sobre los pisos.</returns>
         public DataTable getReportPisos()
         {
             // hacemos la select de la info almacenada en la base de datos y la almacenamos en una lista de objetos
@@ -64,7 +106,21 @@ namespace ComunidadVecinos.Persistence.Manages
 
 
 
-
+        /// <summary>
+        /// Método que ejecuta una consulta a la base de datos para hallar
+        /// información sobre los pisos (de cada uno se extrae el portal,
+        /// la escalera, la planta, la letra y el número de propietarios),
+        /// y tras obtenerla, crear y devolver una Data Table que contiene 
+        /// la información resultante de la consulta.
+        /// 
+        /// La consulta establecida en la sentencia select cruza las tablas
+        /// Pisos y PisosPropietarios.
+        /// 
+        /// La obtención de información de la consulta y creación de la
+        /// Data Table en base a la misma procede igual que en ocasiones
+        /// anteriores.
+        /// </summary>
+        /// <returns>Data Table con información sobre los pisos.</returns>
         public DataTable getReportMinihito1()
         {
             // hacemos la select de la info almacenada en la base de datos y la almacenamos en una lista de objetos

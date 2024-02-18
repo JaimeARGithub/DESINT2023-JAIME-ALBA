@@ -19,7 +19,18 @@ using System.Windows.Shapes;
 namespace ComunidadVecinos
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para la ventana principal.
+    /// 
+    /// Se usarán distintas variables: 
+    /// -Un contador para identificar el punto de avance de creación 
+    /// de la comunidad en que el usuario se encuentra 
+    /// -Objetos página de comunidad, portal y dependencias, que pasarán
+    /// a ocupar el frame principal dependiendo del valor que tenga el
+    /// contador
+    /// -Las variables necesarias para almacenar la información de la 
+    /// comunidad y de los portales
+    /// -Las variables booleanas que almacenarán información sobre las
+    /// dependencias de la comunidad
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -50,6 +61,13 @@ namespace ComunidadVecinos
         bool isTennis;
         bool isPadel;
 
+
+        /// <summary>
+        /// Inicializa la ventana principal.
+        /// El contador se establece a cero, el frame principal pasa
+        /// a estar ocupado por la página de creación de comunidad y
+        /// el botón de retroceso se invisibiliza.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -63,6 +81,26 @@ namespace ComunidadVecinos
             
         }
 
+        /// <summary>
+        /// Método que maneja el click sobre el botón "Next" en la interfaz de usuario,
+        /// empleado para avanzar en el proceso de creación de una comunidad.
+        /// 
+        /// Si el contador indica que estamos en la página de creación de la comunidad:
+        /// - Recopila los datos para las variables necesarias para crear la comunidad.
+        /// - Actualiza la interfaz y muestra la página para crear portales.
+        /// 
+        /// Si el contador indica que estamos creando un portal:
+        /// - Recoge los datos del portal y los guarda.
+        /// - Avanza a la siguiente página de creación de portal.
+        /// 
+        /// Si el contador indica que estamos en la última página (creación de dependencias):
+        /// - Guarda los datos del último portal creado.
+        /// - Recopila y asigna los datos para las dependencias de la comunidad.
+        /// - Genera todos los datos en base a lo que el usuario haya introducido y los
+        /// inserta en la base de datos.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNext_Click(object sender, RoutedEventArgs e)
         {
             // PÁGINA DE CREACIÓN DE COMUNIDAD
@@ -462,8 +500,13 @@ namespace ComunidadVecinos
             
         }
 
-        // Método que genera, desordena y devuelve una lista de números que
-        // abarca del 1 al número que se pase por parámetro
+     
+        /// <summary>
+        /// Método que genera, desordena y devuelve una lista de números que
+        /// abarca del 1 al número que se pase por parámetro.
+        /// </summary>
+        /// <param name="x">Límite superior para la lista de números.</param>
+        /// <returns>Lista de números desordenada.</returns>
         public List<int> GenerateAndShuffleList(int x)
         {
             List<int> result = new List<int>();
@@ -488,7 +531,12 @@ namespace ComunidadVecinos
             return result;
         }
 
-        // Imprimir troncho de texto
+
+        /// <summary>
+        /// Método que imprime los datos de la comunidad que se pase por parámetro.
+        /// </summary>
+        /// <param name="comunidad">Objeto comunidad cuyos datos se imprimirán.</param>
+        /// <param name="outputTextBox">La caja de texto empleada para la salida.</param>
         public static void Imprimir(Comunidad comunidad, TextBox outputTextBox)
         {
             outputTextBox.AppendText($"Datos de la Comunidad: {comunidad.nombre}\n"); outputTextBox.AppendText($"Comunidad ID: {comunidad.Id}\n");
@@ -511,7 +559,30 @@ namespace ComunidadVecinos
 
 
 
-
+        /// <summary>
+        /// Método que maneja el click sobre el botón "Previous" en la interfaz de usuario,
+        /// empleado para retroceder en el proceso de creación de una comunidad.
+        /// 
+        /// Disminuye el valor del contador para indicar el retroceso en el proceso.
+        /// 
+        /// Si el contador indica que estamos en la pantalla inicial (creación de comunidad):
+        /// - Guarda temporalmente los datos del portal si se habían rellenado los campos.
+        /// - Cambia la interfaz de usuario a la pantalla de creación de comunidad, restableciendo
+        /// en los distintos campos los datos que se hubieran indicado previamente.
+        /// 
+        /// Si el contador indica que estamos en la última página (creación de dependencias) y
+        /// estamos retrocediendo a la página de creación de portal:
+        /// - Cambia la interfaz de usuario a la página de creación de portal, restableciendo
+        /// en los distintos campos los datos que se hubieran indicado previamente.
+        /// - Actualiza la etiqueta para mostrar el número de portal correspondiente.
+        /// 
+        /// Si el contador indica que estamos retrocediendo de un portal a otro:
+        /// - Guarda temporalmente los datos del portal si se habían rellenado los campos.
+        /// - Actualiza la etiqueta para mostrar el número de portal correspondiente.
+        /// - Restablece los campos con los datos del portal anteriormente guardados.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnPrev_Click(object sender, RoutedEventArgs e)
         {
             cont--;
@@ -583,84 +654,178 @@ namespace ComunidadVecinos
             }
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de piscina.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYes_Checked(object sender, RoutedEventArgs e)
         {
             paginaCom.btnNo.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de piscina.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNo_Checked(object sender, RoutedEventArgs e)
         {
             paginaCom.btnNo.IsChecked = false;
         }
 
 
-
-
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de portero.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYesGatekeeper_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnNoGatekeeper.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de portero.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNoGatekeeper_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnYesGatekeeper.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de duchas comunitarias.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYesShower_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnNoShower.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de duchas comunitarias.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNoShower_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnYesShower.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de zona de juego.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYesPlay_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnNoPlay.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de zona de juego.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNoPlay_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnYesPlay.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de zona de ejercicio.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYesExercise_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnNoExercise.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de zona de ejercicio.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNoExercise_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnYesExercise.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de sala social.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYesRoom_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnNoRoom.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de sala social.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNoRoom_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnYesRoom.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de pista de tenis.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYesTennis_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnNoTennis.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de pista de tenis.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNoTennis_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnYesTennis.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de sí en la asignación de pista de pádel.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnYesPadel_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnNoPadel.IsChecked = false;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de marcado para el radiobutton
+        /// de no en la asignación de pista de pádel.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNoPadel_Checked(object sender, RoutedEventArgs e)
         {
             paginaDep.btnYesPadel.IsChecked = false;
@@ -668,7 +833,13 @@ namespace ComunidadVecinos
 
 
 
-
+        /// <summary>
+        /// Método que maneja el evento de pulsación sobre el botón "Neighborhood",
+        /// modificando el contenido del frame principal para que pase a mostrar un
+        /// Crystal Report con información sobre los pisos.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnNeigh_Click(object sender, RoutedEventArgs e)
         {
             TabControl.SelectedIndex = 2;
@@ -676,6 +847,13 @@ namespace ComunidadVecinos
             FrameMinihito.Content = pag;
         }
 
+        /// <summary>
+        /// Método que maneja el evento de pulsación sobre el botón "Dependencies",
+        /// modificando el contenido del frame principal para que pase a mostrar un
+        /// Crystal Report con información sobre las dependencias de la comunidad.
+        /// </summary>
+        /// <param name="sender">Fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void btnDep_Click(object sender, RoutedEventArgs e)
         {
             TabControl.SelectedIndex = 2;
@@ -685,12 +863,24 @@ namespace ComunidadVecinos
     }
 
 
-    // Clase para la generación de DNIs aleatorios
+    /// <summary>
+    /// Clase interna auxiliar empleada para la generación de DNIs aleatorios irrepetibles.
+    /// </summary>
     internal class DniGenerator
     {
         private static List<string> dnisGenerados = new List<string>();
         private static Random random = new Random();
 
+        /// <summary>
+        /// Método que invoca continuamente al método de generación de DNIs
+        /// (existente más abajo) mientras el DNI que devuelva dicho método
+        /// se encuentre contenido en la lista de DNIs atributo de la clase,
+        /// asegurando que los únicos DNIs que se añadan a dicha lista sean
+        /// DNIs únicos.
+        /// Cuando se genere un DNI único, dicho DNI será agregado a la lista
+        /// de DNIs atributo de la clase y también devuelto por el método.
+        /// </summary>
+        /// <returns>El DNI único generado.</returns>
         public static string GenerarDNIUnico()
         {
             string nuevoDNI;
@@ -704,6 +894,10 @@ namespace ComunidadVecinos
             return nuevoDNI;
         }
 
+        /// <summary>
+        /// Método que genera y devuelve una String con un DNI.
+        /// </summary>
+        /// <returns>String con el DNI generado.</returns>
         private static string GenerarDNI()
         {
             int numero = random.Next(10000000, 99999999);

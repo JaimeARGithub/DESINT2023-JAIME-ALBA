@@ -27,6 +27,29 @@ namespace ComunidadVecinos.View
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Método que realiza la carga del Crystal Report.
+        /// 
+        /// En primer lugar, crea una instancia vacía del objeto cuyo manage
+        /// nos permitirá obtener la DataTable necesaria para el Crystal Report.
+        /// 
+        /// Tras ello, invoca el método de obtención de la DataTable y guarda los
+        /// datos obtenidos en un objeto.
+        /// 
+        /// Después, crea una instancia del objeto Crystal Report que hayamos designado
+        /// para contener los datos obtenidos de la Data Table, debiendo coincidir
+        /// la estructura de columnas del Crystal Report y de la Data Table.
+        /// 
+        /// Acto seguido, al objeto Crystal Report creado se le indica que usará las
+        /// tablas que seleccionemos y que se hallarán en el DataSet previamente creado,
+        /// y que la fuente de los datos que usará es la Data Table antes recogida.
+        /// 
+        /// Para finalizar, el objeto Crystal Report (ya con los datos asignados) se
+        /// asigna como núcleo de vista a un elemento de interfaz Crystal Report que
+        /// hayamos establecido.
+        /// </summary>
+        /// <param name="sender">La fuente del evento.</param>
+        /// <param name="e">Instancia de <see cref="RoutedEventArgs"/> que contiene los datos del evento.</param>
         private void CrvPRUEBA_Loaded(object sender, RoutedEventArgs e)
         {
             // declaro objeto people

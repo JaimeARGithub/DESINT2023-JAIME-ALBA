@@ -84,6 +84,156 @@
             Row event argument class
             </summary>
         </member>
+        <member name="T:ComunidadVecinos.Persistence.Manages.PisosPropietariosManage">
+            <summary>
+            Clase de persistencia que permite la interacción entre la base
+            de datos y el objeto PisosPropietarios, haciendo posible manipular
+            los datos relativos a esta entidad en la BBDD sin acceder
+            directamente a la misma.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.PisosPropietariosManage.insertPisoProp(ComunidadVecinos.Domain.PisosPropietarios)">
+            <summary>
+            Método que emplea una instancia del DBBroker para establecer
+            conexión con la base de datos e insertar en la misma el objeto
+            PisosPropietarios que se esté pasando por parámetro, 
+            introduciendo en las columnas de la tabla los atributos del objeto.
+            </summary>
+            <param name="p">PisosPropietarios a insertar.</param>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.Manages.PropietarioManage">
+            <summary>
+            Clase de persistencia que permite la interacción entre la base
+            de datos y el objeto Propietario, haciendo posible manipular
+            los datos relativos a esta entidad en la BBDD sin acceder
+            directamente a la misma.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.PropietarioManage.insertOwner(ComunidadVecinos.Domain.Propietario)">
+            <summary>
+            Método que emplea una instancia del DBBroker para establecer
+            conexión con la base de datos e insertar en la misma el objeto
+            Propietario que se esté pasando por parámetro, introduciendo en
+            las columnas de la tabla los atributos del objeto.
+            </summary>
+            <param name="p">Propietario a insertar.</param>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.PropietarioManage.getDatosPropietarios">
+            <summary>
+            Método que ejecuta una consulta a la base de datos para hallar
+            información sobre los propietarios, y tras obtenerla, crear y 
+            devolver una Data Table cuyo contenido será la información 
+            encontrada sobre los propietarios.
+            
+            Dado que la consulta select solamente solicita información sobre
+            el DNI, el nombre y los apellidos, éstos serán los datos contenidos
+            en la Data Table que se devolverá.
+            
+            La creación de la Data Table en base a los datos obtenidos de la
+            consulta procede igual que en casos anteriores.
+            </summary>
+            <returns>Data Table con información sobre los propietarios.</returns>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.Manages.ComunidadManage">
+            <summary>
+            Clase de persistencia que permite la interacción entre la base
+            de datos y el objeto Comunidad, haciendo posible manipular
+            los datos relativos a esta entidad en la BBDD sin acceder
+            directamente a la misma.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.ComunidadManage.insertCommunity(ComunidadVecinos.Domain.Comunidad)">
+            <summary>
+            Método que emplea una instancia del DBBroker para establecer
+            conexión con la base de datos e insertar en la misma el objeto
+            Comunidad que se esté pasando por parámetro, introduciendo en
+            las columnas de la tabla los atributos del objeto.
+            </summary>
+            <param name="c">Comunidad a insertar.</param>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.ComunidadManage.getReportMinihito2">
+            <summary>
+            Método que ejecuta una consulta a la base de datos para hallar
+            información sobre las dependencias de la en teoría única comunidad
+            existente, y tras obtenerla, crear y devolver una Data Table cuyo
+            contenido varía en función de la información encontrada sobre las
+            dependencias de la comunidad.
+            
+            El objeto obtenido con la sentencia select es col; se compone como una
+            lista de objetos al tratarse de una consulta que puede devolver varias
+            filas (cada fila es un objeto), y cada fila a su vez se compone como una
+            lista de objetos al poseer cada fila varias columnas (cada columna es
+            un objeto), con lo que, si col es una lista de objetos (filas), cada uno
+            de estos objetos es también una lista de objetos (columnas).
+            </summary>
+            <returns>Data Table con información sobre las dependencias de la comunidad.</returns>
+        </member>
+        <member name="T:ComunidadVecinos.Persistence.Manages.PisoManage">
+            <summary>
+            Clase de persistencia que permite la interacción entre la base
+            de datos y el objeto Piso, haciendo posible manipular
+            los datos relativos a esta entidad en la BBDD sin acceder
+            directamente a la misma.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.PisoManage.insertPiso(ComunidadVecinos.Domain.Piso)">
+            <summary>
+            Método que emplea una instancia del DBBroker para establecer
+            conexión con la base de datos e insertar en la misma el objeto
+            Piso que se esté pasando por parámetro, introduciendo en
+            las columnas de la tabla los atributos del objeto.
+            </summary>
+            <param name="p">Piso a insertar.</param>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.PisoManage.getReportPisos">
+            <summary>
+            Método empleado como ejemplo de generación de Crystal Reports
+            en clase.
+            
+            Método que ejecuta una consulta a la base de datos para hallar
+            información sobre los pisos (id, portal, trastero, plaza de 
+            parking, propietario uno y propietario dos), y tras obtenerla,
+            crear y devolver una Data Table que contiene la información
+            resultante de la consulta.
+            
+            En primer lugar se ejecuta la consulta y se obtiene de la misma
+            el objeto que contiene el resultado, col. Tras ello, se crea una
+            Data Table como nueva y se le añaden seis columnas, correspondientes
+            al número de columnas que existe en la información obtenida de la
+            consulta a BBDD.
+            
+            Tras ello, se recorre col; col se establece como lista de objetos,
+            siendo cada objeto una fila de la consulta, pero cada uno de estos
+            objetos (filas) se establece como otra lista de objetos, siendo cada
+            objeto una columna de la fila de la consulta.
+            
+            Se recorre col iterando por cada objeto (que es lista de objetos),
+            se crea una fila por cada iteración y a cada columna de esta fila
+            creada se le asigna el valor que tenga la columna de la fila de col
+            que se esté recorriendo. Al acabar cada iteración, a la Data Table
+            se le añade la fila creada.
+            
+            Al acabar de iterar, se devuelve la Data Table.
+            </summary>
+            <returns>Data Table con información sobre los pisos.</returns>
+        </member>
+        <member name="M:ComunidadVecinos.Persistence.Manages.PisoManage.getReportMinihito1">
+            <summary>
+            Método que ejecuta una consulta a la base de datos para hallar
+            información sobre los pisos (de cada uno se extrae el portal,
+            la escalera, la planta, la letra y el número de propietarios),
+            y tras obtenerla, crear y devolver una Data Table que contiene 
+            la información resultante de la consulta.
+            
+            La consulta establecida en la sentencia select cruza las tablas
+            Pisos y PisosPropietarios.
+            
+            La obtención de información de la consulta y creación de la
+            Data Table en base a la misma procede igual que en ocasiones
+            anteriores.
+            </summary>
+            <returns>Data Table con información sobre los pisos.</returns>
+        </member>
         <member name="T:ComunidadVecinos.View.Pag1Minihito">
             <summary>
             Lógica de interacción para Pag1Minihito.xaml
@@ -91,6 +241,31 @@
             <summary>
             Pag1Minihito
             </summary>
+        </member>
+        <member name="M:ComunidadVecinos.View.Pag1Minihito.CrMini1_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que realiza la carga del Crystal Report.
+            
+            En primer lugar, crea una instancia vacía del objeto cuyo manage
+            nos permitirá obtener la DataTable necesaria para el Crystal Report.
+            
+            Tras ello, invoca el método de obtención de la DataTable y guarda los
+            datos obtenidos en un objeto.
+            
+            Después, crea una instancia del objeto Crystal Report que hayamos designado
+            para contener los datos obtenidos de la Data Table, debiendo coincidir
+            la estructura de columnas del Crystal Report y de la Data Table.
+            
+            Acto seguido, al objeto Crystal Report creado se le indica que usará las
+            tablas que seleccionemos y que se hallarán en el DataSet previamente creado,
+            y que la fuente de los datos que usará es la Data Table antes recogida.
+            
+            Para finalizar, el objeto Crystal Report (ya con los datos asignados) se
+            asigna como núcleo de vista a un elemento de interfaz Crystal Report que
+            hayamos establecido.
+            </summary>
+            <param name="sender">La fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
         </member>
         <member name="M:ComunidadVecinos.View.Pag1Minihito.InitializeComponent">
             <summary>
@@ -105,6 +280,31 @@
             Pag2Minihito
             </summary>
         </member>
+        <member name="M:ComunidadVecinos.View.Pag2Minihito.CrMini2_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que realiza la carga del Crystal Report.
+            
+            En primer lugar, crea una instancia vacía del objeto cuyo manage
+            nos permitirá obtener la DataTable necesaria para el Crystal Report.
+            
+            Tras ello, invoca el método de obtención de la DataTable y guarda los
+            datos obtenidos en un objeto.
+            
+            Después, crea una instancia del objeto Crystal Report que hayamos designado
+            para contener los datos obtenidos de la Data Table, debiendo coincidir
+            la estructura de columnas del Crystal Report y de la Data Table.
+            
+            Acto seguido, al objeto Crystal Report creado se le indica que usará las
+            tablas que seleccionemos y que se hallarán en el DataSet previamente creado,
+            y que la fuente de los datos que usará es la Data Table antes recogida.
+            
+            Para finalizar, el objeto Crystal Report (ya con los datos asignados) se
+            asigna como núcleo de vista a un elemento de interfaz Crystal Report que
+            hayamos establecido.
+            </summary>
+            <param name="sender">La fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
         <member name="M:ComunidadVecinos.View.Pag2Minihito.InitializeComponent">
             <summary>
             InitializeComponent
@@ -117,6 +317,31 @@
             <summary>
             PagPRUEBA
             </summary>
+        </member>
+        <member name="M:ComunidadVecinos.View.PagPRUEBA.CrvPRUEBA_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que realiza la carga del Crystal Report.
+            
+            En primer lugar, crea una instancia vacía del objeto cuyo manage
+            nos permitirá obtener la DataTable necesaria para el Crystal Report.
+            
+            Tras ello, invoca el método de obtención de la DataTable y guarda los
+            datos obtenidos en un objeto.
+            
+            Después, crea una instancia del objeto Crystal Report que hayamos designado
+            para contener los datos obtenidos de la Data Table, debiendo coincidir
+            la estructura de columnas del Crystal Report y de la Data Table.
+            
+            Acto seguido, al objeto Crystal Report creado se le indica que usará las
+            tablas que seleccionemos y que se hallarán en el DataSet previamente creado,
+            y que la fuente de los datos que usará es la Data Table antes recogida.
+            
+            Para finalizar, el objeto Crystal Report (ya con los datos asignados) se
+            asigna como núcleo de vista a un elemento de interfaz Crystal Report que
+            hayamos establecido.
+            </summary>
+            <param name="sender">La fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
         </member>
         <member name="M:ComunidadVecinos.View.PagPRUEBA.InitializeComponent">
             <summary>
@@ -144,6 +369,31 @@
             PagInforme
             </summary>
         </member>
+        <member name="M:ComunidadVecinos.View.PagInforme.CrystalReportsViewer_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que realiza la carga del Crystal Report.
+            
+            En primer lugar, crea una instancia vacía del objeto cuyo manage
+            nos permitirá obtener la DataTable necesaria para el Crystal Report.
+            
+            Tras ello, invoca el método de obtención de la DataTable y guarda los
+            datos obtenidos en un objeto.
+            
+            Después, crea una instancia del objeto Crystal Report que hayamos designado
+            para contener los datos obtenidos de la Data Table, debiendo coincidir
+            la estructura de columnas del Crystal Report y de la Data Table.
+            
+            Acto seguido, al objeto Crystal Report creado se le indica que usará las
+            tablas que seleccionemos y que se hallarán en el DataSet previamente creado,
+            y que la fuente de los datos que usará es la Data Table antes recogida.
+            
+            Para finalizar, el objeto Crystal Report (ya con los datos asignados) se
+            asigna como núcleo de vista a un elemento de interfaz Crystal Report que
+            hayamos establecido.
+            </summary>
+            <param name="sender">La fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
         <member name="M:ComunidadVecinos.View.PagInforme.InitializeComponent">
             <summary>
             InitializeComponent
@@ -167,21 +417,222 @@
             Application Entry Point.
             </summary>
         </member>
+        <member name="T:ComunidadVecinos.Domain.Comunidad">
+            <summary>
+            Clase comunidad. Será aquella que se empleará para transportar los datos
+            de las comunidades que se introducirán en la base de datos, interactuando
+            con la clase de persistencia ComunidadManage.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Comunidad.#ctor">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Comunidad"/>.
+            Crea una instancia vacía sin datos; únicamente tiene disponible
+            el manage.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Comunidad.#ctor(System.String,System.String,System.String,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Comunidad"/>.
+            Crea una instancia con los datos pasados por parámetro.
+            </summary>
+            <param name="nombre">String con el nombre de la comunidad.</param>
+            <param name="direccion">String con la dirección de la comunidad.</param>
+            <param name="fechaCreac">String con la fecha de creación de la comunidad.</param>
+            <param name="metrosCuadrados">String con la superficie en metros cuadrados de la comunidad.</param>
+            <param name="hayPiscina">Valor booleano que indica la existencia o no de piscina en la comunidad.</param>
+            <param name="numPortales">Entero que indica el número de portales de la comunidad.</param>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Comunidad.Insert">
+            <summary>
+            Método que llama al método insert del manage,
+            pasándose a sí mismo por parámetro.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Comunidad.getMH2">
+            <summary>
+            Método que llama al método del manage que devuelve la
+            Data Table que contiene los datos solicitados para el
+            minihito sobre Crystal Reports, ejercicio 2, devolviendo
+            dicha Data Table.
+            </summary>
+            <returns>Data Table que contiene los datos solicitados
+            para el ejercicio 2 del minihito sobre Crystal Reports.</returns>
+        </member>
+        <member name="T:ComunidadVecinos.Domain.Piso">
+            <summary>
+            Clase pisos. Será aquella que se empleará para transportar los datos
+            de los pisos que se introducirán en la base de datos, interactuando
+            con la clase de persistencia PisoManage.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Piso.#ctor">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Piso"/>.
+            Crea una instancia vacía sin datos; únicamente tiene disponible
+            el manage.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ComunidadVecinos.Domain.Piso.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String)" -->
+        <member name="M:ComunidadVecinos.Domain.Piso.Insert">
+            <summary>
+            Método que llama al método insert del manage,
+            pasándose a sí mismo por parámetro.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Piso.getP">
+            <summary>
+            Método que llama al método del manage que devuelve la
+            Data Table que contiene los datos solicitados para el
+            primer ejemplo sobre Crystal Reports visto en clase,
+            devolviendo dicha Data Table.
+            </summary>
+            <returns>Data Table que contiene los datos solicitados
+            para el primer ejemplo sobre Crystal Reports visto en clase.</returns>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Piso.getMH1">
+            <summary>
+            Método que llama al método del manage que devuelve la
+            Data Table que contiene los datos solicitados para el
+            minihito sobre Crystal Reports, ejercicio 1, devolviendo
+            dicha Data Table.
+            </summary>
+            <returns>Data Table que contiene los datos solicitados
+            para el ejercicio 1 del minihito sobre Crystal Reports.</returns>
+        </member>
+        <member name="T:ComunidadVecinos.Domain.PisosPropietarios">
+            <summary>
+            Clase PisosPropietarios. Será aquella que se empleará para transportar los datos
+            de los PisosPropietarios que se introducirán en la base de datos, interactuando
+            con la clase de persistencia PisosPropietariosManage.
+            Es la clase que transporta datos hacia la tabla intermedia, resultante de la relación
+            N:M, que recoge cada posible relación entre cada propietario y su/s piso.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.PisosPropietarios.#ctor(System.Int32,System.String)">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.PisosPropietarios"/>.
+            Crea una instancia con los datos pasados por parámetro.
+            </summary>
+            <param name="idPiso">Entero con el que se identifica al piso asociado al registro.</param>
+            <param name="idPropietario">Entero con el que se identifica al propietario asociado al registro.</param>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.PisosPropietarios.Insert">
+            <summary>
+            Método que llama al método insert del manage,
+            pasándose a sí mismo por parámetro.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Domain.Portal">
+            <summary>
+            Clase portal. No tiene relación con la base de datos, pero se emplea durante
+            la creación de una comunidad para ir portal por portal recopilando datos para,
+            al final del proceso, generar una serie de pisos que rellenen todos los posibles
+            datos indicados para un portal (generando pisos para cada letra de una planta, para
+            cada planta de una escalera y para cada escalera del portal).
+            
+            No interactúa con una clase de persistencia propia, pero sí dispone de una list
+            de objetos piso que se rellena al invocar su método principal y que luego es
+            proporcionada a la lista de pisos de la totalidad de la comunidad.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Portal.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Portal"/>.
+            Crea una instancia con los datos pasados por parámetro.
+            </summary>
+            <param name="idCom">Entero que identifica a la comunidad para la que se está creando el portal.</param>
+            <param name="numEscaleras">Entero que indica el número de escaleras que tendrá el portal.</param>
+            <param name="numPlantas">Entero que indica el número de plantas que tendrá el portal.</param>
+            <param name="numPuertas">Entero que indica el número de puertas que tendrá el portal.</param>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Portal.generarPisos">
+            <summary>
+            Método que genera los pisos con la información obtenida sobre el portal.
+            En primer lugar, itera por el número de escaleras indicado. Dentro de
+            cada bucle escalera, itera por el número de plantas indicado. Dentro
+            de cada bucle planta, itera por el número de puertas indicado. Dentro
+            de cada iteración del bucle puertas creará un objeto piso con los
+            siguientes datos: ID de la comunidad, ID del portal, escalera asociada,
+            planta asociada y puerta/letra asociada.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Portal.toString">
+            <summary>
+            Método que muestra por pantalla una MessageBox que contiene los
+            datos del portal creado; número de escaleras, número de plantas
+            y número de puertas.
+            </summary>
+        </member>
+        <member name="T:ComunidadVecinos.Domain.Propietario">
+            <summary>
+            Clase propietario. Será aquella que se empleará para transportar los datos
+            de los propietarios que se introducirán en la base de datos, interactuando
+            con la clase de persistencia PropietarioManage.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Propietario.#ctor">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Propietario"/>.
+            Crea una instancia vacía sin datos; únicamente tiene disponible
+            el manage.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Propietario.#ctor(System.String)">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Propietario"/>.
+            Crea una instancia con los datos pasados por parámetro.
+            El único dato pasado por parámetro es el DNI; el resto
+            de atributos del objeto se obtienen de manera aleatoria.
+            </summary>
+            <param name="dniP">String que contiene el DNI que identificará al propietario.</param>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Propietario.generarPropietarioAleatorio">
+            <summary>
+            Método que, al ser invocado por un objeto de la clase Propietario,
+            asignará a todos sus atributos valores aleatorios empleando un método
+            de obtención aleatoria y listas de datos estáticas contenidas en el
+            interior de la clase.
+            </summary>
+        </member>
         <member name="M:ComunidadVecinos.Domain.Propietario.ObtenerElementoAleatorio(System.Collections.Generic.List{System.String})">
             <summary>
-            Obteners the elemento aleatorio.
+            Método que recibe por parámetro una lista de Strings y
+            selecciona y devuelve una String aleatoria de entre las
+            contenidas en la lista.
             </summary>
-            <param name="lista">The lista.</param>
-            <returns></returns>
+            <param name="lista">Lista de Strings de la que se obtendrá la String aleatoria.</param>
+            <returns>La String aleatoria seleccionada.</returns>
         </member>
         <member name="M:ComunidadVecinos.Domain.Propietario.Insertar">
             <summary>
-            Insertars this instance.
+            Método que llama al método insert del manage,
+            pasándose a sí mismo por parámetro.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.Domain.Propietario.getD">
+            <summary>
+            Método que llama al método del manage que devuelve la
+            Data Table que contiene la información sobre los
+            propietarios, devolviendo dicha Data Table.
+            </summary>
+            <returns>Data Table que contiene información sobre los propietarios.</returns>
+        </member>
+        <member name="T:ComunidadVecinos.RandomNumber">
+            <summary>
+            Clase de apoyo empleada a lo largo de todo el código para obtener números aleatorios.
             </summary>
         </member>
         <member name="M:ComunidadVecinos.RandomNumber.random_Number(System.Int32,System.Int32)">
              Method that extracts of Sample its amount and increases the number of valid samples
             
+            <summary>
+            Método estático que genera y devuelve un número aleatorio,
+            dentro de unos límites inferior y superior.
+            </summary>
+            <param name="min">Límite inferior.</param>
+            <param name="max">Límite superior.</param>
+            <returns>El número aleatorio generado.</returns>
         </member>
         <member name="T:ComunidadVecinos.PagComunidad">
             <summary>
@@ -211,16 +662,267 @@
         </member>
         <member name="T:ComunidadVecinos.MainWindow">
             <summary>
-            Lógica de interacción para MainWindow.xaml
+            Lógica de interacción para la ventana principal.
+            
+            Se usarán distintas variables: 
+            -Un contador para identificar el punto de avance de creación 
+            de la comunidad en que el usuario se encuentra 
+            -Objetos página de comunidad, portal y dependencias, que pasarán
+            a ocupar el frame principal dependiendo del valor que tenga el
+            contador
+            -Las variables necesarias para almacenar la información de la 
+            comunidad y de los portales
+            -Las variables booleanas que almacenarán información sobre las
+            dependencias de la comunidad
             </summary>
             <summary>
             MainWindow
             </summary>
         </member>
+        <member name="M:ComunidadVecinos.MainWindow.#ctor">
+            <summary>
+            Inicializa la ventana principal.
+            El contador se establece a cero, el frame principal pasa
+            a estar ocupado por la página de creación de comunidad y
+            el botón de retroceso se invisibiliza.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNext_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el click sobre el botón "Next" en la interfaz de usuario,
+            empleado para avanzar en el proceso de creación de una comunidad.
+            
+            Si el contador indica que estamos en la página de creación de la comunidad:
+            - Recopila los datos para las variables necesarias para crear la comunidad.
+            - Actualiza la interfaz y muestra la página para crear portales.
+            
+            Si el contador indica que estamos creando un portal:
+            - Recoge los datos del portal y los guarda.
+            - Avanza a la siguiente página de creación de portal.
+            
+            Si el contador indica que estamos en la última página (creación de dependencias):
+            - Guarda los datos del último portal creado.
+            - Recopila y asigna los datos para las dependencias de la comunidad.
+            - Genera todos los datos en base a lo que el usuario haya introducido y los
+            inserta en la base de datos.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.GenerateAndShuffleList(System.Int32)">
+            <summary>
+            Método que genera, desordena y devuelve una lista de números que
+            abarca del 1 al número que se pase por parámetro.
+            </summary>
+            <param name="x">Límite superior para la lista de números.</param>
+            <returns>Lista de números desordenada.</returns>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.Imprimir(ComunidadVecinos.Domain.Comunidad,System.Windows.Controls.TextBox)">
+            <summary>
+            Método que imprime los datos de la comunidad que se pase por parámetro.
+            </summary>
+            <param name="comunidad">Objeto comunidad cuyos datos se imprimirán.</param>
+            <param name="outputTextBox">La caja de texto empleada para la salida.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnPrev_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el click sobre el botón "Previous" en la interfaz de usuario,
+            empleado para retroceder en el proceso de creación de una comunidad.
+            
+            Disminuye el valor del contador para indicar el retroceso en el proceso.
+            
+            Si el contador indica que estamos en la pantalla inicial (creación de comunidad):
+            - Guarda temporalmente los datos del portal si se habían rellenado los campos.
+            - Cambia la interfaz de usuario a la pantalla de creación de comunidad, restableciendo
+            en los distintos campos los datos que se hubieran indicado previamente.
+            
+            Si el contador indica que estamos en la última página (creación de dependencias) y
+            estamos retrocediendo a la página de creación de portal:
+            - Cambia la interfaz de usuario a la página de creación de portal, restableciendo
+            en los distintos campos los datos que se hubieran indicado previamente.
+            - Actualiza la etiqueta para mostrar el número de portal correspondiente.
+            
+            Si el contador indica que estamos retrocediendo de un portal a otro:
+            - Guarda temporalmente los datos del portal si se habían rellenado los campos.
+            - Actualiza la etiqueta para mostrar el número de portal correspondiente.
+            - Restablece los campos con los datos del portal anteriormente guardados.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYes_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de piscina.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNo_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de piscina.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYesGatekeeper_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de portero.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNoGatekeeper_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de portero.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYesShower_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de duchas comunitarias.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNoShower_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de duchas comunitarias.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYesPlay_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de zona de juego.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNoPlay_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de zona de juego.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYesExercise_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de zona de ejercicio.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNoExercise_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de zona de ejercicio.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYesRoom_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de sala social.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNoRoom_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de sala social.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYesTennis_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de pista de tenis.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNoTennis_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de pista de tenis.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnYesPadel_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de sí en la asignación de pista de pádel.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNoPadel_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de marcado para el radiobutton
+            de no en la asignación de pista de pádel.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnNeigh_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de pulsación sobre el botón "Neighborhood",
+            modificando el contenido del frame principal para que pase a mostrar un
+            Crystal Report con información sobre los pisos.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
+        <member name="M:ComunidadVecinos.MainWindow.btnDep_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Método que maneja el evento de pulsación sobre el botón "Dependencies",
+            modificando el contenido del frame principal para que pase a mostrar un
+            Crystal Report con información sobre las dependencias de la comunidad.
+            </summary>
+            <param name="sender">Fuente del evento.</param>
+            <param name="e">Instancia de <see cref="T:System.Windows.RoutedEventArgs"/> que contiene los datos del evento.</param>
+        </member>
         <member name="M:ComunidadVecinos.MainWindow.InitializeComponent">
             <summary>
             InitializeComponent
             </summary>
+        </member>
+        <member name="T:ComunidadVecinos.DniGenerator">
+            <summary>
+            Clase interna auxiliar empleada para la generación de DNIs aleatorios irrepetibles.
+            </summary>
+        </member>
+        <member name="M:ComunidadVecinos.DniGenerator.GenerarDNIUnico">
+            <summary>
+            Método que invoca continuamente al método de generación de DNIs
+            (existente más abajo) mientras el DNI que devuelva dicho método
+            se encuentre contenido en la lista de DNIs atributo de la clase,
+            asegurando que los únicos DNIs que se añadan a dicha lista sean
+            DNIs únicos.
+            Cuando se genere un DNI único, dicho DNI será agregado a la lista
+            de DNIs atributo de la clase y también devuelto por el método.
+            </summary>
+            <returns>El DNI único generado.</returns>
+        </member>
+        <member name="M:ComunidadVecinos.DniGenerator.GenerarDNI">
+            <summary>
+            Método que genera y devuelve una String con un DNI.
+            </summary>
+            <returns>String con el DNI generado.</returns>
         </member>
         <member name="T:ComunidadVecinos.Properties.Resources">
             <summary>
