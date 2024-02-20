@@ -424,6 +424,142 @@
             con la clase de persistencia ComunidadManage.
             </summary>
         </member>
+        <member name="F:ComunidadVecinos.Domain.Comunidad.autoID">
+            <summary>
+            AutoID que se empleará para la clase Comunidad. Es estático.
+            Se asignará al ID del objeto y después autoincrementará cada vez que se invoque
+            al constructor que lo utiliza.
+            </summary>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.Id">
+            <summary>
+            Atributo, obtención y asignación del mismo empleado para la ID asociada a cada
+            objeto de la clase Comunidad.
+            </summary>
+            <value>
+            Entero identificador de cada objeto de la clase Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.nombre">
+            <summary>
+            Atributo, obtención y asignación para el nombre de cada objeto Comunidad.
+            </summary>
+            <value>
+            String nombre del objeto Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.direccion">
+            <summary>
+            Atributo, obtención y asignación para la dirección de cada objeto Comunidad.
+            </summary>
+            <value>
+            String dirección del objeto Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.fechaCreac">
+            <summary>
+            Atributo, obtención y asignación para la fecha de creación de cada objeto Comunidad.
+            </summary>
+            <value>
+            String fecha de creación del objeto Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.metrosCuadrados">
+            <summary>
+            Atributo, obtención y asignación para los metros cuadrados (superficie) de cada objeto Comunidad.
+            </summary>
+            <value>
+            Entero metros cuadrados del objeto Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.hayPiscina">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay piscina] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> si [hay piscina]; si no, <c>booleano false</c>.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.numPortales">
+            <summary>
+            Atributo, obtención y asignación para el número de portales de cada objeto Comunidad.
+            </summary>
+            <value>
+            Entero número de portales del objeto Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.listaPisos">
+            <summary>
+            Atributo, obtención y asignación para la lista de pisos de cada objeto Comunidad.
+            </summary>
+            <value>
+            Lista de objetos Piso asociados al objeto Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.cm">
+            <summary>
+            Atributo, obtención y asignación para el ComunidadManage (clase de persistencia) de cada objeto Comunidad.
+            </summary>
+            <value>
+            ComunidadManage (clase de persistencia para interacción con base de datos) de cada objeto Comunidad.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.hayPortero">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay portero] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> si [hay portero]; si no, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.hayDucha">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay duchas comunitarias] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> si [hay duchas comunitarias]; si no, <c>booleano false</c>.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.hayJuego">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay zona de juego] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> si [hay zona de juego]; si no, <c>booleano false</c>.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.hayEjercicio">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay zona de ejercicio] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> si [hay zona de ejercicio]; si no, <c>booleano false</c>.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.haySala">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay sala social] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> if [hay sala social]; si no, <c>booleano false</c>.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.hayTenis">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay pista de tenis] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> si [hay pista de tenis]; si no, <c>booleano false</c>.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Comunidad.hayPadel">
+            <summary>
+            Atributo, obtención y asignación para ver si [hay pista de padel] o no en cada objeto Comunidad.
+            </summary>
+            <value>
+              <c>Booleano true</c> si [hay pista de padel]; si no, <c>booleano false</c>.
+            </value>
+        </member>
         <member name="M:ComunidadVecinos.Domain.Comunidad.#ctor">
             <summary>
             Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Comunidad"/>.
@@ -461,10 +597,106 @@
         </member>
         <member name="T:ComunidadVecinos.Domain.Piso">
             <summary>
-            Clase pisos. Será aquella que se empleará para transportar los datos
+            Clase piso. Será aquella que se empleará para transportar los datos
             de los pisos que se introducirán en la base de datos, interactuando
             con la clase de persistencia PisoManage.
             </summary>
+        </member>
+        <member name="F:ComunidadVecinos.Domain.Piso.autoID">
+            <summary>
+            AutoID que se empleará para la clase Piso. Es estático.
+            Se asignará al ID del objeto y después autoincrementará cada vez que se invoque
+            al constructor que lo utiliza.
+            </summary>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.Id">
+            <summary>
+            Atributo, obtención y asignación del mismo empleado para la ID asociada a cada
+            objeto de la clase Piso.
+            </summary>
+            <value>
+            Entero identificador de cada objeto de la clase Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.idComunidad">
+            <summary>
+            Atributo, obtención y asignación para el ID de la comunidad de cada objeto Piso.
+            </summary>
+            <value>
+            Entero identificador de la comunidad del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.idProp1">
+            <summary>
+            Atributo, obtención y asignación para el ID del propietario 1 de cada objeto Piso.
+            </summary>
+            <value>
+            String ID del propietario 1 del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.idProp2">
+            <summary>
+            Atributo, obtención y asignación para el ID del propietario 2 de cada objeto Piso.
+            </summary>
+            <value>
+            String ID del propietario 2 del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.numPortal">
+            <summary>
+            Atributo, obtención y asignación para el número de portal de cada objeto Piso.
+            </summary>
+            <value>
+            Entero número de portal del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.numEscalera">
+            <summary>
+            Atributo, obtención y asignación para el número de escalera de cada objeto Piso.
+            </summary>
+            <value>
+            Entero número de escalera del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.numPlanta">
+            <summary>
+            Atributo, obtención y asignación para el número de planta de cada objeto Piso.
+            </summary>
+            <value>
+            Entero número de planta del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.puerta">
+            <summary>
+            Atributo, obtención y asignación para la letra de la puerta de cada objeto Piso.
+            </summary>
+            <value>
+            String letra de la puerta del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.numTrastero">
+            <summary>
+            Atributo, obtención y asignación para el número de trastero de cada objeto Piso.
+            </summary>
+            <value>
+            Entero número de trastero del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.numPlaza">
+            <summary>
+            Atributo, obtención y asignación para el número de plaza de garaje de cada objeto Piso.
+            </summary>
+            <value>
+            Entero número de plaza de garaje del objeto Piso.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Piso.pm">
+            <summary>
+            Atributo, obtención y asignación para el PisoManage (clase de persistencia) de cada objeto Piso.
+            </summary>
+            <value>
+            PisoManage (clase de persistencia para interacción con base de datos) de cada objeto Piso.
+            </value>
         </member>
         <member name="M:ComunidadVecinos.Domain.Piso.#ctor">
             <summary>
@@ -473,7 +705,17 @@
             el manage.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:ComunidadVecinos.Domain.Piso.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String)" -->
+        <member name="M:ComunidadVecinos.Domain.Piso.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.Piso"/>.
+            Crea una instancia con los datos pasados por parámetro.
+            </summary>
+            <param name="idComunidad">Entero con el identificador de la comunidad asociada al piso.</param>
+            <param name="numPortal">Entero con el número de portal asociado al piso.</param>
+            <param name="numEscalera">Entero con el número de escalera asociada al piso.</param>
+            <param name="numPlanta">Entero con el número de planta asociada al piso.</param>
+            <param name="puerta">String que contiene la letra/puerta asociada al piso.</param>
+        </member>
         <member name="M:ComunidadVecinos.Domain.Piso.Insert">
             <summary>
             Método que llama al método insert del manage,
@@ -509,6 +751,46 @@
             N:M, que recoge cada posible relación entre cada propietario y su/s piso.
             </summary>
         </member>
+        <member name="F:ComunidadVecinos.Domain.PisosPropietarios.autoID">
+            <summary>
+            AutoID que se empleará para la clase PisosPropietarios. Es estático.
+            Se asignará al ID del objeto y después autoincrementará cada vez que se invoque
+            al constructor que lo utiliza.
+            </summary>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.PisosPropietarios.Id">
+            <summary>
+            Atributo, obtención y asignación del mismo empleado para la ID asociada a cada
+            objeto de la clase PisosPropietarios.
+            </summary>
+            <value>
+            Entero identificador de cada objeto de la clase PisosPropietarios.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.PisosPropietarios.idPiso">
+            <summary>
+            Atributo, obtención y asignación para el ID del piso de cada objeto PisosPropietarios.
+            </summary>
+            <value>
+            Entero identificador del ID del piso del objeto PisosPropietarios.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.PisosPropietarios.idProp">
+            <summary>
+            Atributo, obtención y asignación para el ID del propietario de cada objeto PisosPropietarios.
+            </summary>
+            <value>
+            String identificador del ID del propietario del objeto PisosPropietarios.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.PisosPropietarios.ppm">
+            <summary>
+            Atributo, obtención y asignación para el PisosPropietariosManage (clase de persistencia) de cada objeto PisosPropietarios.
+            </summary>
+            <value>
+            PisosPropietariosManage (clase de persistencia para interacción con base de datos) de cada objeto PisosPropietarios.
+            </value>
+        </member>
         <member name="M:ComunidadVecinos.Domain.PisosPropietarios.#ctor(System.Int32,System.String)">
             <summary>
             Crea una instancia de la clase <see cref="T:ComunidadVecinos.Domain.PisosPropietarios"/>.
@@ -531,10 +813,66 @@
             datos indicados para un portal (generando pisos para cada letra de una planta, para
             cada planta de una escalera y para cada escalera del portal).
             
-            No interactúa con una clase de persistencia propia, pero sí dispone de una list
+            No interactúa con una clase de persistencia propia, pero sí dispone de una lista
             de objetos piso que se rellena al invocar su método principal y que luego es
             proporcionada a la lista de pisos de la totalidad de la comunidad.
             </summary>
+        </member>
+        <member name="F:ComunidadVecinos.Domain.Portal.autoID">
+            <summary>
+            AutoID que se empleará para la clase Portal. Es estático.
+            Se asignará al ID del objeto y después autoincrementará cada vez que se invoque
+            al constructor que lo utiliza.
+            </summary>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Portal.Idportal">
+            <summary>
+            Atributo, obtención y asignación del mismo empleado para la ID asociada a cada
+            objeto de la clase Portal.
+            </summary>
+            <value>
+            Entero identificador de cada objeto de la clase Portal.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Portal.idComunidad">
+            <summary>
+            Atributo, obtención y asignación para el ID de la comunidad de cada objeto Portal.
+            </summary>
+            <value>
+            Entero ID de la comunidad del objeto Portal.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Portal.numEscaleras">
+            <summary>
+            Atributo, obtención y asignación para el número de escaleras de cada objeto Portal.
+            </summary>
+            <value>
+            Entero número de escaleras del objeto Portal.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Portal.numPlantas">
+            <summary>
+            Atributo, obtención y asignación para el número de plantas de cada objeto Portal.
+            </summary>
+            <value>
+            Entero número de plantas del objeto Portal.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Portal.numPuertas">
+            <summary>
+            Atributo, obtención y asignación para el número de puertas de cada objeto Portal.
+            </summary>
+            <value>
+            Entero número de puertas del objeto Portal.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Portal.listaPisos">
+            <summary>
+            Atributo, obtención y asignación para la lista de pisos de cada objeto Portal.
+            </summary>
+            <value>
+            Lista de objetos Piso asociados al objeto Portal.
+            </value>
         </member>
         <member name="M:ComunidadVecinos.Domain.Portal.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
@@ -570,6 +908,71 @@
             de los propietarios que se introducirán en la base de datos, interactuando
             con la clase de persistencia PropietarioManage.
             </summary>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.dni">
+            <summary>
+            Atributo, obtención y asignación del mismo empleado para el DNI asociado a cada
+            objeto de la clase Propietario.
+            </summary>
+            <value>
+            String DNI de cada objeto de la clase Propietario.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.nombre">
+            <summary>
+            Atributo, obtención y asignación para el nombre de cada objeto Propietario.
+            </summary>
+            <value>
+            String nombre del objeto Propietario.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.apellidos">
+            <summary>
+            Atributo, obtención y asignación para los apellidos de cada objeto Propietario.
+            </summary>
+            <value>
+            String apellidos del objeto Propietario.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.direcResidencia">
+            <summary>
+            Atributo, obtención y asignación para la dirección de residencia de cada objeto Propietario.
+            </summary>
+            <value>
+            String dirección de residencia del objeto Propietario.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.localidad">
+            <summary>
+            Atributo, obtención y asignación para la localidad de cada objeto Propietario.
+            </summary>
+            <value>
+            String localidad del objeto Propietario.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.codPostal">
+            <summary>
+            Atributo, obtención y asignación para el código postal de cada objeto Propietario.
+            </summary>
+            <value>
+            Entero código postal del objeto Propietario.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.provincia">
+            <summary>
+            Atributo, obtención y asignación para la provincia de cada objeto Propietario.
+            </summary>
+            <value>
+            String provincia del objeto Propietario.
+            </value>
+        </member>
+        <member name="P:ComunidadVecinos.Domain.Propietario.pm">
+            <summary>
+            Atributo, obtención y asignación para el PropietarioManage (clase de persistencia) de cada objeto Propietario.
+            </summary>
+            <value>
+            PropietarioManage (clase de persistencia para interacción con base de datos) de cada objeto Propietario.
+            </value>
         </member>
         <member name="M:ComunidadVecinos.Domain.Propietario.#ctor">
             <summary>

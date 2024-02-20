@@ -16,10 +16,44 @@ namespace ComunidadVecinos.Domain
     /// </summary>
     public class PisosPropietarios
     {
+        /// <summary>
+        /// AutoID que se empleará para la clase PisosPropietarios. Es estático.
+        /// Se asignará al ID del objeto y después autoincrementará cada vez que se invoque
+        /// al constructor que lo utiliza.
+        /// </summary>
         public static int autoID = 0;
+
+        /// <summary>
+        /// Atributo, obtención y asignación del mismo empleado para la ID asociada a cada
+        /// objeto de la clase PisosPropietarios.
+        /// </summary>
+        /// <value>
+        /// Entero identificador de cada objeto de la clase PisosPropietarios.
+        /// </value>
         public int Id { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el ID del piso de cada objeto PisosPropietarios.
+        /// </summary>
+        /// <value>
+        /// Entero identificador del ID del piso del objeto PisosPropietarios.
+        /// </value>
         public int idPiso { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el ID del propietario de cada objeto PisosPropietarios.
+        /// </summary>
+        /// <value>
+        /// String identificador del ID del propietario del objeto PisosPropietarios.
+        /// </value>
         public string idProp { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el PisosPropietariosManage (clase de persistencia) de cada objeto PisosPropietarios.
+        /// </summary>
+        /// <value>
+        /// PisosPropietariosManage (clase de persistencia para interacción con base de datos) de cada objeto PisosPropietarios.
+        /// </value>
         public PisosPropietariosManage ppm { get; set; }
 
         /// <summary>

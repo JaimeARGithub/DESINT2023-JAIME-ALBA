@@ -16,14 +16,69 @@ namespace ComunidadVecinos.Domain
     /// </summary>
     public class Propietario
     {
+        /// <summary>
+        /// Atributo, obtención y asignación del mismo empleado para el DNI asociado a cada
+        /// objeto de la clase Propietario.
+        /// </summary>
+        /// <value>
+        /// String DNI de cada objeto de la clase Propietario.
+        /// </value>
         public string dni {  get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el nombre de cada objeto Propietario.
+        /// </summary>
+        /// <value>
+        /// String nombre del objeto Propietario.
+        /// </value>
         public string nombre { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para los apellidos de cada objeto Propietario.
+        /// </summary>
+        /// <value>
+        /// String apellidos del objeto Propietario.
+        /// </value>
         public string apellidos { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para la dirección de residencia de cada objeto Propietario.
+        /// </summary>
+        /// <value>
+        /// String dirección de residencia del objeto Propietario.
+        /// </value>
         public string direcResidencia { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para la localidad de cada objeto Propietario.
+        /// </summary>
+        /// <value>
+        /// String localidad del objeto Propietario.
+        /// </value>
         public string localidad {  get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el código postal de cada objeto Propietario.
+        /// </summary>
+        /// <value>
+        /// Entero código postal del objeto Propietario.
+        /// </value>
         public int codPostal { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para la provincia de cada objeto Propietario.
+        /// </summary>
+        /// <value>
+        /// String provincia del objeto Propietario.
+        /// </value>
         public string provincia { get; set; }
 
+        /// <summary>
+        /// Atributo, obtención y asignación para el PropietarioManage (clase de persistencia) de cada objeto Propietario.
+        /// </summary>
+        /// <value>
+        /// PropietarioManage (clase de persistencia para interacción con base de datos) de cada objeto Propietario.
+        /// </value>
         public PropietarioManage pm { get; set; }
 
 

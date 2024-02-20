@@ -9,23 +9,106 @@ using System.Threading.Tasks;
 namespace ComunidadVecinos.Domain
 {
     /// <summary>
-    /// Clase pisos. Será aquella que se empleará para transportar los datos
+    /// Clase piso. Será aquella que se empleará para transportar los datos
     /// de los pisos que se introducirán en la base de datos, interactuando
     /// con la clase de persistencia PisoManage.
     /// </summary>
     public class Piso
     {
+        /// <summary>
+        /// AutoID que se empleará para la clase Piso. Es estático.
+        /// Se asignará al ID del objeto y después autoincrementará cada vez que se invoque
+        /// al constructor que lo utiliza.
+        /// </summary>
         public static int autoID = 0;
+
+        /// <summary>
+        /// Atributo, obtención y asignación del mismo empleado para la ID asociada a cada
+        /// objeto de la clase Piso.
+        /// </summary>
+        /// <value>
+        /// Entero identificador de cada objeto de la clase Piso.
+        /// </value>
         public int Id { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el ID de la comunidad de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// Entero identificador de la comunidad del objeto Piso.
+        /// </value>
         public int idComunidad { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el ID del propietario 1 de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// String ID del propietario 1 del objeto Piso.
+        /// </value>
         public string idProp1 { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el ID del propietario 2 de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// String ID del propietario 2 del objeto Piso.
+        /// </value>
         public string idProp2 { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de portal de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// Entero número de portal del objeto Piso.
+        /// </value>
         public int numPortal { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de escalera de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// Entero número de escalera del objeto Piso.
+        /// </value>
         public int numEscalera { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de planta de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// Entero número de planta del objeto Piso.
+        /// </value>
         public int numPlanta { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para la letra de la puerta de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// String letra de la puerta del objeto Piso.
+        /// </value>
         public string puerta { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de trastero de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// Entero número de trastero del objeto Piso.
+        /// </value>
         public int numTrastero { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de plaza de garaje de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// Entero número de plaza de garaje del objeto Piso.
+        /// </value>
         public int numPlaza { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el PisoManage (clase de persistencia) de cada objeto Piso.
+        /// </summary>
+        /// <value>
+        /// PisoManage (clase de persistencia para interacción con base de datos) de cada objeto Piso.
+        /// </value>
         public PisoManage pm { get; set; }
 
         /// <summary>
@@ -39,7 +122,7 @@ namespace ComunidadVecinos.Domain
         }
 
         /// <summary>
-        /// Crea una instancia de la clase <see cref="Piso"/.
+        /// Crea una instancia de la clase <see cref="Piso"/>.
         /// Crea una instancia con los datos pasados por parámetro.
         /// </summary>
         /// <param name="idComunidad">Entero con el identificador de la comunidad asociada al piso.</param>

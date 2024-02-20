@@ -14,18 +14,66 @@ namespace ComunidadVecinos.Domain
     /// datos indicados para un portal (generando pisos para cada letra de una planta, para
     /// cada planta de una escalera y para cada escalera del portal).
     /// 
-    /// No interactúa con una clase de persistencia propia, pero sí dispone de una list
+    /// No interactúa con una clase de persistencia propia, pero sí dispone de una lista
     /// de objetos piso que se rellena al invocar su método principal y que luego es
     /// proporcionada a la lista de pisos de la totalidad de la comunidad.
     /// </summary>
     public class Portal
     {
+        /// <summary>
+        /// AutoID que se empleará para la clase Portal. Es estático.
+        /// Se asignará al ID del objeto y después autoincrementará cada vez que se invoque
+        /// al constructor que lo utiliza.
+        /// </summary>
         public static int autoID = 0;
+
+        /// <summary>
+        /// Atributo, obtención y asignación del mismo empleado para la ID asociada a cada
+        /// objeto de la clase Portal.
+        /// </summary>
+        /// <value>
+        /// Entero identificador de cada objeto de la clase Portal.
+        /// </value>
         public int Idportal { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el ID de la comunidad de cada objeto Portal.
+        /// </summary>
+        /// <value>
+        /// Entero ID de la comunidad del objeto Portal.
+        /// </value>
         public int idComunidad {  get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de escaleras de cada objeto Portal.
+        /// </summary>
+        /// <value>
+        /// Entero número de escaleras del objeto Portal.
+        /// </value>
         public int numEscaleras { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de plantas de cada objeto Portal.
+        /// </summary>
+        /// <value>
+        /// Entero número de plantas del objeto Portal.
+        /// </value>
         public int numPlantas { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para el número de puertas de cada objeto Portal.
+        /// </summary>
+        /// <value>
+        /// Entero número de puertas del objeto Portal.
+        /// </value>
         public int numPuertas { get; set; }
+
+        /// <summary>
+        /// Atributo, obtención y asignación para la lista de pisos de cada objeto Portal.
+        /// </summary>
+        /// <value>
+        /// Lista de objetos Piso asociados al objeto Portal.
+        /// </value>
         public List<Piso> listaPisos { get; set; }
 
         /// <summary>

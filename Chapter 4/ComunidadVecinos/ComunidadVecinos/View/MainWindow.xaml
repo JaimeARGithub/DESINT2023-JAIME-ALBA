@@ -109,7 +109,6 @@
                         <Label Content="                 " Background="#F2F2F2"/>
                         <Button Height="30" Width="65" Content="Next" x:Name="btnNext" HorizontalAlignment="Right" Click="btnNext_Click" />
                     </StackPanel>
-                    <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="243,13,0,0" Grid.Row="5" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
 
