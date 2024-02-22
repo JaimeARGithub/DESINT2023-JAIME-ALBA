@@ -194,6 +194,11 @@ namespace ComunidadVecinos.Domain
         {
             return pm.getDatosPropietarios();
         }
+
+        public void getPruebilla()
+        {
+            pm.pruebilla();
+        }
     }
 }
 

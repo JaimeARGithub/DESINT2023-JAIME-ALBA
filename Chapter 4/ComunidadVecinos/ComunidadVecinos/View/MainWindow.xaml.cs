@@ -860,6 +860,12 @@ namespace ComunidadVecinos
             Pag2Minihito pag = new Pag2Minihito();
             FrameMinihito.Content = pag;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Propietario p = new Propietario();
+            p.getPruebilla();
+        }
     }
 
 

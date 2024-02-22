@@ -138,6 +138,7 @@
                 <Grid Background="#F2F2F2">
 
                     <Frame x:Name="FrameMinihito"/>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="335,172,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
                 </Grid>
             </TabItem>
