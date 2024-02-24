@@ -96,6 +96,8 @@ namespace ExampleMVCnoDatabase.Persistence.Manages
             {
                 // para cada fila de la consulta, se crea una nueva fila con los datos que
                 // contiene la consulta inicial y se van añadiendo a la data table
+
+                // créame la fila como una fila nueva DEL TIPO DE FILAS que tiene dt
                 row = dt.NewRow();
                 row[0] = aux[0];
                 row[1] = aux[1];

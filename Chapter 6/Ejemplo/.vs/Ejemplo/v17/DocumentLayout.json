@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|c:\\users\\pokem\\onedrive\\documentos\\visual community studio\\desint2023-jaime-alba\\chapter 6\\ejemplo\\ejemplo\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\ejemplo\\persistence\\manages\\playersmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\persistence\\manages\\playersmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\ejemplo\\domain\\players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\domain\\players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\ejemplo\\view\\ventanareports.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\view\\ventanareports.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Players.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\Domain\\Players.cs",
+              "RelativeDocumentMoniker": "Ejemplo\\Domain\\Players.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\Domain\\Players.cs",
+              "RelativeToolTip": "Ejemplo\\Domain\\Players.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAswCoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T21:40:58.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayersManage.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\Persistence\\Manages\\PlayersManage.cs",
+              "RelativeDocumentMoniker": "Ejemplo\\Persistence\\Manages\\PlayersManage.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\Persistence\\Manages\\PlayersManage.cs",
+              "RelativeToolTip": "Ejemplo\\Persistence\\Manages\\PlayersManage.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T21:41:31.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "View\\VentanaReports.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\VentanaReports.xaml.cs",
+              "RelativeDocumentMoniker": "Ejemplo\\View\\VentanaReports.xaml.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\VentanaReports.xaml.cs",
+              "RelativeToolTip": "Ejemplo\\View\\VentanaReports.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T23:34:10.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Ejemplo\\View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Ejemplo\\View\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAowIkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T21:35:57.213Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

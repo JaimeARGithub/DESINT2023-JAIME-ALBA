@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\examplemvcnodatabase\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|solutionrelative:examplemvcnodatabase\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|c:\\users\\pokem\\onedrive\\documentos\\visual community studio\\desint2023-jaime-alba\\chapter 5\\reports\\examplemvcnodatabase\\view\\informe.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|solutionrelative:examplemvcnodatabase\\view\\informe.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\examplemvcnodatabase\\persistence\\manages\\peoplemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|solutionrelative:examplemvcnodatabase\\persistence\\manages\\peoplemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\examplemvcnodatabase\\view\\informe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|solutionrelative:examplemvcnodatabase\\view\\informe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\examplemvcnodatabase\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|solutionrelative:examplemvcnodatabase\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\examplemvcnodatabase\\domain\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|solutionrelative:examplemvcnodatabase\\domain\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\examplemvcnodatabase\\persistence\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{BA2D3EDC-470A-4841-9B32-311A1BEAB340}|ExampleMVCnoDatabase\\ExampleMVCnoDatabase.csproj|solutionrelative:examplemvcnodatabase\\persistence\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataSet1.xsd",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\Persistence\\DataSet1.xsd",
+              "RelativeDocumentMoniker": "ExampleMVCNoDatabase\\Persistence\\DataSet1.xsd",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\Persistence\\DataSet1.xsd",
+              "RelativeToolTip": "ExampleMVCNoDatabase\\Persistence\\DataSet1.xsd",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKzSURBVDhP3VRNTxNRFD2d6XTa6fQDmAJiQW3AIC5QE0lgpQuXJCauMHHhyriUPRH1B7gwMe5NZGM0UaM7iQsToC4UoiRAtA0ptFjo2Jl\u002BTWem3veshAiYkODGk0nem3nvnTn3vnMvDhue5rgnNnR9LFusjr1LbWAxp2PdrMGwbDiuC1WSoAUl9LdHMBzXMNARTmrR6L2/Ej6eXZysu43bRasOgd49Htre4A/N\u002BRYibyAgiVAk76trQ/2jXvZxTdfPJ1ObHS\u002BXM5hL57FmlFGsOXgws9R3NKwg0abi7JEW9GthtCkyBMGDSt3GhlnFQu4H5rOkvljlP\u002BCEhZI1UXacUZEyEPH7UHMakL021o0qShSiUauj7rjwCQJIEK2JKBGhUbNh2S5MGvPlHYQ3ns9RPmSc1EK4OdyHDsUPP4XRoMMmhZsxKviQ2cKj5Ao/1BLwUYgiQrKEnkgQio/TcLDU4CNJTuslCsOB6BEQoA2qT0KQRqaG3R1T861QQjyi4Pq5BK4OHseV0924kGhHnNLyG5zapLBECschSe/T33ddvUvfVSJ3aa4F/ThD\u002BdwJVf5DIUNXOIDe1hDlyqHcVUiNyVXnSzV46RIGO6OI\u002BqXm7v2xTX2iRcXlgXjzbW88/bzanO2PbYWHhf\u002BUkPmTGZ2Znl1gmUaFbMZwYMIqeXWrYlGjqGBl0\u002BA206sW\u002BrQgXz8w4duvWdydnsfDmWW8WV7jSi/1dmJ85BRf57ZJtAaRIt89\u002B7KKAWpHMWoArEIaFJtpOciSmgVqX\u002BwwmX6qUKlP2aILWWTd59cYksUc4\u002BJFcX/60wsKY7RA0kXqS80utV0xrCGwKupSA6yG79y6ODjZXNoFfmZLL04kM4Wh10sZzK7mkSmWYdqsBwpopeo4RqYf6YmR8bvRrfqnYm3RJ/z0vwfwEw/hICOMmp/tAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-02-02T00:33:46.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Informe.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\Informe.xaml.cs",
+              "RelativeDocumentMoniker": "ExampleMVCNoDatabase\\View\\Informe.xaml.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\Informe.xaml.cs",
+              "RelativeToolTip": "ExampleMVCNoDatabase\\View\\Informe.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAEwCwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T00:04:52.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Informe.xaml",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\Informe.xaml",
+              "RelativeDocumentMoniker": "ExampleMVCNoDatabase\\View\\Informe.xaml",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\Informe.xaml",
+              "RelativeToolTip": "ExampleMVCNoDatabase\\View\\Informe.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-02T00:04:52.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ExampleMVCNoDatabase\\View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ExampleMVCNoDatabase\\View\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAYwKYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T00:04:53.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ExampleMVCNoDatabase\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\View\\MainWindow.xaml",
+              "RelativeToolTip": "ExampleMVCNoDatabase\\View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-02T00:04:53.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PeopleManage.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\Persistence\\Manages\\PeopleManage.cs",
+              "RelativeDocumentMoniker": "ExampleMVCNoDatabase\\Persistence\\Manages\\PeopleManage.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\Persistence\\Manages\\PeopleManage.cs",
+              "RelativeToolTip": "ExampleMVCNoDatabase\\Persistence\\Manages\\PeopleManage.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAxwGMAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T00:04:53.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "People.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\Domain\\People.cs",
+              "RelativeDocumentMoniker": "ExampleMVCNoDatabase\\Domain\\People.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 5\\Reports\\ExampleMVCNoDatabase\\Domain\\People.cs",
+              "RelativeToolTip": "ExampleMVCNoDatabase\\Domain\\People.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAcwEQAAAAiAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVDhP7VNdSFNhGH7POds8znNy080/BIXldAbJcEkXiaChXRRCCIGK6E1CV/lDeZHl8EowxYtAIgxC7CIvRIe48kLDC5Vz41EmbhpDS51uudOmubNztr7vuILqoiDoyufie3nP9/B8z/tz4Bz/DCoRYc23xlTdqUpXl6rZ6NUoa6g0sJabFrasrkzjmnJ9xZxgMKhnKhi9\u002B6JbI8wJkc7OTuN28fYF\u002BbIMh/OHIuaQ\u002BMAQT8RWJM9JGolTkSpOikkcQRKcilINJigggzyI72gVPRgOhw2RWGRGDWouQkVaExQg8MF7\u002BW7nprNxZXfFTFM0FGcWA5PEABKFiBRxtJS2NGGxoYWhG/Nb85neI68PifLWXGu559BDH50cuUmCHN18vNmrOFz8uHjFG/Ca4/E41JhrwiU5JU\u002BtOVZ7gaHAnsVkvU5NTY3G4rHVbDZbMDJGIAhC0Gq0fJGxKMomsdjWLpLZwloK6l7UTda/rI/bHXZfKBR6hXqVlrj6CYEvgcm\u002Bt31xU69p6iB8kB0QAp\u002BaR5tx3pOgnPVww78BGpUGdFrdMsuyTTqd7rNymwByTqKHMvxhP30sHqMPQA8vDGf4Qj5KlEVkkGByn\u002BQqJhRBSZZwANRwJf6K7wMYeD9QPs6PQzQWvTayOOJsGGswcDscyDH5Lh4U5iqC\u002Bfp8OJVOgd/ncfobUlJSBOTqYe2lWr7CVIEfXjUbzQ\u002B6KruEQmMhoIE4UF\u002BfYa5iqbqoGlz7LnAfuM1tb9p6cM5oGEAlwl5oz02S5BiivQsEAwa0CYUkkG7nPeekP\u002Bg3Tq9Ps6jmOc8jzzLWUtZm6cNS94xrphEttzlNmwaWDAskq5NxaSBKoqP9evstzPsbKIIYs\u002BuzHWh1OiZWJ2BH2AGKpMCUboI8fd5s/\u002B3\u002BpgTtj/jxp9BAP0fBRkqkDfXEhiZro\u002BKUTY7K988Y5/g/APgG2Ocp0eSbumcAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-02-02T00:04:53.208Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
