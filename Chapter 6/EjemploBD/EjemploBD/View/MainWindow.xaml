@@ -1,0 +1,49 @@
+﻿<Window x:Class="EjemploBD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjemploBD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnNew" Content="NEW" Margin="20" Click="btnNew_Click"></Button>
+                <Button x:Name="btnDel" Content="DEL" Margin="20" Click="btnDel_Click"></Button>
+            </StackPanel>
+
+            <DataGrid x:Name="dgvLesbians" AutoGenerateColumns="False" IsReadOnly="True" Margin="5" SelectionChanged="dgvLesbians_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="NAME" Binding="{Binding Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="BODY COUNT" Binding="{Binding Bodycount}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+
+            <Separator Height="100" Visibility="Hidden"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Name" Width="70"></Label>
+                <TextBox x:Name="txtName" Margin="10" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Body count" Width="70"></Label>
+                <TextBox x:Name="txtBodyCount" Margin="10" Width="300"/>
+            </StackPanel>
+
+            <Button x:Name="btnSave" Content="SAVE" Width="40" Click="btnSave_Click"></Button>
+            <Button x:Name="btnRep" Content="REPORT" Width="60" Click="btnRep_Click"></Button>
+            <Button x:Name="btnWbt" Content="WHITE BOX TEST" Width="100"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

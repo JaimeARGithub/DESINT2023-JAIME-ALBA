@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LESBIAN_DATA" msprop:Generator_RowClassName="LESBIAN_DATARow" msprop:Generator_RowEvHandlerName="LESBIAN_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="LESBIAN_DATARowDeleted" msprop:Generator_RowDeletingName="LESBIAN_DATARowDeleting" msprop:Generator_RowEvArgName="LESBIAN_DATARowChangeEvent" msprop:Generator_TablePropName="LESBIAN_DATA" msprop:Generator_RowChangedName="LESBIAN_DATARowChanged" msprop:Generator_UserTableName="LESBIAN_DATA" msprop:Generator_RowChangingName="LESBIAN_DATARowChanging" msprop:Generator_TableClassName="LESBIAN_DATADataTable" msprop:Generator_TableVarName="tableLESBIAN_DATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" msprop:Generator_UserColumnName="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BODYCOUNT" msprop:Generator_UserColumnName="BODYCOUNT" msprop:Generator_ColumnPropNameInTable="BODYCOUNTColumn" msprop:Generator_ColumnPropNameInRow="BODYCOUNT" msprop:Generator_ColumnVarNameInTable="columnBODYCOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
