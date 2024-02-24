@@ -25,6 +25,11 @@ namespace Ejemplo.Domain
             pm = new PlayersManage();
         }
 
+        public Players(List<Players> listPlayers)
+        {
+            pm = new PlayersManage(listPlayers);
+        }
+
 
         public Players(string dni, string name, string surnames, string position, int age)
         {
@@ -40,6 +45,16 @@ namespace Ejemplo.Domain
         public List<Players> readP()
         {
             return pm.readPlayers();
+        }
+
+        public DataTable getD()
+        {
+            return pm.getData();
+        }
+
+        public void getWBT()
+        {
+            pm.getWhiteBoxTest();
         }
     }
 }

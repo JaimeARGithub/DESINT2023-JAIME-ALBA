@@ -35,3 +35,44 @@ C:\Users\pokem\OneDrive\Desktop\Ejemplo\Ejemplo\bin\Debug\stdole.dll
 C:\Users\pokem\OneDrive\Desktop\Ejemplo\Ejemplo\obj\Debug\View\VentanaReports.g.cs
 C:\Users\pokem\OneDrive\Desktop\Ejemplo\Ejemplo\obj\Debug\View\VentanaReports.baml
 C:\Users\pokem\OneDrive\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csproj.Up2Date
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\Ejemplo.exe.config
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\Ejemplo.xml
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\Ejemplo.exe
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\Ejemplo.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\sapbusinessobjects.wpf.viewer.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\stdole.dll
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csproj.AssemblyReference.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\View\MainWindow.g.cs
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\View\VentanaReports.g.cs
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\App.g.cs
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo_MarkupCompile.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo_MarkupCompile.lref
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\View\MainWindow.baml
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\View\VentanaReports.baml
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.g.resources
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.Properties.Resources.resources
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csproj.GenerateResource.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csproj.CoreCompileInputs.cache
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csproj.Up2Date
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.exe
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.pdb
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\Ejemplo.exe.manifest
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\bin\Debug\Ejemplo.application
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.exe.manifest
+C:\Users\pokem\OneDrive\Documentos\Visual Community Studio\DESINT2023-JAIME-ALBA\Chapter 6\Ejemplo\Ejemplo\obj\Debug\Ejemplo.application

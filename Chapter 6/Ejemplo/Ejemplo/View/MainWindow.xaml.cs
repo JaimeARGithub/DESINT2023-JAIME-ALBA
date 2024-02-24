@@ -129,30 +129,17 @@ namespace Ejemplo
 
         private void btnRep_Click(object sender, RoutedEventArgs e)
         {
-            DataTable dt = new DataTable();
-            DataColumn c1 = new DataColumn("DNI");
-            DataColumn c2 = new DataColumn("Name");
-            DataColumn c3 = new DataColumn("Surnames");
-            dt.Columns.Add(c1);
-            dt.Columns.Add(c2);
-            dt.Columns.Add(c3);
-
-            DataRow row = null;
+            Players pData = new Players((List<Players>)dgvPlayers.ItemsSource);
 
 
-            foreach (Players p in (List<Players>)dgvPlayers.ItemsSource)
-            {
-                row = dt.NewRow();
-                row[0] = p.DNI;
-                row[1] = p.Name;
-                row[2] = p.Surnames;
-
-                dt.Rows.Add(row);
-            }
-
-
-            VentanaReports vr = new VentanaReports(dt);
+            VentanaReports vr = new VentanaReports(pData.getD());
             vr.Show();
+        }
+
+        private void btnWbt_Click(object sender, RoutedEventArgs e)
+        {
+            Players pTest = new Players((List<Players>)dgvPlayers.ItemsSource);
+            pTest.getWBT();
         }
     }
 }

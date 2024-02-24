@@ -58,8 +58,9 @@
                 <TextBox x:Name="txtAge" Margin="10" Width="300"/>
             </StackPanel>
 
-            <Button x:Name="btnSave" Content="SAVE" Margin="20" Click="btnSave_Click"></Button>
-            <Button x:Name="btnRep" Content="REPORT" Margin="20" Click="btnRep_Click"></Button>
+            <Button x:Name="btnSave" Content="SAVE" Width="40" Click="btnSave_Click"></Button>
+            <Button x:Name="btnRep" Content="REPORT" Width="60" Click="btnRep_Click"></Button>
+            <Button x:Name="btnWbt" Content="WHITE BOX TEST" Width="100" Click="btnWbt_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>
