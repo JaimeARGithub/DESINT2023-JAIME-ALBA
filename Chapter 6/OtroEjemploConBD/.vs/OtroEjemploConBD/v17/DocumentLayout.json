@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OtroEjemploConBD||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27129CC-CF3B-4B90-B8A2-D7C69F534E47}|OtroEjemploConBD\\OtroEjemploConBD.csproj|c:\\users\\pokem\\onedrive\\desktop\\otroejemploconbd\\otroejemploconbd\\view\\pagedata.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27129CC-CF3B-4B90-B8A2-D7C69F534E47}|OtroEjemploConBD\\OtroEjemploConBD.csproj|solutionrelative:otroejemploconbd\\view\\pagedata.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27129CC-CF3B-4B90-B8A2-D7C69F534E47}|OtroEjemploConBD\\OtroEjemploConBD.csproj|c:\\users\\pokem\\onedrive\\desktop\\otroejemploconbd\\otroejemploconbd\\view\\pagereport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27129CC-CF3B-4B90-B8A2-D7C69F534E47}|OtroEjemploConBD\\OtroEjemploConBD.csproj|solutionrelative:otroejemploconbd\\view\\pagereport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27129CC-CF3B-4B90-B8A2-D7C69F534E47}|OtroEjemploConBD\\OtroEjemploConBD.csproj|c:\\users\\pokem\\onedrive\\desktop\\otroejemploconbd\\otroejemploconbd\\view\\pagereport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27129CC-CF3B-4B90-B8A2-D7C69F534E47}|OtroEjemploConBD\\OtroEjemploConBD.csproj|solutionrelative:otroejemploconbd\\view\\pagereport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27129CC-CF3B-4B90-B8A2-D7C69F534E47}|OtroEjemploConBD\\OtroEjemploConBD.csproj|c:\\users\\pokem\\onedrive\\desktop\\otroejemploconbd\\otroejemploconbd\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OtroEjemploConBD",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\OtroEjemploConBD.csproj",
+              "RelativeDocumentMoniker": "OtroEjemploConBD\\OtroEjemploConBD.csproj",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\OtroEjemploConBD.csproj",
+              "RelativeToolTip": "OtroEjemploConBD\\OtroEjemploConBD.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-26T02:51:37.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PageData.xaml",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\View\\PageData.xaml",
+              "RelativeDocumentMoniker": "OtroEjemploConBD\\View\\PageData.xaml",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\View\\PageData.xaml",
+              "RelativeToolTip": "OtroEjemploConBD\\View\\PageData.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-26T02:50:39.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageReport.xaml",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\View\\PageReport.xaml",
+              "RelativeDocumentMoniker": "OtroEjemploConBD\\View\\PageReport.xaml",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\View\\PageReport.xaml",
+              "RelativeToolTip": "OtroEjemploConBD\\View\\PageReport.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-26T02:46:54.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "View\\PageReport.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\View\\PageReport.xaml.cs",
+              "RelativeDocumentMoniker": "OtroEjemploConBD\\View\\PageReport.xaml.cs",
+              "ToolTip": "C:\\Users\\pokem\\OneDrive\\Desktop\\OtroEjemploConBD\\OtroEjemploConBD\\View\\PageReport.xaml.cs",
+              "RelativeToolTip": "OtroEjemploConBD\\View\\PageReport.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T02:34:09.669Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

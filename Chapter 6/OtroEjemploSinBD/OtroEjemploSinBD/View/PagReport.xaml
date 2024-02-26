@@ -1,0 +1,17 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OtroEjemploSinBD.View"
+      xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="OtroEjemploSinBD.View.PagReport"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PagReport">
+
+    <Grid  Background="#FFE5E5E5">
+
+        <Viewer:CrystalReportsViewer x:Name="CrystalReport" HorizontalAlignment="Center" VerticalAlignment="Center" Height="450" Width="800" Loaded="CrystalReport_Loaded"/>
+
+    </Grid>
+</Page>

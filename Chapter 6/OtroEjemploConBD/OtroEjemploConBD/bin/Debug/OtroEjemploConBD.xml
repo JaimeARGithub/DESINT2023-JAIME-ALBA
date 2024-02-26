@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OtroEjemploConBD</name>
+    </assembly>
+    <members>
+        <member name="T:OtroEjemploConBD.Persistence.DataSet1">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:OtroEjemploConBD.Persistence.DataSet1.VEGGIE_DATADataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:OtroEjemploConBD.Persistence.DataSet1.VEGGIE_DATARow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:OtroEjemploConBD.Persistence.DataSet1.VEGGIE_DATARowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="M:OtroEjemploConBD.Persistence.Manages.VeggiesManage.selectMaxID(OtroEjemploConBD.Domain.Veggies)">
+            <summary>
+            Método que selecciona de la base de datos la ID máxima existente y se la asigna al Veggie enviado por parámetro.
+            </summary>
+            <param name="v">El veggie cuya ID se asigna a la máxima existente en la base de datos.</param>
+        </member>
+        <member name="M:OtroEjemploConBD.Persistence.Manages.VeggiesManage.updateVeggie(OtroEjemploConBD.Domain.Veggies)">
+            <summary>
+            Método que envía por parámetro un objeto Veggie y actualiza sus campos en la base de datos.
+            </summary>
+            <param name="v">El Veggie a actualizar..</param>
+        </member>
+        <member name="T:OtroEjemploConBD.View.PageData">
+            <summary>
+            Lógica de interacción para PageData.xaml
+            </summary>
+            <summary>
+            PageData
+            </summary>
+        </member>
+        <member name="M:OtroEjemploConBD.View.PageData.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:OtroEjemploConBD.View.PageReport">
+            <summary>
+            Lógica de interacción para PageReport.xaml
+            </summary>
+            <summary>
+            PageReport
+            </summary>
+        </member>
+        <member name="M:OtroEjemploConBD.View.PageReport.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:OtroEjemploConBD.App">
+            <summary>
+            Lógica de interacción para App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:OtroEjemploConBD.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:OtroEjemploConBD.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:OtroEjemploConBD.MainWindow">
+            <summary>
+            Lógica de interacción para MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:OtroEjemploConBD.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:OtroEjemploConBD.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:OtroEjemploConBD.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:OtroEjemploConBD.Properties.Resources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+    </members>
+</doc>

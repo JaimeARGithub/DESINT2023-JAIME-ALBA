@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VEGGIE_DATA" msprop:Generator_RowEvHandlerName="VEGGIE_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="VEGGIE_DATARowDeleted" msprop:Generator_RowDeletingName="VEGGIE_DATARowDeleting" msprop:Generator_RowEvArgName="VEGGIE_DATARowChangeEvent" msprop:Generator_TablePropName="VEGGIE_DATA" msprop:Generator_RowChangedName="VEGGIE_DATARowChanged" msprop:Generator_RowChangingName="VEGGIE_DATARowChanging" msprop:Generator_TableClassName="VEGGIE_DATADataTable" msprop:Generator_RowClassName="VEGGIE_DATARow" msprop:Generator_TableVarName="tableVEGGIE_DATA" msprop:Generator_UserTableName="VEGGIE_DATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MIN_WEIGHT" msprop:Generator_ColumnPropNameInRow="MIN_WEIGHT" msprop:Generator_ColumnPropNameInTable="MIN_WEIGHTColumn" msprop:Generator_ColumnVarNameInTable="columnMIN_WEIGHT" msprop:Generator_UserColumnName="MIN_WEIGHT" type="xs:string" minOccurs="0" />
+              <xs:element name="MAX_WEIGHT" msprop:Generator_ColumnPropNameInRow="MAX_WEIGHT" msprop:Generator_ColumnPropNameInTable="MAX_WEIGHTColumn" msprop:Generator_ColumnVarNameInTable="columnMAX_WEIGHT" msprop:Generator_UserColumnName="MAX_WEIGHT" type="xs:string" minOccurs="0" />
+              <xs:element name="AVERAGE_WEIGHT" msprop:Generator_ColumnPropNameInRow="AVERAGE_WEIGHT" msprop:Generator_ColumnPropNameInTable="AVERAGE_WEIGHTColumn" msprop:Generator_ColumnVarNameInTable="columnAVERAGE_WEIGHT" msprop:Generator_UserColumnName="AVERAGE_WEIGHT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

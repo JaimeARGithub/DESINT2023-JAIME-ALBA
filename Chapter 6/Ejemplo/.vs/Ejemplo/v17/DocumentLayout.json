@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|c:\\users\\pokem\\onedrive\\documentos\\visual community studio\\desint2023-jaime-alba\\chapter 6\\ejemplo\\ejemplo\\view\\ventanareports.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\ejemplo\\view\\ventanareports.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\view\\ventanareports.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|c:\\users\\pokem\\onedrive\\documentos\\visual community studio\\desint2023-jaime-alba\\chapter 6\\ejemplo\\ejemplo\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\ejemplo\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\ejemplo\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|c:\\users\\pokem\\onedrive\\documentos\\visual community studio\\desint2023-jaime-alba\\chapter 6\\ejemplo\\ejemplo\\persistence\\manages\\playersmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\ejemplo\\persistence\\manages\\playersmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14AD3983-4DDF-4053-88EA-4533A3558369}|Ejemplo\\Ejemplo.csproj|solutionrelative:ejemplo\\persistence\\manages\\playersmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -48,22 +48,21 @@
               "RelativeDocumentMoniker": "Ejemplo\\View\\VentanaReports.xaml.cs",
               "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\VentanaReports.xaml.cs",
               "RelativeToolTip": "Ejemplo\\View\\VentanaReports.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAA+wCwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-24T22:21:45.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Ejemplo\\View\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\MainWindow.xaml",
               "RelativeToolTip": "Ejemplo\\View\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-24T18:13:21.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T18:13:21.519Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "Ejemplo\\Persistence\\Manages\\PlayersManage.cs",
               "ViewState": "AQIAAFMAAAAAAAAAAAAUwFoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T21:41:31.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T21:41:31.304Z"
             },
             {
               "$type": "Document",
@@ -92,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Ejemplo\\View\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\pokem\\OneDrive\\Documentos\\Visual Community Studio\\DESINT2023-JAIME-ALBA\\Chapter 6\\Ejemplo\\Ejemplo\\View\\MainWindow.xaml.cs",
               "RelativeToolTip": "Ejemplo\\View\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAnwI0AAAAbAAAA",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAnwIMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-23T21:35:57.213Z",
               "EditorCaption": ""
